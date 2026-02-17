@@ -1,0 +1,23 @@
+{
+  "agent": "GitHub Copilot CLI",
+  "version": "v2.85.0",
+  "releaseDate": "2026-01-14",
+  "sourceUrl": "https://github.com/cli/cli/releases/tag/v2.85.0",
+  "changes": [
+    {
+      "type": "feature",
+      "category": "command-line",
+      "description": "Add gh browse --actions flag for quick access to Actions",
+      "impact": "minor"
+    },
+    {
+      "type": "feature",
+      "category": "command-line",
+      "description": "Allow git remote names in gh repo set-default",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": []
+}

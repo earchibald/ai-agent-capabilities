@@ -1,0 +1,16 @@
+{
+  "agent": "GitHub Copilot CLI",
+  "lastUpdated": "2026-02-17T19:54:00.000Z",
+  "releases": [
+    {
+      "version": "v2.86.0",
+      "releaseDate": "2026-01-21",
+      "sourceUrl": "https://github.com/cli/cli/releases/tag/v2.86.0"
+    },
+    {
+      "version": "v2.85.0",
+      "releaseDate": "2026-01-14",
+      "sourceUrl": "https://github.com/cli/cli/releases/tag/v2.85.0"
+    }
+  ]
+}
