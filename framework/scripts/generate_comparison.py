@@ -8,7 +8,7 @@ This script generates comparison matrices and reports from agent capability file
 import json
 import os
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, List, Any
 from collections import defaultdict
 
@@ -71,7 +71,7 @@ def generate_comparison_matrix() -> Dict[str, Any]:
     
     # Build comparison matrix
     matrix = {
-        "generated_at": datetime.utcnow().isoformat(),
+        "generated_at": datetime.now(timezone.utc).isoformat(),
         "agents": list(agent_data.keys()),
         "categories": sorted(all_categories),
         "comparison": {}
@@ -108,7 +108,7 @@ def generate_capability_summary() -> Dict[str, Any]:
     agents = get_all_agents()
     
     summary = {
-        "generated_at": datetime.utcnow().isoformat(),
+        "generated_at": datetime.now(timezone.utc).isoformat(),
         "agents": {}
     }
     
@@ -163,7 +163,7 @@ def generate_markdown_comparison() -> str:
             all_categories.add(cap.get('category', 'other'))
     
     md = ["# AI Agent Capability Comparison\n"]
-    md.append(f"*Generated: {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')}*\n")
+    md.append(f"*Generated: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%S UTC')}*\n")
     md.append("## Overview\n")
     
     # Agent summary table

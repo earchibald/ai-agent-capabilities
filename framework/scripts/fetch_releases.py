@@ -10,7 +10,7 @@ import json
 import os
 import sys
 from pathlib import Path
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from typing import Dict, List, Any, Optional
 import urllib.request
 import urllib.error
@@ -168,7 +168,7 @@ def save_releases(agent_id: str, releases: List[Dict]) -> None:
     index_file = releases_dir / "index.json"
     index_data = {
         "agent": agent_id,
-        "lastUpdated": datetime.utcnow().isoformat(),
+        "lastUpdated": datetime.now(timezone.utc).isoformat(),
         "releases": [
             {
                 "version": r.get('version'),
