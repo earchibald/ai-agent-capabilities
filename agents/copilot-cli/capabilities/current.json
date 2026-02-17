@@ -1,0 +1,132 @@
+{
+  "agent": {
+    "name": "GitHub Copilot CLI",
+    "vendor": "GitHub",
+    "version": "as of 2026-02-17",
+    "lastUpdated": "2026-02-17T19:49:34.318Z"
+  },
+  "capabilities": [
+    {
+      "category": "command-line",
+      "name": "Natural Language Commands",
+      "description": "Convert natural language to shell commands",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "requirements": ["GitHub CLI installed", "GitHub Copilot subscription"]
+    },
+    {
+      "category": "command-line",
+      "name": "gh copilot suggest",
+      "description": "Get command suggestions for tasks described in natural language",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "command-line",
+      "name": "gh copilot explain",
+      "description": "Explain what a command does in plain language",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "command-line",
+      "name": "Multi-step Workflows",
+      "description": "Plan and execute complex multi-step command line workflows",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "context-awareness",
+      "name": "Git Context Awareness",
+      "description": "Understands git repository context for better suggestions",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "context-awareness",
+      "name": "GitHub Context Integration",
+      "description": "Access GitHub issues, PRs, and repository data",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "chat-assistance",
+      "name": "Interactive Terminal Chat",
+      "description": "Chat with Copilot directly in the terminal",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "code-generation",
+      "name": "Script Generation",
+      "description": "Generate shell scripts from descriptions",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "debugging",
+      "name": "Error Explanation",
+      "description": "Explain command errors and suggest fixes",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "customization",
+      "name": "Shell Integration",
+      "description": "Works with bash, zsh, PowerShell, and other shells",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    }
+  ],
+  "integrations": [
+    {
+      "platform": "GitHub CLI",
+      "supported": true,
+      "features": ["Command suggestion", "Command explanation", "GitHub integration"]
+    },
+    {
+      "platform": "Bash",
+      "supported": true,
+      "features": ["Shell commands", "Script generation"]
+    },
+    {
+      "platform": "Zsh",
+      "supported": true,
+      "features": ["Shell commands", "Script generation"]
+    },
+    {
+      "platform": "PowerShell",
+      "supported": true,
+      "features": ["Shell commands", "Script generation"]
+    },
+    {
+      "platform": "Windows Terminal",
+      "supported": true,
+      "features": ["Native integration in Windows Terminal Canary"]
+    }
+  ],
+  "models": [
+    {
+      "name": "GPT-4",
+      "provider": "OpenAI",
+      "available": true,
+      "tier": "free"
+    }
+  ],
+  "documentation": {
+    "officialDocs": "https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-the-command-line",
+    "releaseNotes": "https://github.com/cli/cli/releases",
+    "github": "https://github.com/cli/cli",
+    "apiDocs": "https://cli.github.com/manual/"
+  }
+}

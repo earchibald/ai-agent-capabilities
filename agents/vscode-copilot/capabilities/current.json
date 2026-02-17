@@ -1,0 +1,222 @@
+{
+  "agent": {
+    "name": "GitHub Copilot for VS Code",
+    "vendor": "GitHub / Microsoft",
+    "version": "as of 2026-02-17",
+    "lastUpdated": "2026-02-17T19:49:34.318Z"
+  },
+  "capabilities": [
+    {
+      "category": "code-completion",
+      "name": "Inline Code Suggestions",
+      "description": "Real-time code completions as you type, suggesting entire lines or blocks of code",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "requirements": ["VS Code 1.74+", "GitHub Copilot extension"]
+    },
+    {
+      "category": "code-completion",
+      "name": "Multi-line Completions",
+      "description": "Suggests multiple lines of code based on context",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "chat-assistance",
+      "name": "Copilot Chat",
+      "description": "Interactive chat interface for asking coding questions and getting explanations",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "limitations": ["50 chat requests per month on Free tier"]
+    },
+    {
+      "category": "multi-file-editing",
+      "name": "Copilot Edits",
+      "description": "Make changes across multiple files with natural language instructions",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "limitations": ["Included in 50 chat requests on Free tier"]
+    },
+    {
+      "category": "code-generation",
+      "name": "Function Generation",
+      "description": "Generate entire functions from comments or function signatures",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "code-explanation",
+      "name": "Code Explanation",
+      "description": "Explain selected code or entire files",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "testing",
+      "name": "Test Generation",
+      "description": "Generate unit tests for selected code",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "debugging",
+      "name": "Fix Suggestions",
+      "description": "Suggest fixes for errors and bugs",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "code-refactoring",
+      "name": "Code Refactoring",
+      "description": "Refactor code with AI assistance",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "documentation",
+      "name": "Documentation Generation",
+      "description": "Generate code documentation and comments",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "context-awareness",
+      "name": "Workspace Context",
+      "description": "Understands your entire workspace for better suggestions",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "context-awareness",
+      "name": "Copilot Spaces",
+      "description": "Shared knowledge base from docs and repositories for teams",
+      "available": true,
+      "tier": "enterprise",
+      "maturityLevel": "beta"
+    },
+    {
+      "category": "model-selection",
+      "name": "Multiple Model Support",
+      "description": "Choose from different AI models (Claude, GPT-4, etc.)",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "requirements": ["Pro+ tier for multi-model access"]
+    },
+    {
+      "category": "agent-orchestration",
+      "name": "Copilot Extensions",
+      "description": "Integrate third-party agents and custom extensions",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "agent-orchestration",
+      "name": "Agent Mode",
+      "description": "Autonomous coding agent that can write code and create PRs",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "beta"
+    },
+    {
+      "category": "security",
+      "name": "Code Vulnerability Detection",
+      "description": "Detect security vulnerabilities in code",
+      "available": true,
+      "tier": "business",
+      "maturityLevel": "stable",
+      "requirements": ["GitHub Advanced Security"]
+    },
+    {
+      "category": "security",
+      "name": "Public Code Filter",
+      "description": "Filter suggestions matching public code",
+      "available": true,
+      "tier": "business",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "collaboration",
+      "name": "Code Reviews",
+      "description": "AI-powered code review assistance",
+      "available": true,
+      "tier": "enterprise",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "customization",
+      "name": "Custom Instructions",
+      "description": "Set custom instructions for Copilot behavior",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable"
+    }
+  ],
+  "integrations": [
+    {
+      "platform": "Visual Studio Code",
+      "supported": true,
+      "features": ["Code completion", "Chat", "Edits", "Inline chat", "Terminal assistance"]
+    },
+    {
+      "platform": "GitHub.com",
+      "supported": true,
+      "features": ["Pull request summaries", "Code reviews", "Chat in issues"]
+    },
+    {
+      "platform": "GitHub Mobile",
+      "supported": true,
+      "features": ["Chat", "Code search", "Code completion"]
+    }
+  ],
+  "models": [
+    {
+      "name": "GPT-4",
+      "provider": "OpenAI",
+      "available": true,
+      "tier": "pro"
+    },
+    {
+      "name": "GPT-4 Turbo",
+      "provider": "OpenAI",
+      "available": true,
+      "tier": "pro"
+    },
+    {
+      "name": "Claude 3.5 Sonnet",
+      "provider": "Anthropic",
+      "available": true,
+      "tier": "pro"
+    },
+    {
+      "name": "o1-preview",
+      "provider": "OpenAI",
+      "available": true,
+      "tier": "pro"
+    },
+    {
+      "name": "o1-mini",
+      "provider": "OpenAI",
+      "available": true,
+      "tier": "pro"
+    }
+  ],
+  "documentation": {
+    "officialDocs": "https://docs.github.com/en/copilot",
+    "releaseNotes": "https://github.blog/changelog/",
+    "github": "https://github.com/github/copilot-docs",
+    "apiDocs": "https://docs.github.com/en/copilot/building-copilot-extensions"
+  }
+}

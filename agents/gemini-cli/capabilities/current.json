@@ -1,0 +1,236 @@
+{
+  "agent": {
+    "name": "Google Gemini for Coding",
+    "vendor": "Google",
+    "version": "Gemini 2.0 (as of 2026-02-17)",
+    "lastUpdated": "2026-02-17T19:49:34.318Z"
+  },
+  "capabilities": [
+    {
+      "category": "code-generation",
+      "name": "Code Generation",
+      "description": "Generate code in multiple programming languages from natural language",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "code-generation",
+      "name": "Gemini Code Assist",
+      "description": "AI-powered code completion and generation in Cloud IDEs and supported environments",
+      "available": true,
+      "tier": "enterprise",
+      "maturityLevel": "stable",
+      "requirements": ["Google Cloud subscription"]
+    },
+    {
+      "category": "code-explanation",
+      "name": "Code Understanding",
+      "description": "Explain code, answer questions about codebases",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "debugging",
+      "name": "Debugging Assistance",
+      "description": "Help identify and fix bugs in code",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "code-refactoring",
+      "name": "Code Refactoring",
+      "description": "Suggest improvements and refactor code",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "testing",
+      "name": "Test Generation",
+      "description": "Generate unit tests and test cases",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "documentation",
+      "name": "Documentation Generation",
+      "description": "Generate code documentation and comments",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "chat-assistance",
+      "name": "Interactive Chat",
+      "description": "Chat interface for coding assistance",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "context-awareness",
+      "name": "Large Context Window",
+      "description": "Up to 2 million token context window for processing entire codebases",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "limitations": ["Available in Gemini 1.5 Pro and 2.0 models"]
+    },
+    {
+      "category": "multi-file-editing",
+      "name": "Multi-file Understanding",
+      "description": "Work with multiple files and complex project structures",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "language-support",
+      "name": "Multi-language Support",
+      "description": "Support for many programming languages",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "api-integration",
+      "name": "Gemini API",
+      "description": "RESTful API for integrating Gemini into applications",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "api-integration",
+      "name": "Function Calling",
+      "description": "Call external functions and tools",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "customization",
+      "name": "System Instructions",
+      "description": "Customize behavior with system instructions",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "performance",
+      "name": "Multimodal Capabilities",
+      "description": "Process text, images, video, and audio",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "performance",
+      "name": "Code Execution",
+      "description": "Execute Python code in a sandboxed environment",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "ide-integration",
+      "name": "Cloud Workstations Integration",
+      "description": "Native integration with Google Cloud Workstations",
+      "available": true,
+      "tier": "enterprise",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "ide-integration",
+      "name": "VS Code Extension",
+      "description": "Code Assist extension for VS Code",
+      "available": true,
+      "tier": "enterprise",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "ide-integration",
+      "name": "IntelliJ Integration",
+      "description": "Code Assist plugin for IntelliJ IDEA",
+      "available": true,
+      "tier": "enterprise",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "security",
+      "name": "Security Analysis",
+      "description": "Identify security issues and vulnerabilities",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    }
+  ],
+  "integrations": [
+    {
+      "platform": "Google AI Studio",
+      "supported": true,
+      "features": ["Web interface", "Chat", "Code generation", "Prompt tuning"]
+    },
+    {
+      "platform": "Gemini API",
+      "supported": true,
+      "features": ["RESTful API", "Python SDK", "JavaScript SDK", "Kotlin SDK"]
+    },
+    {
+      "platform": "VS Code",
+      "supported": true,
+      "features": ["Code Assist extension", "Code completion", "Chat"]
+    },
+    {
+      "platform": "IntelliJ IDEA",
+      "supported": true,
+      "features": ["Code Assist plugin", "Code completion", "Chat"]
+    },
+    {
+      "platform": "Cloud Workstations",
+      "supported": true,
+      "features": ["Native integration", "Code completion"]
+    },
+    {
+      "platform": "Android Studio",
+      "supported": true,
+      "features": ["Code Assist", "Android-specific assistance"]
+    }
+  ],
+  "models": [
+    {
+      "name": "Gemini 2.0 Flash",
+      "provider": "Google",
+      "available": true,
+      "tier": "free"
+    },
+    {
+      "name": "Gemini 1.5 Pro",
+      "provider": "Google",
+      "available": true,
+      "tier": "free"
+    },
+    {
+      "name": "Gemini 1.5 Flash",
+      "provider": "Google",
+      "available": true,
+      "tier": "free"
+    },
+    {
+      "name": "Gemini 1.0 Pro",
+      "provider": "Google",
+      "available": true,
+      "tier": "free"
+    }
+  ],
+  "documentation": {
+    "officialDocs": "https://ai.google.dev/gemini-api/docs",
+    "releaseNotes": "https://ai.google.dev/gemini-api/docs/releases",
+    "github": "https://github.com/google-gemini",
+    "apiDocs": "https://ai.google.dev/gemini-api/docs/api-overview"
+  }
+}

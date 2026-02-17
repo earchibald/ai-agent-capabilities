@@ -1,0 +1,207 @@
+{
+  "agent": {
+    "name": "Claude for Coding",
+    "vendor": "Anthropic",
+    "version": "Claude 3.5 Sonnet (as of 2026-02-17)",
+    "lastUpdated": "2026-02-17T19:49:34.318Z"
+  },
+  "capabilities": [
+    {
+      "category": "code-generation",
+      "name": "Code Generation",
+      "description": "Generate code in multiple programming languages from natural language descriptions",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "requirements": ["Claude API access or claude.ai subscription"]
+    },
+    {
+      "category": "code-explanation",
+      "name": "Code Analysis",
+      "description": "Analyze and explain existing code, including complex algorithms",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "debugging",
+      "name": "Bug Detection and Fixing",
+      "description": "Identify bugs and suggest fixes in code",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "code-refactoring",
+      "name": "Code Refactoring",
+      "description": "Refactor code for better performance, readability, or maintainability",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "testing",
+      "name": "Test Generation",
+      "description": "Generate unit tests and test cases",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "documentation",
+      "name": "Documentation Writing",
+      "description": "Generate code documentation, README files, and API documentation",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "chat-assistance",
+      "name": "Interactive Coding Chat",
+      "description": "Interactive conversation about code with context retention",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "context-awareness",
+      "name": "Extended Context Window",
+      "description": "200K token context window for processing large codebases",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "limitations": ["API usage depends on tier"]
+    },
+    {
+      "category": "multi-file-editing",
+      "name": "Multi-file Code Understanding",
+      "description": "Understand and work with multiple files and complex project structures",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "security",
+      "name": "Security Analysis",
+      "description": "Identify security vulnerabilities and suggest secure coding practices",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "language-support",
+      "name": "Multi-language Support",
+      "description": "Support for 100+ programming languages",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "api-integration",
+      "name": "API Access",
+      "description": "RESTful API for integrating Claude into custom tools and workflows",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "requirements": ["API key required"]
+    },
+    {
+      "category": "api-integration",
+      "name": "Tool Use (Function Calling)",
+      "description": "Claude can use external tools and APIs via function calling",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "api-integration",
+      "name": "Computer Use (Beta)",
+      "description": "Claude can interact with computer interfaces, including IDEs",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "beta",
+      "limitations": ["API only", "Still in development"]
+    },
+    {
+      "category": "customization",
+      "name": "System Prompts",
+      "description": "Customize Claude's behavior with system prompts",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    },
+    {
+      "category": "performance",
+      "name": "Vision Capabilities",
+      "description": "Analyze images including code screenshots and diagrams",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable"
+    }
+  ],
+  "integrations": [
+    {
+      "platform": "Claude.ai",
+      "supported": true,
+      "features": ["Web interface", "Chat", "Code generation", "File uploads"]
+    },
+    {
+      "platform": "API",
+      "supported": true,
+      "features": ["RESTful API", "Python SDK", "TypeScript SDK"]
+    },
+    {
+      "platform": "VS Code",
+      "supported": true,
+      "features": ["Via GitHub Copilot Extensions", "Via third-party extensions"]
+    },
+    {
+      "platform": "Cursor IDE",
+      "supported": true,
+      "features": ["Native integration", "Code completion", "Chat"]
+    },
+    {
+      "platform": "Zed",
+      "supported": true,
+      "features": ["Native integration"]
+    }
+  ],
+  "models": [
+    {
+      "name": "Claude 3.5 Sonnet",
+      "provider": "Anthropic",
+      "available": true,
+      "tier": "free"
+    },
+    {
+      "name": "Claude 3.5 Haiku",
+      "provider": "Anthropic",
+      "available": true,
+      "tier": "free"
+    },
+    {
+      "name": "Claude 3 Opus",
+      "provider": "Anthropic",
+      "available": true,
+      "tier": "free"
+    },
+    {
+      "name": "Claude 3 Sonnet",
+      "provider": "Anthropic",
+      "available": true,
+      "tier": "free"
+    },
+    {
+      "name": "Claude 3 Haiku",
+      "provider": "Anthropic",
+      "available": true,
+      "tier": "free"
+    }
+  ],
+  "documentation": {
+    "officialDocs": "https://docs.anthropic.com/",
+    "releaseNotes": "https://docs.anthropic.com/en/api/changelog",
+    "github": "https://github.com/anthropics",
+    "apiDocs": "https://docs.anthropic.com/en/api/getting-started"
+  }
+}
