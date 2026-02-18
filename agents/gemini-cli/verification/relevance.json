@@ -1,0 +1,316 @@
+{
+  "generated_at": "2026-02-18T17:23:31.202300+00:00",
+  "pass": "relevance",
+  "results": [
+    {
+      "capability": "Agent Mode",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Agent Mode",
+      "url": "https://github.com/google-gemini/gemini-cli/releases",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Code Generation",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Code Generation",
+      "url": "https://ai.google.dev/gemini-api/docs",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Code Explanation",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Debugging",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Multi-file Editing",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Terminal CLI",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Terminal CLI",
+      "url": "https://github.com/google-gemini/gemini-cli/releases",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Chat Assistance",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Context Window",
+      "url": "https://ai.google.dev/gemini-api/docs",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Context Window",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Custom Context Files",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "MCP Support",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Google Search Grounding",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Google Search Grounding",
+      "url": "https://ai.google.dev/gemini-api/docs",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Test Generation",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Documentation Generation",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Git Integration",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Custom Instructions",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Multi-language Support",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Security Analysis",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Token Caching",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Token Caching",
+      "url": "https://ai.google.dev/gemini-api/docs",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Prompt and Context Inspector",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Prompt and Context Inspector",
+      "url": "https://github.com/google-gemini/gemini-cli/releases",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Debug Logging",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Debug Logging",
+      "url": "https://github.com/google-gemini/gemini-cli/releases",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Usage Tracking",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Usage Tracking",
+      "url": "https://github.com/google-gemini/gemini-cli/releases",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Lifecycle Hooks",
+      "url": "https://geminicli.com/docs/hooks/",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    }
+  ]
+}

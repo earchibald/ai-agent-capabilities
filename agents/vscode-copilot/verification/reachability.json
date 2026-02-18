@@ -1,0 +1,429 @@
+{
+  "generated_at": "2026-02-18T17:22:37.247542+00:00",
+  "pass": "reachability",
+  "results": [
+    {
+      "capability": "Code Completion",
+      "url": "https://code.visualstudio.com/docs/copilot/ai-powered-suggestions",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Code Completion",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Next Edit Suggestions",
+      "url": "https://code.visualstudio.com/docs/copilot/ai-powered-suggestions#_next-edit-suggestions",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Next Edit Suggestions",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot#next-edit-suggestions",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Agent Mode",
+      "url": "https://code.visualstudio.com/docs/copilot/chat/agent-mode",
+      "status_code": 404,
+      "redirected": false,
+      "redirect_url": null,
+      "error": "HTTP Error 404: Not Found",
+      "reachable": false
+    },
+    {
+      "capability": "Agent Mode",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/using-agent-mode",
+      "status_code": 404,
+      "redirected": false,
+      "redirect_url": null,
+      "error": "HTTP Error 404: Not Found",
+      "reachable": false
+    },
+    {
+      "capability": "Extensions",
+      "url": "https://docs.github.com/en/copilot/building-copilot-extensions",
+      "status_code": 404,
+      "redirected": false,
+      "redirect_url": null,
+      "error": "HTTP Error 404: Not Found",
+      "reachable": false
+    },
+    {
+      "capability": "Extensions",
+      "url": "https://code.visualstudio.com/docs/copilot/copilot-extensions",
+      "status_code": 404,
+      "redirected": false,
+      "redirect_url": null,
+      "error": "HTTP Error 404: Not Found",
+      "reachable": false
+    },
+    {
+      "capability": "Code Generation",
+      "url": "https://code.visualstudio.com/docs/copilot/ai-powered-suggestions",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Code Generation",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Chat Assistance",
+      "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Chat Assistance",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Multi-file Editing",
+      "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-edits",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat#_builtin-chat-modes",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Multi-file Editing",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/copilot-edits",
+      "status_code": 404,
+      "redirected": false,
+      "redirect_url": null,
+      "error": "HTTP Error 404: Not Found",
+      "reachable": false
+    },
+    {
+      "capability": "Code Explanation",
+      "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Code Explanation",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Debugging",
+      "url": "https://code.visualstudio.com/docs/copilot/debugging-with-copilot",
+      "status_code": 404,
+      "redirected": false,
+      "redirect_url": null,
+      "error": "HTTP Error 404: Not Found",
+      "reachable": false
+    },
+    {
+      "capability": "Debugging",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/debugging-errors-with-github-copilot",
+      "status_code": 404,
+      "redirected": false,
+      "redirect_url": null,
+      "error": "HTTP Error 404: Not Found",
+      "reachable": false
+    },
+    {
+      "capability": "Code Refactoring",
+      "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Code Refactoring",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/refactoring-code-with-github-copilot",
+      "status_code": 404,
+      "redirected": false,
+      "redirect_url": null,
+      "error": "HTTP Error 404: Not Found",
+      "reachable": false
+    },
+    {
+      "capability": "Test Generation",
+      "url": "https://code.visualstudio.com/docs/copilot/testing",
+      "status_code": 404,
+      "redirected": false,
+      "redirect_url": null,
+      "error": "HTTP Error 404: Not Found",
+      "reachable": false
+    },
+    {
+      "capability": "Test Generation",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/writing-tests-with-github-copilot",
+      "status_code": 404,
+      "redirected": false,
+      "redirect_url": null,
+      "error": "HTTP Error 404: Not Found",
+      "reachable": false
+    },
+    {
+      "capability": "Documentation Generation",
+      "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Documentation Generation",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Workspace Context",
+      "url": "https://code.visualstudio.com/docs/copilot/workspace-context",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://code.visualstudio.com/docs/copilot/reference/workspace-context",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Workspace Context",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Copilot Spaces",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/using-copilot-spaces",
+      "status_code": 404,
+      "redirected": false,
+      "redirect_url": null,
+      "error": "HTTP Error 404: Not Found",
+      "reachable": false
+    },
+    {
+      "capability": "Copilot Spaces",
+      "url": "https://github.blog/changelog/label/copilot/",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Model Selection",
+      "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Model Selection",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/ai-models/changing-the-ai-model-for-copilot-chat",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/use-ai-models/change-the-chat-model",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "MCP Support",
+      "url": "https://code.visualstudio.com/docs/copilot/chat/mcp-servers",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://code.visualstudio.com/docs/copilot/customization/mcp-servers",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "MCP Support",
+      "url": "https://docs.github.com/en/copilot/customizing-copilot/extending-copilot-in-vs-code/using-mcp-servers-in-vs-code",
+      "status_code": 404,
+      "redirected": false,
+      "redirect_url": null,
+      "error": "HTTP Error 404: Not Found",
+      "reachable": false
+    },
+    {
+      "capability": "Custom Instructions",
+      "url": "https://code.visualstudio.com/docs/copilot/copilot-customization",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://code.visualstudio.com/docs/copilot/customization/overview",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Custom Instructions",
+      "url": "https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Code Review",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/code-review",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Security Analysis",
+      "url": "https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/using-github-copilot-code-security",
+      "status_code": 404,
+      "redirected": false,
+      "redirect_url": null,
+      "error": "HTTP Error 404: Not Found",
+      "reachable": false
+    },
+    {
+      "capability": "Security Analysis",
+      "url": "https://docs.github.com/en/copilot/managing-copilot/managing-copilot-policies",
+      "status_code": 404,
+      "redirected": false,
+      "redirect_url": null,
+      "error": "HTTP Error 404: Not Found",
+      "reachable": false
+    },
+    {
+      "capability": "Multi-language Support",
+      "url": "https://docs.github.com/en/copilot/about-github-copilot/github-copilot-features",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/get-started/features",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Multi-language Support",
+      "url": "https://github.com/features/copilot",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Prompt and Context Inspector",
+      "url": "https://code.visualstudio.com/docs/copilot/copilot-settings",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://code.visualstudio.com/docs/copilot/reference/copilot-settings",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Prompt and Context Inspector",
+      "url": "https://code.visualstudio.com/docs/copilot/faq",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Debug Logging",
+      "url": "https://code.visualstudio.com/docs/copilot/setup",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Debug Logging",
+      "url": "https://code.visualstudio.com/docs/copilot/chat/mcp-servers",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://code.visualstudio.com/docs/copilot/customization/mcp-servers",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Usage Tracking",
+      "url": "https://code.visualstudio.com/docs/getstarted/telemetry",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://code.visualstudio.com/docs/configure/telemetry",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Usage Tracking",
+      "url": "https://code.visualstudio.com/api/extension-guides/telemetry",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Lifecycle Hooks",
+      "url": "https://code.visualstudio.com/docs/copilot/copilot-customization",
+      "status_code": 200,
+      "redirected": true,
+      "redirect_url": "https://code.visualstudio.com/docs/copilot/customization/overview",
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Lifecycle Hooks",
+      "url": "https://code.visualstudio.com/updates/v1_109",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    }
+  ]
+}

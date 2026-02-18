@@ -1,0 +1,462 @@
+{
+  "generated_at": "2026-02-18T17:23:31.202677+00:00",
+  "pass": "relevance",
+  "results": [
+    {
+      "capability": "Code Completion",
+      "url": "https://code.visualstudio.com/docs/copilot/ai-powered-suggestions",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Code Completion",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Next Edit Suggestions",
+      "url": "https://code.visualstudio.com/docs/copilot/ai-powered-suggestions#_next-edit-suggestions",
+      "granularity": "section",
+      "relevant": true,
+      "checks": {
+        "anchor_found": true,
+        "fragment": "_next-edit-suggestions"
+      }
+    },
+    {
+      "capability": "Next Edit Suggestions",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot#next-edit-suggestions",
+      "granularity": "section",
+      "relevant": false,
+      "checks": {
+        "anchor_found": false,
+        "fragment": "next-edit-suggestions"
+      }
+    },
+    {
+      "capability": "Agent Mode",
+      "url": "https://code.visualstudio.com/docs/copilot/chat/agent-mode",
+      "granularity": "dedicated",
+      "relevant": false,
+      "checks": {
+        "page_reachable": false
+      }
+    },
+    {
+      "capability": "Agent Mode",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/using-agent-mode",
+      "granularity": "dedicated",
+      "relevant": false,
+      "checks": {
+        "page_reachable": false
+      }
+    },
+    {
+      "capability": "Extensions",
+      "url": "https://docs.github.com/en/copilot/building-copilot-extensions",
+      "granularity": "dedicated",
+      "relevant": false,
+      "checks": {
+        "page_reachable": false
+      }
+    },
+    {
+      "capability": "Extensions",
+      "url": "https://code.visualstudio.com/docs/copilot/copilot-extensions",
+      "granularity": "dedicated",
+      "relevant": false,
+      "checks": {
+        "page_reachable": false
+      }
+    },
+    {
+      "capability": "Code Generation",
+      "url": "https://code.visualstudio.com/docs/copilot/ai-powered-suggestions",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "capability": "Code Generation",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": true,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Chat Assistance",
+      "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Chat Assistance",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "capability": "Multi-file Editing",
+      "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-edits",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Multi-file Editing",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/copilot-edits",
+      "granularity": "dedicated",
+      "relevant": false,
+      "checks": {
+        "page_reachable": false
+      }
+    },
+    {
+      "capability": "Code Explanation",
+      "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "capability": "Code Explanation",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "capability": "Debugging",
+      "url": "https://code.visualstudio.com/docs/copilot/debugging-with-copilot",
+      "granularity": "dedicated",
+      "relevant": false,
+      "checks": {
+        "page_reachable": false
+      }
+    },
+    {
+      "capability": "Debugging",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/debugging-errors-with-github-copilot",
+      "granularity": "dedicated",
+      "relevant": false,
+      "checks": {
+        "page_reachable": false
+      }
+    },
+    {
+      "capability": "Code Refactoring",
+      "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Code Refactoring",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/refactoring-code-with-github-copilot",
+      "granularity": "dedicated",
+      "relevant": false,
+      "checks": {
+        "page_reachable": false
+      }
+    },
+    {
+      "capability": "Test Generation",
+      "url": "https://code.visualstudio.com/docs/copilot/testing",
+      "granularity": "dedicated",
+      "relevant": false,
+      "checks": {
+        "page_reachable": false
+      }
+    },
+    {
+      "capability": "Test Generation",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/writing-tests-with-github-copilot",
+      "granularity": "dedicated",
+      "relevant": false,
+      "checks": {
+        "page_reachable": false
+      }
+    },
+    {
+      "capability": "Documentation Generation",
+      "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "capability": "Documentation Generation",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Workspace Context",
+      "url": "https://code.visualstudio.com/docs/copilot/workspace-context",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": true,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Workspace Context",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "capability": "Copilot Spaces",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/using-copilot-spaces",
+      "granularity": "dedicated",
+      "relevant": false,
+      "checks": {
+        "page_reachable": false
+      }
+    },
+    {
+      "capability": "Copilot Spaces",
+      "url": "https://github.blog/changelog/label/copilot/",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Model Selection",
+      "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": true,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Model Selection",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/ai-models/changing-the-ai-model-for-copilot-chat",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": true,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "MCP Support",
+      "url": "https://code.visualstudio.com/docs/copilot/chat/mcp-servers",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "MCP Support",
+      "url": "https://docs.github.com/en/copilot/customizing-copilot/extending-copilot-in-vs-code/using-mcp-servers-in-vs-code",
+      "granularity": "dedicated",
+      "relevant": false,
+      "checks": {
+        "page_reachable": false
+      }
+    },
+    {
+      "capability": "Custom Instructions",
+      "url": "https://code.visualstudio.com/docs/copilot/copilot-customization",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": true,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Custom Instructions",
+      "url": "https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": true,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Code Review",
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/code-review",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": true,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Security Analysis",
+      "url": "https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/using-github-copilot-code-security",
+      "granularity": "dedicated",
+      "relevant": false,
+      "checks": {
+        "page_reachable": false
+      }
+    },
+    {
+      "capability": "Security Analysis",
+      "url": "https://docs.github.com/en/copilot/managing-copilot/managing-copilot-policies",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "page_reachable": false
+      }
+    },
+    {
+      "capability": "Multi-language Support",
+      "url": "https://docs.github.com/en/copilot/about-github-copilot/github-copilot-features",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Multi-language Support",
+      "url": "https://github.com/features/copilot",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Prompt and Context Inspector",
+      "url": "https://code.visualstudio.com/docs/copilot/copilot-settings",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Prompt and Context Inspector",
+      "url": "https://code.visualstudio.com/docs/copilot/faq",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Debug Logging",
+      "url": "https://code.visualstudio.com/docs/copilot/setup",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Debug Logging",
+      "url": "https://code.visualstudio.com/docs/copilot/chat/mcp-servers",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "capability": "Usage Tracking",
+      "url": "https://code.visualstudio.com/docs/getstarted/telemetry",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Usage Tracking",
+      "url": "https://code.visualstudio.com/api/extension-guides/telemetry",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "capability": "Lifecycle Hooks",
+      "url": "https://code.visualstudio.com/docs/copilot/copilot-customization",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Lifecycle Hooks",
+      "url": "https://code.visualstudio.com/updates/v1_109",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    }
+  ]
+}

@@ -16,16 +16,20 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
+          "url": "https://code.claude.com/docs",
           "description": "Claude Code overview - agentic coding tool capabilities",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Claude Code is an agentic coding tool that reads your codebase, edits files, runs commands, and integrates with your development tools."
         },
         {
           "url": "https://code.claude.com/docs/en/changelog",
           "description": "Claude Code changelog - agent mode updates and improvements",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Claude Code changelog tracking agentic coding tool updates, improvements, and new capability releases across all supported platforms."
         }
       ]
     },
@@ -39,16 +43,10 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
-          "description": "Claude Code overview - sub-agent orchestration for parallel task execution",
+          "url": "https://code.claude.com/docs/en/sub-agents",
+          "description": "Claude Code Sub-agents documentation - spawning parallel agents for coordinated work",
           "verifiedDate": "2026-02-18",
-          "status": "active"
-        },
-        {
-          "url": "https://code.claude.com/docs/en/changelog",
-          "description": "Claude Code changelog - sub-agent feature releases",
-          "verifiedDate": "2026-02-18",
-          "status": "active"
+          "sourceGranularity": "dedicated"
         }
       ]
     },
@@ -62,10 +60,12 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
+          "url": "https://code.claude.com/docs",
           "description": "Claude Code overview - code generation from natural language",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Describe what you want in plain language. Claude Code plans the approach, writes the code across multiple files, and verifies it works."
         }
       ]
     },
@@ -79,10 +79,12 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
+          "url": "https://code.claude.com/docs",
           "description": "Claude Code overview - code analysis and explanation capabilities",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Claude Code is an AI-powered coding assistant that helps you build features, fix bugs, and automate development tasks. It understands your entire codebase."
         }
       ]
     },
@@ -96,10 +98,12 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
+          "url": "https://code.claude.com/docs",
           "description": "Claude Code overview - debugging with test execution and fix verification",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "For bugs, paste an error message or describe the symptom. Claude Code traces the issue through your codebase, identifies the root cause, and implements a fix."
         }
       ]
     },
@@ -113,10 +117,12 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
+          "url": "https://code.claude.com/docs",
           "description": "Claude Code overview - multi-file refactoring capabilities",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Claude Code is an agentic coding tool that reads your codebase, edits files, runs commands, and integrates with your development tools."
         }
       ]
     },
@@ -130,10 +136,12 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
+          "url": "https://code.claude.com/docs",
           "description": "Claude Code overview - test generation with iterative fixing",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Claude Code handles the tedious tasks that eat up your day: writing tests for untested code, fixing lint errors across a project, resolving merge conflicts."
         }
       ]
     },
@@ -147,10 +155,12 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
+          "url": "https://code.claude.com/docs",
           "description": "Claude Code overview - documentation generation capabilities",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Claude Code handles the tedious tasks that eat up your day: writing tests for untested code, fixing lint errors across a project, resolving merge conflicts, updating dependencies, and writing release notes."
         }
       ]
     },
@@ -164,10 +174,12 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
+          "url": "https://code.claude.com/docs",
           "description": "Claude Code overview - interactive conversational coding assistance",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Claude Code is an AI-powered coding assistant that helps you build features, fix bugs, and automate development tasks. It understands your entire codebase and can work across multiple files and tools."
         }
       ]
     },
@@ -181,10 +193,12 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
+          "url": "https://code.claude.com/docs",
           "description": "Claude Code overview - direct file creation and editing across projects",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Describe what you want in plain language. Claude Code plans the approach, writes the code across multiple files, and verifies it works."
         }
       ]
     },
@@ -198,16 +212,10 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
-          "description": "Claude Code overview - full-featured CLI for terminal-based development",
+          "url": "https://code.claude.com/docs/en/cli-reference",
+          "description": "Claude Code CLI reference - full command and flag documentation",
           "verifiedDate": "2026-02-18",
-          "status": "active"
-        },
-        {
-          "url": "https://code.claude.com/docs/en/changelog",
-          "description": "Claude Code changelog - CLI feature updates",
-          "verifiedDate": "2026-02-18",
-          "status": "active"
+          "sourceGranularity": "dedicated"
         }
       ]
     },
@@ -221,16 +229,20 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
+          "url": "https://code.claude.com/docs",
           "description": "Claude Code overview - context window management",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Claude Code is an AI-powered coding assistant that helps you build features, fix bugs, and automate development tasks. It understands your entire codebase and can work across multiple files and tools."
         },
         {
           "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
           "description": "Anthropic model documentation - context window specifications",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Anthropic model documentation covering context window specifications, token limits, and model capabilities across Claude model family."
         }
       ]
     },
@@ -244,10 +256,10 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
-          "description": "Claude Code overview - CLAUDE.md project-specific context files",
+          "url": "https://code.claude.com/docs/en/claude-md",
+          "description": "CLAUDE.md documentation - project-specific context files for coding standards and architecture",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "sourceGranularity": "dedicated"
         }
       ]
     },
@@ -261,16 +273,16 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/tutorials/set-up-mcp",
-          "description": "Claude Code MCP integration tutorial - connecting external tools",
+          "url": "https://code.claude.com/docs/en/mcp",
+          "description": "Claude Code MCP documentation - Model Context Protocol integration for external tools",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://code.claude.com/docs/en/overview",
-          "description": "Claude Code overview - Model Context Protocol support",
+          "url": "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/tutorials/set-up-mcp",
+          "description": "Claude Code MCP setup tutorial - step-by-step MCP server configuration",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "sourceGranularity": "dedicated"
         }
       ]
     },
@@ -284,10 +296,16 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
-          "description": "Claude Code overview - custom slash commands (skills) and CLAUDE.md files",
+          "url": "https://code.claude.com/docs/en/skills",
+          "description": "Claude Code Skills documentation - custom slash commands for reusable workflows",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://code.claude.com/docs/en/claude-md",
+          "description": "CLAUDE.md documentation - project-specific coding standards and instructions",
+          "verifiedDate": "2026-02-18",
+          "sourceGranularity": "dedicated"
         }
       ]
     },
@@ -301,10 +319,17 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
-          "description": "Claude Code overview - git operations and CI/CD integration",
+          "url": "https://code.claude.com/docs/en/github-actions",
+          "description": "Claude Code GitHub Actions documentation - automated PR review and issue triage",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://code.claude.com/docs",
+          "description": "Claude Code overview - git integration for staging, committing, branching, and PRs",
+          "verifiedDate": "2026-02-18",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Claude Code works directly with git. It stages changes, writes commit messages, creates branches, and opens pull requests."
         }
       ]
     },
@@ -318,10 +343,12 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
+          "url": "https://code.claude.com/docs",
           "description": "Claude Code overview - multi-language programming support",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Claude Code is an agentic coding tool that reads your codebase, edits files, runs commands, and integrates with your development tools. Available in your terminal, IDE, desktop app, and browser."
         }
       ]
     },
@@ -335,10 +362,12 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
+          "url": "https://code.claude.com/docs",
           "description": "Claude Code overview - security vulnerability identification",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Pipe logs into it, run it in CI, or chain it with other tools: git diff main --name-only | claude -p 'review these changed files for security issues'"
         }
       ]
     },
@@ -352,16 +381,20 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
+          "url": "https://code.claude.com/docs",
           "description": "Claude Code overview - extended thinking mode for complex reasoning",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Claude Code is an AI-powered coding assistant that helps you build features, fix bugs, and automate development tasks. It understands your entire codebase and can work across multiple files and tools."
         },
         {
           "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
           "description": "Anthropic model documentation - extended thinking capabilities",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Anthropic model documentation covering extended thinking capabilities, reasoning performance, and model-specific features for complex tasks."
         }
       ]
     },
@@ -375,16 +408,20 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
+          "url": "https://code.claude.com/docs",
           "description": "Claude Code overview - image analysis capabilities",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Claude Code is an AI-powered coding assistant that helps you build features, fix bugs, and automate development tasks. It understands your entire codebase and can work across multiple files and tools."
         },
         {
           "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
           "description": "Anthropic model documentation - vision capabilities",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Anthropic model documentation covering vision and multimodal capabilities including image analysis and understanding across Claude models."
         }
       ]
     },
@@ -398,16 +435,10 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
-          "description": "Claude Code overview - /context, /compact, and /statusline commands",
+          "url": "https://code.claude.com/docs/en/cli-reference",
+          "description": "Claude Code CLI reference - /context, /compact, /statusline commands",
           "verifiedDate": "2026-02-18",
-          "status": "active"
-        },
-        {
-          "url": "https://code.claude.com/docs/en/changelog",
-          "description": "Claude Code changelog - context inspection feature updates",
-          "verifiedDate": "2026-02-18",
-          "status": "active"
+          "sourceGranularity": "dedicated"
         }
       ]
     },
@@ -421,16 +452,16 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
-          "description": "Claude Code overview - --debug flag, /debug, /doctor commands",
+          "url": "https://code.claude.com/docs/en/cli-reference",
+          "description": "Claude Code CLI reference - --debug flag, /debug, /doctor commands",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://code.claude.com/docs/en/changelog",
-          "description": "Claude Code changelog - debugging feature updates",
+          "url": "https://code.claude.com/docs/en/settings",
+          "description": "Claude Code Settings documentation - debug configuration and OTEL metrics export",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "sourceGranularity": "dedicated"
         }
       ]
     },
@@ -444,16 +475,10 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
-          "description": "Claude Code overview - /cost, /stats, /usage, /export commands",
+          "url": "https://code.claude.com/docs/en/cli-reference",
+          "description": "Claude Code CLI reference - /cost, /stats, /usage, /export commands",
           "verifiedDate": "2026-02-18",
-          "status": "active"
-        },
-        {
-          "url": "https://code.claude.com/docs/en/changelog",
-          "description": "Claude Code changelog - usage tracking feature updates",
-          "verifiedDate": "2026-02-18",
-          "status": "active"
+          "sourceGranularity": "dedicated"
         }
       ]
     },
@@ -467,16 +492,10 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.claude.com/docs/en/overview",
-          "description": "Claude Code overview - eight hook events configured in .claude/settings.json",
+          "url": "https://code.claude.com/docs/en/hooks",
+          "description": "Claude Code Hooks documentation - lifecycle hook events and configuration",
           "verifiedDate": "2026-02-18",
-          "status": "active"
-        },
-        {
-          "url": "https://code.claude.com/docs/en/changelog",
-          "description": "Claude Code changelog - lifecycle hooks feature releases",
-          "verifiedDate": "2026-02-18",
-          "status": "active"
+          "sourceGranularity": "dedicated"
         }
       ]
     }

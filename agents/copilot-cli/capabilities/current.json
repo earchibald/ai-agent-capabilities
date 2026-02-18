@@ -22,13 +22,17 @@
           "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
           "description": "Using Copilot CLI - agent mode workflow for autonomous file creation, editing, and command execution",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "The command-line interface (CLI) for GitHub Copilot allows you to use Copilot directly from your terminal for autonomous task execution."
         },
         {
           "url": "https://docs.github.com/en/copilot/copilot-cli",
           "description": "Copilot CLI overview - agent mode as core capability",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Copilot CLI overview - the command-line interface for GitHub Copilot provides agent mode as a core autonomous capability."
         }
       ]
     },
@@ -45,7 +49,9 @@
           "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
           "description": "Using Copilot CLI - generating code from natural language descriptions in the terminal",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Request for Copilot to perform a specific task, such as fixing a bug, adding a feature to an existing application in the terminal."
         }
       ]
     },
@@ -62,7 +68,9 @@
           "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
           "description": "Using Copilot CLI - creating, editing, and deleting files across a project",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "To complete a task, Copilot may need to work with files that are outside the current working directory for multi-file operations."
         }
       ]
     },
@@ -79,13 +87,17 @@
           "url": "https://docs.github.com/en/copilot/copilot-cli",
           "description": "Copilot CLI overview - terminal-based AI assistant for development workflows",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Copilot CLI overview - terminal-based AI assistant for development workflows including file editing and command execution."
         },
         {
           "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
           "description": "CLI command reference - full command and flag documentation",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "copilot help [topic] Display help information. Help topics include: config, commands, environment, logging, and permissions."
         }
       ]
     },
@@ -102,13 +114,17 @@
           "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
           "description": "CLI command reference - gh copilot suggest and gh copilot explain commands",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Copilot CLI command reference documenting gh copilot suggest and gh copilot explain commands for shell assistance."
         },
         {
           "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
           "description": "Using Copilot CLI - how to use command suggestions and explanations",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Copilot CLI provides command suggestion and explanation capabilities for tasks described in natural language."
         }
       ]
     },
@@ -125,7 +141,9 @@
           "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
           "description": "Using Copilot CLI - debugging issues by running commands, analyzing output, and proposing fixes",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "The command-line interface for GitHub Copilot allows debugging issues by running commands, analyzing output, and proposing fixes iteratively."
         }
       ]
     },
@@ -142,7 +160,9 @@
           "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
           "description": "Using Copilot CLI - generating and running tests with automated failure analysis",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Executes commands such as tests and builds, providing brief summaries on success and full output on failure for iterative fixing."
         }
       ]
     },
@@ -159,7 +179,9 @@
           "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
           "description": "Using Copilot CLI - creating and updating documentation from the command line",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "The command-line interface for GitHub Copilot allows creating and updating documentation from the command line."
         }
       ]
     },
@@ -176,7 +198,9 @@
           "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
           "description": "Using Copilot CLI - interactive terminal chat for coding questions and guidance",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "You can interact with Copilot while it's thinking. Send follow-up messages to steer the conversation in different directions."
         }
       ]
     },
@@ -193,13 +217,17 @@
           "url": "https://docs.github.com/en/copilot/copilot-cli",
           "description": "Copilot CLI overview - multi-language programming support",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Copilot CLI overview page covering multi-language programming support in the command-line interface environment."
         },
         {
           "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
           "description": "Using Copilot CLI - language support in interactive sessions",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "The command-line interface for GitHub Copilot allows working with multiple programming languages in interactive terminal sessions."
         }
       ]
     },
@@ -216,7 +244,9 @@
           "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
           "description": "CLI command reference - /context slash command, Ctrl+T reasoning toggle, Ctrl+O/Ctrl+E timeline expansion, Shift+Tab plan mode",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "/context Show the context window token usage and visualization. Ctrl+T toggles display of model reasoning process."
         }
       ]
     },
@@ -233,7 +263,9 @@
           "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
           "description": "CLI command reference - --log-level, --log-dir flags, --share and --share-gist session export",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Set the log level (choices: none, error, warning, info, debug, all, default). Logs written to --log-dir directory."
         }
       ]
     },
@@ -250,7 +282,9 @@
           "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
           "description": "CLI command reference - /usage slash command, /compact context compression, --acp Agent Client Protocol flag",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "/usage Display session usage metrics and statistics. Auto-compaction triggers at 95% token limit to preserve context."
         }
       ]
     },
@@ -267,13 +301,17 @@
           "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
           "description": "CLI command reference - six hook events and .github/hooks/hooks.json configuration",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Copilot CLI command reference documenting hook events and .github/hooks/hooks.json configuration for lifecycle management."
         },
         {
           "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
           "description": "Using Copilot CLI - configuring and using lifecycle hooks",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Copilot CLI supports lifecycle hooks configured in .github/hooks/hooks.json for session, prompt, and tool events."
         }
       ]
     }

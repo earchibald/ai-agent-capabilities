@@ -145,9 +145,20 @@
                   "type": ["string", "null"],
                   "format": "uri",
                   "description": "URL of the replacement source"
+                },
+                "sourceGranularity": {
+                  "type": "string",
+                  "enum": ["dedicated", "section", "excerpt"],
+                  "description": "How specific the source URL is: dedicated=about this capability, section=URL has #anchor to relevant section, excerpt=broad URL with quoted evidence"
+                },
+                "excerpt": {
+                  "type": "string",
+                  "minLength": 50,
+                  "maxLength": 300,
+                  "description": "Verbatim excerpt from the source page that evidences the capability claim. Required when sourceGranularity is 'excerpt'."
                 }
               },
-              "required": ["url", "description", "verifiedDate"]
+              "required": ["url", "description", "verifiedDate", "sourceGranularity"]
             },
             "description": "Authoritative source citations for this capability"
           }

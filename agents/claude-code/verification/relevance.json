@@ -1,0 +1,326 @@
+{
+  "generated_at": "2026-02-18T17:23:31.201356+00:00",
+  "pass": "relevance",
+  "results": [
+    {
+      "capability": "Agent Mode",
+      "url": "https://code.claude.com/docs",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": true,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Agent Mode",
+      "url": "https://code.claude.com/docs/en/changelog",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Sub-agents",
+      "url": "https://code.claude.com/docs/en/sub-agents",
+      "granularity": "dedicated",
+      "relevant": false,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 0.0
+      }
+    },
+    {
+      "capability": "Code Generation",
+      "url": "https://code.claude.com/docs",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": true,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Code Explanation",
+      "url": "https://code.claude.com/docs",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Debugging",
+      "url": "https://code.claude.com/docs",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": true,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Code Refactoring",
+      "url": "https://code.claude.com/docs",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": true,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Test Generation",
+      "url": "https://code.claude.com/docs",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Documentation Generation",
+      "url": "https://code.claude.com/docs",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": true,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Chat Assistance",
+      "url": "https://code.claude.com/docs",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Multi-file Editing",
+      "url": "https://code.claude.com/docs",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": true,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Terminal CLI",
+      "url": "https://code.claude.com/docs/en/cli-reference",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Context Window",
+      "url": "https://code.claude.com/docs",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Context Window",
+      "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Custom Context Files",
+      "url": "https://code.claude.com/docs/en/claude-md",
+      "granularity": "dedicated",
+      "relevant": false,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 0.33
+      }
+    },
+    {
+      "capability": "MCP Support",
+      "url": "https://code.claude.com/docs/en/mcp",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "MCP Support",
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/tutorials/set-up-mcp",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Custom Instructions",
+      "url": "https://code.claude.com/docs/en/skills",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Custom Instructions",
+      "url": "https://code.claude.com/docs/en/claude-md",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "capability": "Git Integration",
+      "url": "https://code.claude.com/docs/en/github-actions",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Git Integration",
+      "url": "https://code.claude.com/docs",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": true,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Multi-language Support",
+      "url": "https://code.claude.com/docs",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": true,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Security Analysis",
+      "url": "https://code.claude.com/docs",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Extended Thinking",
+      "url": "https://code.claude.com/docs",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Extended Thinking",
+      "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Vision",
+      "url": "https://code.claude.com/docs",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Vision",
+      "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Prompt and Context Inspector",
+      "url": "https://code.claude.com/docs/en/cli-reference",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 0.67
+      }
+    },
+    {
+      "capability": "Debug Logging",
+      "url": "https://code.claude.com/docs/en/cli-reference",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Debug Logging",
+      "url": "https://code.claude.com/docs/en/settings",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "capability": "Usage Tracking",
+      "url": "https://code.claude.com/docs/en/cli-reference",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "capability": "Lifecycle Hooks",
+      "url": "https://code.claude.com/docs/en/hooks",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    }
+  ]
+}

@@ -19,13 +19,17 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - open-source terminal AI agent overview",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini CLI brings the power of Gemini directly into your terminal, providing an open-source AI agent for software development."
         },
         {
           "url": "https://github.com/google-gemini/gemini-cli/releases",
           "description": "Gemini CLI releases - agent mode updates",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini CLI releases tracking agent mode updates, improvements, and new capability releases across versions."
         }
       ]
     },
@@ -42,13 +46,17 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - code generation from natural language and multimodal inputs",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Generate new apps from PDFs, images, or sketches using multimodal capabilities and the power of Gemini models."
         },
         {
           "url": "https://ai.google.dev/gemini-api/docs",
           "description": "Gemini API documentation - model capabilities for code generation",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini API documentation covering model capabilities for code generation, multimodal input processing, and application development."
         }
       ]
     },
@@ -65,7 +73,9 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - codebase querying and understanding",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Query and edit large codebases; Debug issues and troubleshoot with natural language directly in your terminal."
         }
       ]
     },
@@ -82,7 +92,9 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - natural language debugging capabilities",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Query and edit large codebases; Debug issues and troubleshoot with natural language directly in your terminal."
         }
       ]
     },
@@ -99,7 +111,9 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - file system operations across projects",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini CLI brings the power of Gemini directly into your terminal, providing an open-source AI agent for software development."
         }
       ]
     },
@@ -116,13 +130,17 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - terminal agent with shell execution and workflow automation",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini CLI brings the power of Gemini directly into your terminal, providing an open-source AI agent for software development."
         },
         {
           "url": "https://github.com/google-gemini/gemini-cli/releases",
           "description": "Gemini CLI releases - CLI feature updates",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini CLI releases tracking CLI feature updates including new commands, flags, and workflow improvements."
         }
       ]
     },
@@ -139,7 +157,9 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - interactive chat with conversation checkpointing",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Conversation checkpointing to save and resume complex sessions with Gemini CLI interactive terminal interface."
         }
       ]
     },
@@ -156,13 +176,17 @@
           "url": "https://ai.google.dev/gemini-api/docs",
           "description": "Gemini API documentation - 1M token context window specifications",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Access to improved reasoning and 1M token context window for processing large codebases with Gemini API models."
         },
         {
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - context window capabilities",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Access to improved reasoning and 1M token context window for processing large codebases with Gemini models."
         }
       ]
     },
@@ -179,7 +203,9 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - GEMINI.md project-specific context files",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Custom context files (GEMINI.md) to tailor behavior for your projects and provide project-specific coding context."
         }
       ]
     },
@@ -196,7 +222,9 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - Model Context Protocol server integration",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "MCP (Model Context Protocol) support for custom integrations with external tools and data sources."
         }
       ]
     },
@@ -213,13 +241,17 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - built-in web fetching and Google Search grounding",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Ground your queries with built-in Google Search for real-time information and up-to-date documentation."
         },
         {
           "url": "https://ai.google.dev/gemini-api/docs",
           "description": "Gemini API documentation - search grounding capabilities",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini API documentation covering search grounding capabilities for real-time information retrieval and fact verification."
         }
       ]
     },
@@ -236,7 +268,9 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - test generation and execution capabilities",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini CLI brings the power of Gemini directly into your terminal, providing an open-source AI agent for software development."
         }
       ]
     },
@@ -253,7 +287,9 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - documentation generation capabilities",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini CLI brings the power of Gemini directly into your terminal, providing an open-source AI agent for software development."
         }
       ]
     },
@@ -270,7 +306,9 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - git operations and GitHub Actions integration",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini CLI brings the power of Gemini directly into your terminal for executing git operations and GitHub Actions integration."
         }
       ]
     },
@@ -287,7 +325,9 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - GEMINI.md context files and configurable system instructions",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Custom context files (GEMINI.md) to tailor behavior for your projects with configurable system instructions and output formats."
         }
       ]
     },
@@ -304,7 +344,9 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - multi-language programming support",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini CLI brings the power of Gemini directly into your terminal, providing an open-source AI agent for software development."
         }
       ]
     },
@@ -321,7 +363,9 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - security vulnerability identification",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini CLI brings the power of Gemini directly into your terminal, providing an open-source AI agent for software development."
         }
       ]
     },
@@ -338,13 +382,17 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - built-in token caching for performance optimization",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Token Caching - Optimize token usage with built-in caching for improved performance and reduced API consumption."
         },
         {
           "url": "https://ai.google.dev/gemini-api/docs",
           "description": "Gemini API documentation - token caching support",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini API documentation covering token caching support for optimized performance and reduced API usage."
         }
       ]
     },
@@ -361,13 +409,17 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - /memory show, /about commands, structured exit codes",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini CLI provides /memory show for loaded GEMINI.md context, /about for version and diagnostics, and structured exit codes."
         },
         {
           "url": "https://github.com/google-gemini/gemini-cli/releases",
           "description": "Gemini CLI releases - observability feature updates",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini CLI releases tracking observability feature updates including diagnostic commands and context inspection."
         }
       ]
     },
@@ -384,13 +436,17 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - --debug flag, F12 console, DEBUG_MODE, GEMINI_DEV_TRACING",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini CLI provides --debug flag, F12 debug console, DEBUG_MODE env var, and GEMINI_DEV_TRACING for developer tracing."
         },
         {
           "url": "https://github.com/google-gemini/gemini-cli/releases",
           "description": "Gemini CLI releases - debugging feature updates",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini CLI releases tracking debugging feature updates including debug flag enhancements and tracing improvements."
         }
       ]
     },
@@ -407,13 +463,17 @@
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - /stats, OpenTelemetry telemetry, headless JSON output with metrics",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini CLI /stats displays session token usage, cached token savings, and session duration with OpenTelemetry telemetry support."
         },
         {
           "url": "https://github.com/google-gemini/gemini-cli/releases",
           "description": "Gemini CLI releases - usage tracking feature updates",
           "verifiedDate": "2026-02-18",
-          "status": "active"
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini CLI releases tracking usage tracking feature updates including /stats and OpenTelemetry telemetry improvements."
         }
       ]
     },
@@ -428,15 +488,9 @@
       "sources": [
         {
           "url": "https://geminicli.com/docs/hooks/",
-          "description": "Gemini CLI hooks documentation - complete lifecycle hooks reference",
+          "description": "Gemini CLI hooks documentation - complete lifecycle hooks reference with 11 hook events",
           "verifiedDate": "2026-02-18",
-          "status": "active"
-        },
-        {
-          "url": "https://github.com/google-gemini/gemini-cli",
-          "description": "Gemini CLI repository - hooks implementation and settings.json schema",
-          "verifiedDate": "2026-02-18",
-          "status": "active"
+          "sourceGranularity": "dedicated"
         }
       ]
     }

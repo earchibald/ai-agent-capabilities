@@ -1,0 +1,23 @@
+{
+  "agent": "claude-code",
+  "docSources": [
+    {
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview",
+      "type": "sitemap",
+      "crawlStrategy": "follow-links",
+      "description": "Claude Code official documentation"
+    },
+    {
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/hooks",
+      "type": "dedicated",
+      "crawlStrategy": "single-page",
+      "description": "Claude Code lifecycle hooks documentation"
+    },
+    {
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/tutorials/set-up-mcp",
+      "type": "dedicated",
+      "crawlStrategy": "single-page",
+      "description": "Claude Code MCP setup tutorial"
+    }
+  ]
+}

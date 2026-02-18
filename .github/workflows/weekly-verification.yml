@@ -1,0 +1,50 @@
+name: Weekly Source Verification
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'  # Monday at 6am UTC
+  workflow_dispatch:  # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run full source verification
+        run: python3 framework/scripts/verify_sources.py
+
+      - name: Commit verification results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add agents/*/verification/*.json
+          git diff --cached --quiet || git commit -m "Weekly source verification [automated]"
+          git push
+
+      - name: Check for issues
+        run: |
+          python3 -c "
+          import json
+          from pathlib import Path
+          issues = []
+          for f in Path('agents').rglob('verification/reachability.json'):
+              data = json.load(open(f))
+              for r in data.get('results', []):
+                  if not r.get('reachable'):
+                      issues.append(f'{f.parent.parent.name}: {r[\"capability\"]} -> {r[\"url\"]}')
+          if issues:
+              print(f'::warning::{len(issues)} unreachable source(s) found')
+              for i in issues:
+                  print(f'  - {i}')
+          else:
+              print('All sources reachable.')
+          "

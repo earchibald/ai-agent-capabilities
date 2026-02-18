@@ -1,0 +1,23 @@
+{
+  "agent": "gemini-cli",
+  "docSources": [
+    {
+      "url": "https://geminicli.com/docs/",
+      "type": "sitemap",
+      "crawlStrategy": "follow-links",
+      "description": "Gemini CLI official documentation site"
+    },
+    {
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "type": "readme",
+      "crawlStrategy": "single-page",
+      "description": "Gemini CLI GitHub repository README"
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs",
+      "type": "reference",
+      "crawlStrategy": "single-page",
+      "description": "Gemini API documentation"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "generated_at": "2026-02-18T17:23:31.201966+00:00",
+  "pass": "relevance",
+  "results": [
+    {
+      "capability": "Agent Mode",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Agent Mode",
+      "url": "https://docs.github.com/en/copilot/copilot-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "page_reachable": false
+      }
+    },
+    {
+      "capability": "Code Generation",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Multi-file Editing",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Terminal CLI",
+      "url": "https://docs.github.com/en/copilot/copilot-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "page_reachable": false
+      }
+    },
+    {
+      "capability": "Terminal CLI",
+      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Command Suggestions",
+      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Command Suggestions",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Debugging",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Test Generation",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Documentation Generation",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Chat Assistance",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Multi-language Support",
+      "url": "https://docs.github.com/en/copilot/copilot-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "page_reachable": false
+      }
+    },
+    {
+      "capability": "Multi-language Support",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Prompt and Context Inspector",
+      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Debug Logging",
+      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Usage Tracking",
+      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Lifecycle Hooks",
+      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Lifecycle Hooks",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    }
+  ]
+}
