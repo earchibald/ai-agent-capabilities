@@ -1,0 +1,156 @@
+{
+  "agent": "gemini-cli",
+  "lastUpdated": "2026-02-18T05:34:00.287154+00:00",
+  "releases": [
+    {
+      "version": "v0.29.0",
+      "releaseDate": "2026-02-18",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.0"
+    },
+    {
+      "version": "v0.30.0-preview.0",
+      "releaseDate": "2026-02-17",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-preview.0"
+    },
+    {
+      "version": "v0.29.0-preview.5",
+      "releaseDate": "2026-02-17",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.0-preview.5"
+    },
+    {
+      "version": "v0.29.0-preview.4",
+      "releaseDate": "2026-02-17",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.0-preview.4"
+    },
+    {
+      "version": "v0.29.0-preview.3",
+      "releaseDate": "2026-02-13",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.0-preview.3"
+    },
+    {
+      "version": "v0.30.0-nightly.20260212.207ac6f2d",
+      "releaseDate": "2026-02-12",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260212.207ac6f2d"
+    },
+    {
+      "version": "v0.30.0-nightly.20260212.099aa9621",
+      "releaseDate": "2026-02-12",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260212.099aa9621"
+    },
+    {
+      "version": "v0.29.0-preview.2",
+      "releaseDate": "2026-02-12",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.0-preview.2"
+    },
+    {
+      "version": "v0.30.0-nightly.20260211.f5dd1068f",
+      "releaseDate": "2026-02-11",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260211.f5dd1068f"
+    },
+    {
+      "version": "v0.30.0-nightly.20260211.0d034b8c1",
+      "releaseDate": "2026-02-11",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260211.0d034b8c1"
+    },
+    {
+      "version": "v0.28.2",
+      "releaseDate": "2026-02-11",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.28.2"
+    },
+    {
+      "version": "v0.28.1",
+      "releaseDate": "2026-02-11",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.28.1"
+    },
+    {
+      "version": "v0.30.0-nightly.20260210.8257ec447",
+      "releaseDate": "2026-02-10",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260210.8257ec447"
+    },
+    {
+      "version": "v0.29.0-preview.0",
+      "releaseDate": "2026-02-10",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.0-preview.0"
+    },
+    {
+      "version": "v0.28.0",
+      "releaseDate": "2026-02-10",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.28.0"
+    },
+    {
+      "version": "v0.28.0-preview.8",
+      "releaseDate": "2026-02-10",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.28.0-preview.8"
+    },
+    {
+      "version": "v0.28.0-preview.7",
+      "releaseDate": "2026-02-10",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.28.0-preview.7"
+    },
+    {
+      "version": "v0.27.4",
+      "releaseDate": "2026-02-10",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.27.4"
+    },
+    {
+      "version": "v0.28.0-preview.6",
+      "releaseDate": "2026-02-09",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.28.0-preview.6"
+    },
+    {
+      "version": "v0.29.0-nightly.20260206.4ffc349c1",
+      "releaseDate": "2026-02-06",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.0-nightly.20260206.4ffc349c1"
+    },
+    {
+      "version": "v0.28.0-preview.5",
+      "releaseDate": "2026-02-06",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.28.0-preview.5"
+    },
+    {
+      "version": "v0.28.0-preview.4",
+      "releaseDate": "2026-02-06",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.28.0-preview.4"
+    },
+    {
+      "version": "v0.28.0-preview.3",
+      "releaseDate": "2026-02-06",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.28.0-preview.3"
+    },
+    {
+      "version": "v0.27.3",
+      "releaseDate": "2026-02-06",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.27.3"
+    },
+    {
+      "version": "v0.29.0-nightly.20260205.a3af4a8ca",
+      "releaseDate": "2026-02-05",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.0-nightly.20260205.a3af4a8ca"
+    },
+    {
+      "version": "v0.28.0-preview.2",
+      "releaseDate": "2026-02-05",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.28.0-preview.2"
+    },
+    {
+      "version": "v0.28.0-preview.1",
+      "releaseDate": "2026-02-05",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.28.0-preview.1"
+    },
+    {
+      "version": "v0.27.2",
+      "releaseDate": "2026-02-05",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.27.2"
+    },
+    {
+      "version": "v0.27.1",
+      "releaseDate": "2026-02-05",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.27.1"
+    },
+    {
+      "version": "v0.27.0",
+      "releaseDate": "2026-02-04",
+      "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.27.0"
+    }
+  ]
+}

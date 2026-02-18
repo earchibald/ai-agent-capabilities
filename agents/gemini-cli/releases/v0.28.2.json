@@ -1,0 +1,16 @@
+{
+  "version": "v0.28.2",
+  "releaseDate": "2026-02-11",
+  "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.28.2",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "## What's Changed\n* fix(patch): cherry-pick e9a9474 to release/v0.28.1-pr-18840 [CONFLICTS] by @gemini-cli-robot in https://github.com/google-gemini/gemini-cli/pull/18847\n\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.28.1...v0.28.2",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "Gemini CLI"
+}

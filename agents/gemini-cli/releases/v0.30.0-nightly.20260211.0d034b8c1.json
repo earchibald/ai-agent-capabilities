@@ -1,0 +1,16 @@
+{
+  "version": "v0.30.0-nightly.20260211.0d034b8c1",
+  "releaseDate": "2026-02-11",
+  "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260211.0d034b8c1",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "## What's Changed\n* chore: cleanup unused and add unlisted dependencies in packages/core by @adamfweidman in https://github.com/google-gemini/gemini-cli/pull/18762\n* chore(core): update activate_skill prompt verbiage to be more direct by @NTaylorMullen in https://github.com/google-gemini/gemini-cli/pull/18605\n* Add autoconfigure memory usage setting to the dialog by @jacob314 in https://github.com/google-gemini/gemini-cli/pull/18510\n* fix(core): prevent race condition in policy persistence by @braddux in https://github.com/google-gemini/gemini-cli/pull/18506\n* fix(evals): prevent false positive in hierarchical memory test by @Abhijit-2592 in https://github.com/google-gemini/gemini-cli/pull/18777\n* test(evals): mark all `save_memory` evals as `USUALLY_PASSES` due to unreliability by @jerop in https://github.com/google-gemini/gemini-cli/pull/18786\n* feat(cli): add setting to hide shortcuts hint UI by @LyalinDotCom in https://github.com/google-gemini/gemini-cli/pull/18562\n* feat(core): formalize 5-phase sequential planning workflow by @jerop in https://github.com/google-gemini/gemini-cli/pull/18759\n* Introduce limits for search results. by @gundermanc in https://github.com/google-gemini/gemini-cli/pull/18767\n\n## New Contributors\n* @braddux made their first contribution in https://github.com/google-gemini/gemini-cli/pull/18506\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.30.0-nightly.20260210.8257ec447...v0.30.0-nightly.20260211.0d034b8c1",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "Gemini CLI"
+}

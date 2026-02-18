@@ -1,0 +1,16 @@
+{
+  "version": "v0.27.3",
+  "releaseDate": "2026-02-06",
+  "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.27.3",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "## What's Changed\n* fix(patch): cherry-pick 1cae5ab to release/v0.27.2-pr-18376 to patch version v0.27.2 and create version 0.27.3 by @gemini-cli-robot in https://github.com/google-gemini/gemini-cli/pull/18464\n\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.27.2...v0.27.3",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "Gemini CLI"
+}

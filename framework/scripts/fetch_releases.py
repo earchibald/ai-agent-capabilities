@@ -21,13 +21,8 @@ AGENTS_DIR = REPO_ROOT / "agents"
 # Configuration for each agent's release notes
 AGENT_CONFIGS = {
     "vscode-copilot": {
-        "name": "GitHub Copilot for VS Code",
+        "name": "GitHub Copilot (VS Code)",
         "sources": [
-            {
-                "type": "github-releases",
-                "repo": "github/copilot-docs",
-                "url": "https://api.github.com/repos/github/copilot-docs/releases"
-            },
             {
                 "type": "changelog-url",
                 "url": "https://github.blog/changelog/label/copilot/"
@@ -38,27 +33,27 @@ AGENT_CONFIGS = {
         "name": "GitHub Copilot CLI",
         "sources": [
             {
-                "type": "github-releases",
-                "repo": "cli/cli",
-                "url": "https://api.github.com/repos/cli/cli/releases"
+                "type": "changelog-url",
+                "url": "https://github.blog/changelog/label/copilot/"
             }
         ]
     },
     "claude-code": {
-        "name": "Claude for Coding",
+        "name": "Claude Code",
         "sources": [
             {
                 "type": "changelog-url",
-                "url": "https://docs.anthropic.com/en/api/changelog"
+                "url": "https://code.claude.com/docs/en/changelog"
             }
         ]
     },
     "gemini-cli": {
-        "name": "Google Gemini for Coding",
+        "name": "Gemini CLI",
         "sources": [
             {
-                "type": "changelog-url",
-                "url": "https://ai.google.dev/gemini-api/docs/releases"
+                "type": "github-releases",
+                "repo": "google-gemini/gemini-cli",
+                "url": "https://api.github.com/repos/google-gemini/gemini-cli/releases"
             }
         ]
     }
@@ -185,8 +180,8 @@ def save_releases(agent_id: str, releases: List[Dict]) -> None:
 
 def main():
     """Main function to fetch release notes for all agents."""
-    # Calculate date 2 months ago
-    two_months_ago = datetime.now() - timedelta(days=60)
+    # Calculate date 2 months ago (timezone-aware for GitHub API comparison)
+    two_months_ago = datetime.now(timezone.utc) - timedelta(days=60)
     
     print(f"Fetching release notes since {two_months_ago.strftime('%Y-%m-%d')}...")
     print()
