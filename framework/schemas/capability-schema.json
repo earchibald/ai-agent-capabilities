@@ -54,7 +54,8 @@
               "performance",
               "collaboration",
               "model-selection",
-              "agent-orchestration"
+              "agent-orchestration",
+              "observability"
             ]
           },
           "name": {
@@ -96,6 +97,59 @@
               "type": "string"
             },
             "description": "Requirements for using this capability"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["active", "deprecated", "modified", "unknown"],
+            "description": "Record status: active=verified current, deprecated=removed/replaced, modified=changed since last verification, unknown=unconfirmed"
+          },
+          "deprecatedDate": {
+            "type": ["string", "null"],
+            "format": "date",
+            "description": "When this capability was deprecated (null if active)"
+          },
+          "supersededBy": {
+            "type": ["string", "null"],
+            "description": "Name of the capability that replaced this one"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "format": "uri",
+                  "description": "Authoritative source URL"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "Brief label for the source"
+                },
+                "publishedDate": {
+                  "type": ["string", "null"],
+                  "format": "date",
+                  "description": "When the upstream page was published/last updated (null if unknown)"
+                },
+                "verifiedDate": {
+                  "type": "string",
+                  "format": "date",
+                  "description": "When we confirmed the fact from this source"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": ["active", "deprecated", "modified", "unknown"],
+                  "description": "Source status: active=current, deprecated=removed, modified=changed since verification, unknown=unconfirmed"
+                },
+                "supersededBy": {
+                  "type": ["string", "null"],
+                  "format": "uri",
+                  "description": "URL of the replacement source"
+                }
+              },
+              "required": ["url", "description", "verifiedDate"]
+            },
+            "description": "Authoritative source citations for this capability"
           }
         },
         "required": ["category", "name", "description", "available"]

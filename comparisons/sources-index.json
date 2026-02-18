@@ -1,0 +1,1017 @@
+{
+  "generated_at": "2026-02-18T08:38:56.763249+00:00",
+  "sources": [
+    {
+      "url": "https://ai.google.dev/gemini-api/docs",
+      "description": "Gemini API documentation - model capabilities for code generation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "gemini-cli",
+          "capability": "Code Generation"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Context Window"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Google Search Grounding"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Token Caching"
+        }
+      ]
+    },
+    {
+      "url": "https://code.claude.com/docs/en/changelog",
+      "description": "Claude Code changelog - agent mode updates and improvements",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "claude-code",
+          "capability": "Agent Mode"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Sub-agents"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Terminal CLI"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Prompt and Context Inspector"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Debug Logging"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Usage Tracking"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Lifecycle Hooks"
+        }
+      ]
+    },
+    {
+      "url": "https://code.claude.com/docs/en/overview",
+      "description": "Claude Code overview - agentic coding tool capabilities",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "claude-code",
+          "capability": "Agent Mode"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Sub-agents"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Code Generation"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Code Explanation"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Debugging"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Code Refactoring"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Test Generation"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Documentation Generation"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Chat Assistance"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Multi-file Editing"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Terminal CLI"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Context Window"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Custom Context Files"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "MCP Support"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Custom Instructions"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Git Integration"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Multi-language Support"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Security Analysis"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Extended Thinking"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Vision"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Prompt and Context Inspector"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Debug Logging"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Usage Tracking"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Lifecycle Hooks"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/api/extension-guides/telemetry",
+      "description": "VS Code Extension API telemetry guide (createTelemetryLogger, onDidReceiveFeedback)",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Usage Tracking"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/ai-powered-suggestions",
+      "description": "VS Code Copilot AI-powered suggestions documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Code Completion"
+        },
+        {
+          "agent": "vscode-copilot",
+          "capability": "Code Generation"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/ai-powered-suggestions#_next-edit-suggestions",
+      "description": "VS Code Copilot Next Edit Suggestions (NES) documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Next Edit Suggestions"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/chat/agent-mode",
+      "description": "VS Code Copilot Agent Mode documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Agent Mode"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat",
+      "description": "VS Code Copilot Chat documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Chat Assistance"
+        },
+        {
+          "agent": "vscode-copilot",
+          "capability": "Code Explanation"
+        },
+        {
+          "agent": "vscode-copilot",
+          "capability": "Code Refactoring"
+        },
+        {
+          "agent": "vscode-copilot",
+          "capability": "Documentation Generation"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-edits",
+      "description": "VS Code Copilot Edits (multi-file editing) documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Multi-file Editing"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/chat/mcp-servers",
+      "description": "VS Code Copilot MCP servers documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "MCP Support"
+        },
+        {
+          "agent": "vscode-copilot",
+          "capability": "Debug Logging"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/copilot-customization",
+      "description": "VS Code Copilot customization documentation (instructions, prompt files, custom agents)",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Custom Instructions"
+        },
+        {
+          "agent": "vscode-copilot",
+          "capability": "Lifecycle Hooks"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/copilot-extensions",
+      "description": "VS Code Copilot Extensions documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Extensions"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/copilot-settings",
+      "description": "VS Code Copilot settings reference (developer/debug settings including Chat Debug View)",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Prompt and Context Inspector"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/debugging-with-copilot",
+      "description": "VS Code debugging with Copilot documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Debugging"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/faq",
+      "description": "VS Code Copilot FAQ and troubleshooting (diagnostic commands)",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Prompt and Context Inspector"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/setup",
+      "description": "VS Code Copilot setup documentation (troubleshooting, output channels, trace logging)",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Debug Logging"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/testing",
+      "description": "VS Code Copilot testing documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Test Generation"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/workspace-context",
+      "description": "VS Code Copilot workspace context documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Workspace Context"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/getstarted/telemetry",
+      "description": "VS Code telemetry documentation (Developer: Show Telemetry, telemetry.log)",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Usage Tracking"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/updates/v1_109",
+      "description": "VS Code v1.109 release notes (lifecycle hooks preview announcement)",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Lifecycle Hooks"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/tutorials/set-up-mcp",
+      "description": "Claude Code MCP integration tutorial - connecting external tools",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "claude-code",
+          "capability": "MCP Support"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/about-github-copilot/github-copilot-features",
+      "description": "GitHub Copilot features overview (includes language support details)",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Multi-language Support"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/building-copilot-extensions",
+      "description": "Building GitHub Copilot Extensions documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Extensions"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/copilot-cli",
+      "description": "Copilot CLI overview - agent mode as core capability",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "copilot-cli",
+          "capability": "Agent Mode"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Terminal CLI"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Multi-language Support"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot",
+      "description": "GitHub Copilot custom instructions documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Custom Instructions"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/customizing-copilot/extending-copilot-in-vs-code/using-mcp-servers-in-vs-code",
+      "description": "GitHub docs: using MCP servers in VS Code with Copilot",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "MCP Support"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "description": "Using Copilot CLI - agent mode workflow for autonomous file creation, editing, and command execution",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "copilot-cli",
+          "capability": "Agent Mode"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Code Generation"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Multi-file Editing"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Command Suggestions"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Debugging"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Test Generation"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Documentation Generation"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Chat Assistance"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Multi-language Support"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Lifecycle Hooks"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/managing-copilot/managing-copilot-policies",
+      "description": "GitHub Copilot policies (includes public code suggestion matching filter)",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Security Analysis"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
+      "description": "GitHub Copilot supported AI models reference",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Model Selection"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
+      "description": "CLI command reference - full command and flag documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "copilot-cli",
+          "capability": "Terminal CLI"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Command Suggestions"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Prompt and Context Inspector"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Debug Logging"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Usage Tracking"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Lifecycle Hooks"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/using-github-copilot-code-security",
+      "description": "GitHub Copilot code security responsible use documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Security Analysis"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/ai-models/changing-the-ai-model-for-copilot-chat",
+      "description": "GitHub Copilot changing the AI model documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Model Selection"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide",
+      "description": "GitHub Copilot Chat in IDE documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Chat Assistance"
+        },
+        {
+          "agent": "vscode-copilot",
+          "capability": "Code Explanation"
+        },
+        {
+          "agent": "vscode-copilot",
+          "capability": "Documentation Generation"
+        },
+        {
+          "agent": "vscode-copilot",
+          "capability": "Workspace Context"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/code-review",
+      "description": "GitHub Copilot code review documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Code Review"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/copilot-edits",
+      "description": "GitHub Copilot Edits documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Multi-file Editing"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/debugging-errors-with-github-copilot",
+      "description": "GitHub Copilot debugging errors documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Debugging"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot",
+      "description": "GitHub Copilot code suggestions in IDE documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Code Completion"
+        },
+        {
+          "agent": "vscode-copilot",
+          "capability": "Code Generation"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot#next-edit-suggestions",
+      "description": "GitHub Copilot Next Edit Suggestions in IDE",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Next Edit Suggestions"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/refactoring-code-with-github-copilot",
+      "description": "GitHub Copilot refactoring code documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Code Refactoring"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/using-agent-mode",
+      "description": "GitHub Copilot Agent Mode documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Agent Mode"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/using-copilot-spaces",
+      "description": "GitHub Copilot Spaces documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Copilot Spaces"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/using-github-copilot/writing-tests-with-github-copilot",
+      "description": "GitHub Copilot writing tests documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Test Generation"
+        }
+      ]
+    },
+    {
+      "url": "https://geminicli.com/docs/hooks/",
+      "description": "Gemini CLI hooks documentation - complete lifecycle hooks reference",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "gemini-cli",
+          "capability": "Lifecycle Hooks"
+        }
+      ]
+    },
+    {
+      "url": "https://github.blog/changelog/label/copilot/",
+      "description": "GitHub Copilot changelog (Spaces feature announcements)",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Copilot Spaces"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/features/copilot",
+      "description": "GitHub Copilot product page (language support highlights)",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Multi-language Support"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "description": "Gemini CLI repository - open-source terminal AI agent overview",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "gemini-cli",
+          "capability": "Agent Mode"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Code Generation"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Code Explanation"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Debugging"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Multi-file Editing"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Terminal CLI"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Chat Assistance"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Context Window"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Custom Context Files"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "MCP Support"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Google Search Grounding"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Test Generation"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Documentation Generation"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Git Integration"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Custom Instructions"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Multi-language Support"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Security Analysis"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Token Caching"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Prompt and Context Inspector"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Debug Logging"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Usage Tracking"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Lifecycle Hooks"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/google-gemini/gemini-cli/releases",
+      "description": "Gemini CLI releases - agent mode updates",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "gemini-cli",
+          "capability": "Agent Mode"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Terminal CLI"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Prompt and Context Inspector"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Debug Logging"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Usage Tracking"
+        }
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
+      "description": "Anthropic model documentation - context window specifications",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "claude-code",
+          "capability": "Context Window"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Extended Thinking"
+        },
+        {
+          "agent": "claude-code",
+          "capability": "Vision"
+        }
+      ]
+    }
+  ]
+}

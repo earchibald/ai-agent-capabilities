@@ -1,236 +1,493 @@
 {
   "agent": {
-    "name": "Google Gemini for Coding",
+    "name": "Gemini CLI",
     "vendor": "Google",
-    "version": "Gemini 2.0 (as of 2026-02-17)",
-    "lastUpdated": "2026-02-17T19:49:34.318Z"
+    "version": "v0.29.0 (as of 2026-02-18)",
+    "lastUpdated": "2026-02-18T05:00:00.000Z"
   },
   "capabilities": [
     {
-      "category": "code-generation",
-      "name": "Code Generation",
-      "description": "Generate code in multiple programming languages from natural language",
+      "category": "agent-orchestration",
+      "name": "Agent Mode",
+      "description": "Open-source terminal AI agent that autonomously queries and modifies codebases, generates applications from multimodal inputs, and automates operational tasks",
       "available": true,
       "tier": "free",
-      "maturityLevel": "stable"
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - open-source terminal AI agent overview",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://github.com/google-gemini/gemini-cli/releases",
+          "description": "Gemini CLI releases - agent mode updates",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
     },
     {
       "category": "code-generation",
-      "name": "Gemini Code Assist",
-      "description": "AI-powered code completion and generation in Cloud IDEs and supported environments",
+      "name": "Code Generation",
+      "description": "Generate code and full applications from natural language, PDFs, images, and sketches via multimodal input",
       "available": true,
-      "tier": "enterprise",
+      "tier": "free",
       "maturityLevel": "stable",
-      "requirements": ["Google Cloud subscription"]
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - code generation from natural language and multimodal inputs",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://ai.google.dev/gemini-api/docs",
+          "description": "Gemini API documentation - model capabilities for code generation",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
     },
     {
       "category": "code-explanation",
-      "name": "Code Understanding",
-      "description": "Explain code, answer questions about codebases",
+      "name": "Code Explanation",
+      "description": "Query and understand large codebases with natural language",
       "available": true,
       "tier": "free",
-      "maturityLevel": "stable"
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - codebase querying and understanding",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
     },
     {
       "category": "debugging",
-      "name": "Debugging Assistance",
-      "description": "Help identify and fix bugs in code",
+      "name": "Debugging",
+      "description": "Natural language debugging and troubleshooting with command execution",
       "available": true,
       "tier": "free",
-      "maturityLevel": "stable"
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - natural language debugging capabilities",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
     },
     {
-      "category": "code-refactoring",
-      "name": "Code Refactoring",
-      "description": "Suggest improvements and refactor code",
+      "category": "multi-file-editing",
+      "name": "Multi-file Editing",
+      "description": "File system operations including creation, editing, and deletion across projects",
       "available": true,
       "tier": "free",
-      "maturityLevel": "stable"
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - file system operations across projects",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "command-line",
+      "name": "Terminal CLI",
+      "description": "Full terminal AI agent with shell command execution, file operations, and workflow automation. Supports non-interactive mode for scripting.",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - terminal agent with shell execution and workflow automation",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://github.com/google-gemini/gemini-cli/releases",
+          "description": "Gemini CLI releases - CLI feature updates",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "chat-assistance",
+      "name": "Chat Assistance",
+      "description": "Interactive chat interface in the terminal with conversation checkpointing to save and resume sessions",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - interactive chat with conversation checkpointing",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "context-awareness",
+      "name": "Context Window",
+      "description": "1M token context window for processing large codebases",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://ai.google.dev/gemini-api/docs",
+          "description": "Gemini API documentation - 1M token context window specifications",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - context window capabilities",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "context-awareness",
+      "name": "Custom Context Files",
+      "description": "GEMINI.md files for project-specific behavior customization and context",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - GEMINI.md project-specific context files",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "api-integration",
+      "name": "MCP Support",
+      "description": "Model Context Protocol server support for integrating custom tools and external data sources",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - Model Context Protocol server integration",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "api-integration",
+      "name": "Google Search Grounding",
+      "description": "Built-in web fetching and Google Search grounding for up-to-date information",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - built-in web fetching and Google Search grounding",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://ai.google.dev/gemini-api/docs",
+          "description": "Gemini API documentation - search grounding capabilities",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
     },
     {
       "category": "testing",
       "name": "Test Generation",
-      "description": "Generate unit tests and test cases",
+      "description": "Generate and execute tests with iterative fixing",
       "available": true,
       "tier": "free",
-      "maturityLevel": "stable"
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - test generation and execution capabilities",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
     },
     {
       "category": "documentation",
       "name": "Documentation Generation",
-      "description": "Generate code documentation and comments",
+      "description": "Generate code documentation and project documentation",
       "available": true,
       "tier": "free",
-      "maturityLevel": "stable"
-    },
-    {
-      "category": "chat-assistance",
-      "name": "Interactive Chat",
-      "description": "Chat interface for coding assistance",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable"
-    },
-    {
-      "category": "context-awareness",
-      "name": "Large Context Window",
-      "description": "Up to 2 million token context window for processing entire codebases",
-      "available": true,
-      "tier": "pro",
       "maturityLevel": "stable",
-      "limitations": ["Available in Gemini 1.5 Pro and 2.0 models"]
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - documentation generation capabilities",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
     },
     {
-      "category": "multi-file-editing",
-      "name": "Multi-file Understanding",
-      "description": "Work with multiple files and complex project structures",
+      "category": "collaboration",
+      "name": "Git Integration",
+      "description": "Execute git operations, PR queries, rebases, and GitHub Actions integration for automated PR reviews and issue triage",
       "available": true,
       "tier": "free",
-      "maturityLevel": "stable"
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - git operations and GitHub Actions integration",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "customization",
+      "name": "Custom Instructions",
+      "description": "GEMINI.md context files, configurable system instructions, and multiple output formats (text, JSON, streaming)",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - GEMINI.md context files and configurable system instructions",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
     },
     {
       "category": "language-support",
       "name": "Multi-language Support",
-      "description": "Support for many programming languages",
+      "description": "Support for all major programming languages",
       "available": true,
       "tier": "free",
-      "maturityLevel": "stable"
-    },
-    {
-      "category": "api-integration",
-      "name": "Gemini API",
-      "description": "RESTful API for integrating Gemini into applications",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable"
-    },
-    {
-      "category": "api-integration",
-      "name": "Function Calling",
-      "description": "Call external functions and tools",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable"
-    },
-    {
-      "category": "customization",
-      "name": "System Instructions",
-      "description": "Customize behavior with system instructions",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable"
-    },
-    {
-      "category": "performance",
-      "name": "Multimodal Capabilities",
-      "description": "Process text, images, video, and audio",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable"
-    },
-    {
-      "category": "performance",
-      "name": "Code Execution",
-      "description": "Execute Python code in a sandboxed environment",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable"
-    },
-    {
-      "category": "ide-integration",
-      "name": "Cloud Workstations Integration",
-      "description": "Native integration with Google Cloud Workstations",
-      "available": true,
-      "tier": "enterprise",
-      "maturityLevel": "stable"
-    },
-    {
-      "category": "ide-integration",
-      "name": "VS Code Extension",
-      "description": "Code Assist extension for VS Code",
-      "available": true,
-      "tier": "enterprise",
-      "maturityLevel": "stable"
-    },
-    {
-      "category": "ide-integration",
-      "name": "IntelliJ Integration",
-      "description": "Code Assist plugin for IntelliJ IDEA",
-      "available": true,
-      "tier": "enterprise",
-      "maturityLevel": "stable"
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - multi-language programming support",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
     },
     {
       "category": "security",
       "name": "Security Analysis",
-      "description": "Identify security issues and vulnerabilities",
+      "description": "Identify security issues and vulnerabilities in code",
       "available": true,
       "tier": "free",
-      "maturityLevel": "stable"
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - security vulnerability identification",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "performance",
+      "name": "Token Caching",
+      "description": "Built-in token caching for optimized performance and reduced API usage",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - built-in token caching for performance optimization",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://ai.google.dev/gemini-api/docs",
+          "description": "Gemini API documentation - token caching support",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "observability",
+      "name": "Prompt and Context Inspector",
+      "description": "/memory show displays loaded GEMINI.md instructional context for the session. /about shows version and diagnostic info. Structured exit codes (41=auth, 42=input, 44=sandbox, 52=config, 53=turn-limit) for programmatic error identification. recordResponses and fakeResponses config fields support testing and replay of model interactions.",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - /memory show, /about commands, structured exit codes",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://github.com/google-gemini/gemini-cli/releases",
+          "description": "Gemini CLI releases - observability feature updates",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "observability",
+      "name": "Debug Logging",
+      "description": "--debug flag and F12 debug console in interactive mode. DEBUG_MODE env var for core component verbosity. WebSocket network logging with streaming diagnostics. Debug log auto-truncation prevents memory issues. Developer tracing via GEMINI_DEV_TRACING=true env var instruments model calls, tool scheduler, and tool calls, viewable in Genkit (localhost:4000) or Jaeger (localhost:16686) UIs.",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - --debug flag, F12 console, DEBUG_MODE, GEMINI_DEV_TRACING",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://github.com/google-gemini/gemini-cli/releases",
+          "description": "Gemini CLI releases - debugging feature updates",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "observability",
+      "name": "Usage Tracking",
+      "description": "/stats displays session token usage, cached token savings (API key auth only), and session duration. Headless --output-format json includes stats object with token and latency metrics. Full OpenTelemetry telemetry (opt-in, disabled by default) tracking sessions, tool execution, file operations, API interactions, model routing, and performance. Exports to GCP or local OTLP endpoint.",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - /stats, OpenTelemetry telemetry, headless JSON output with metrics",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://github.com/google-gemini/gemini-cli/releases",
+          "description": "Gemini CLI releases - usage tracking feature updates",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "customization",
+      "name": "Lifecycle Hooks",
+      "description": "Eleven hook events (SessionStart, SessionEnd, BeforeAgent, AfterAgent, BeforeModel, AfterModel, BeforeToolSelection, BeforeTool, AfterTool, PreCompress, Notification) execute shell commands at agent lifecycle points. BeforeTool/AfterTool support regex matchers for tool filtering. Hooks can intercept, inject context, block operations, modify tool arguments, swap models, and redact responses. Configured in .gemini/settings.json at project, user, or system level. JSON stdin/stdout communication protocol. Project hooks are fingerprinted with security warnings on change.",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://geminicli.com/docs/hooks/",
+          "description": "Gemini CLI hooks documentation - complete lifecycle hooks reference",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - hooks implementation and settings.json schema",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
     }
   ],
   "integrations": [
     {
-      "platform": "Google AI Studio",
+      "platform": "Terminal CLI",
       "supported": true,
-      "features": ["Web interface", "Chat", "Code generation", "Prompt tuning"]
+      "features": [
+        "File operations",
+        "Shell execution",
+        "Web fetch",
+        "Google Search",
+        "MCP tools"
+      ]
     },
     {
-      "platform": "Gemini API",
+      "platform": "GitHub Actions",
       "supported": true,
-      "features": ["RESTful API", "Python SDK", "JavaScript SDK", "Kotlin SDK"]
-    },
-    {
-      "platform": "VS Code",
-      "supported": true,
-      "features": ["Code Assist extension", "Code completion", "Chat"]
-    },
-    {
-      "platform": "IntelliJ IDEA",
-      "supported": true,
-      "features": ["Code Assist plugin", "Code completion", "Chat"]
-    },
-    {
-      "platform": "Cloud Workstations",
-      "supported": true,
-      "features": ["Native integration", "Code completion"]
-    },
-    {
-      "platform": "Android Studio",
-      "supported": true,
-      "features": ["Code Assist", "Android-specific assistance"]
+      "features": [
+        "PR reviews",
+        "Issue triage",
+        "Automated assistance"
+      ]
     }
   ],
   "models": [
     {
-      "name": "Gemini 2.0 Flash",
+      "name": "Gemini 2.5 Flash",
+      "provider": "Google",
+      "available": true,
+      "tier": "free",
+      "note": "Default model"
+    },
+    {
+      "name": "Gemini 3 Pro",
       "provider": "Google",
       "available": true,
       "tier": "free"
     },
     {
-      "name": "Gemini 1.5 Pro",
-      "provider": "Google",
-      "available": true,
-      "tier": "free"
-    },
-    {
-      "name": "Gemini 1.5 Flash",
-      "provider": "Google",
-      "available": true,
-      "tier": "free"
-    },
-    {
-      "name": "Gemini 1.0 Pro",
+      "name": "Gemini 3 Flash",
       "provider": "Google",
       "available": true,
       "tier": "free"
     }
   ],
   "documentation": {
-    "officialDocs": "https://ai.google.dev/gemini-api/docs",
-    "releaseNotes": "https://ai.google.dev/gemini-api/docs/releases",
-    "github": "https://github.com/google-gemini",
-    "apiDocs": "https://ai.google.dev/gemini-api/docs/api-overview"
+    "officialDocs": "https://github.com/google-gemini/gemini-cli",
+    "releaseNotes": "https://github.com/google-gemini/gemini-cli/releases",
+    "github": "https://github.com/google-gemini/gemini-cli",
+    "apiDocs": "https://ai.google.dev/gemini-api/docs"
   }
 }

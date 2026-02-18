@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-17T19:57:05.663026+00:00",
+  "generated_at": "2026-02-18T08:38:56.760978+00:00",
   "agents": [
     "claude-code",
     "copilot-cli",
@@ -20,10 +20,10 @@
     "customization",
     "debugging",
     "documentation",
-    "ide-integration",
     "language-support",
     "model-selection",
     "multi-file-editing",
+    "observability",
     "performance",
     "security",
     "testing"
@@ -31,26 +31,25 @@
   "comparison": {
     "agent-orchestration": {
       "claude-code": {
-        "count": 0,
-        "capabilities": []
-      },
-      "copilot-cli": {
-        "count": 0,
-        "capabilities": []
-      },
-      "gemini-cli": {
-        "count": 0,
-        "capabilities": []
-      },
-      "vscode-copilot": {
         "count": 2,
         "capabilities": [
           {
-            "name": "Copilot Extensions",
+            "name": "Agent Mode",
             "available": true,
             "tier": "pro",
             "maturity": "stable"
           },
+          {
+            "name": "Sub-agents",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 1,
+        "capabilities": [
           {
             "name": "Agent Mode",
             "available": true,
@@ -58,29 +57,45 @@
             "maturity": "beta"
           }
         ]
+      },
+      "gemini-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Agent Mode",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 2,
+        "capabilities": [
+          {
+            "name": "Agent Mode",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          },
+          {
+            "name": "Extensions",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
       }
     },
     "api-integration": {
       "claude-code": {
-        "count": 3,
+        "count": 1,
         "capabilities": [
           {
-            "name": "API Access",
-            "available": true,
-            "tier": "free",
-            "maturity": "stable"
-          },
-          {
-            "name": "Tool Use (Function Calling)",
-            "available": true,
-            "tier": "free",
-            "maturity": "stable"
-          },
-          {
-            "name": "Computer Use (Beta)",
+            "name": "MCP Support",
             "available": true,
             "tier": "pro",
-            "maturity": "beta"
+            "maturity": "stable"
           }
         ]
       },
@@ -92,13 +107,13 @@
         "count": 2,
         "capabilities": [
           {
-            "name": "Gemini API",
+            "name": "MCP Support",
             "available": true,
             "tier": "free",
             "maturity": "stable"
           },
           {
-            "name": "Function Calling",
+            "name": "Google Search Grounding",
             "available": true,
             "tier": "free",
             "maturity": "stable"
@@ -106,8 +121,15 @@
         ]
       },
       "vscode-copilot": {
-        "count": 0,
-        "capabilities": []
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "MCP Support",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
       }
     },
     "chat-assistance": {
@@ -115,9 +137,9 @@
         "count": 1,
         "capabilities": [
           {
-            "name": "Interactive Coding Chat",
+            "name": "Chat Assistance",
             "available": true,
-            "tier": "free",
+            "tier": "pro",
             "maturity": "stable"
           }
         ]
@@ -126,10 +148,10 @@
         "count": 1,
         "capabilities": [
           {
-            "name": "Interactive Terminal Chat",
+            "name": "Chat Assistance",
             "available": true,
-            "tier": "free",
-            "maturity": "stable"
+            "tier": "pro",
+            "maturity": "beta"
           }
         ]
       },
@@ -137,7 +159,7 @@
         "count": 1,
         "capabilities": [
           {
-            "name": "Interactive Chat",
+            "name": "Chat Assistance",
             "available": true,
             "tier": "free",
             "maturity": "stable"
@@ -148,7 +170,7 @@
         "count": 1,
         "capabilities": [
           {
-            "name": "Copilot Chat",
+            "name": "Chat Assistance",
             "available": true,
             "tier": "free",
             "maturity": "stable"
@@ -173,13 +195,13 @@
         "count": 2,
         "capabilities": [
           {
-            "name": "Inline Code Suggestions",
+            "name": "Code Completion",
             "available": true,
             "tier": "free",
             "maturity": "stable"
           },
           {
-            "name": "Multi-line Completions",
+            "name": "Next Edit Suggestions",
             "available": true,
             "tier": "free",
             "maturity": "stable"
@@ -192,9 +214,9 @@
         "count": 1,
         "capabilities": [
           {
-            "name": "Code Analysis",
+            "name": "Code Explanation",
             "available": true,
-            "tier": "free",
+            "tier": "pro",
             "maturity": "stable"
           }
         ]
@@ -207,7 +229,7 @@
         "count": 1,
         "capabilities": [
           {
-            "name": "Code Understanding",
+            "name": "Code Explanation",
             "available": true,
             "tier": "free",
             "maturity": "stable"
@@ -233,7 +255,7 @@
           {
             "name": "Code Generation",
             "available": true,
-            "tier": "free",
+            "tier": "pro",
             "maturity": "stable"
           }
         ]
@@ -242,26 +264,20 @@
         "count": 1,
         "capabilities": [
           {
-            "name": "Script Generation",
+            "name": "Code Generation",
             "available": true,
-            "tier": "free",
-            "maturity": "stable"
+            "tier": "pro",
+            "maturity": "beta"
           }
         ]
       },
       "gemini-cli": {
-        "count": 2,
+        "count": 1,
         "capabilities": [
           {
             "name": "Code Generation",
             "available": true,
             "tier": "free",
-            "maturity": "stable"
-          },
-          {
-            "name": "Gemini Code Assist",
-            "available": true,
-            "tier": "enterprise",
             "maturity": "stable"
           }
         ]
@@ -270,7 +286,7 @@
         "count": 1,
         "capabilities": [
           {
-            "name": "Function Generation",
+            "name": "Code Generation",
             "available": true,
             "tier": "free",
             "maturity": "stable"
@@ -285,7 +301,7 @@
           {
             "name": "Code Refactoring",
             "available": true,
-            "tier": "free",
+            "tier": "pro",
             "maturity": "stable"
           }
         ]
@@ -295,15 +311,8 @@
         "capabilities": []
       },
       "gemini-cli": {
-        "count": 1,
-        "capabilities": [
-          {
-            "name": "Code Refactoring",
-            "available": true,
-            "tier": "free",
-            "maturity": "stable"
-          }
-        ]
+        "count": 0,
+        "capabilities": []
       },
       "vscode-copilot": {
         "count": 1,
@@ -319,22 +328,36 @@
     },
     "collaboration": {
       "claude-code": {
-        "count": 0,
-        "capabilities": []
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Git Integration",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
       },
       "copilot-cli": {
         "count": 0,
         "capabilities": []
       },
       "gemini-cli": {
-        "count": 0,
-        "capabilities": []
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Git Integration",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
       },
       "vscode-copilot": {
         "count": 1,
         "capabilities": [
           {
-            "name": "Code Reviews",
+            "name": "Code Review",
             "available": true,
             "tier": "enterprise",
             "maturity": "stable"
@@ -344,53 +367,10 @@
     },
     "command-line": {
       "claude-code": {
-        "count": 0,
-        "capabilities": []
-      },
-      "copilot-cli": {
-        "count": 4,
-        "capabilities": [
-          {
-            "name": "Natural Language Commands",
-            "available": true,
-            "tier": "free",
-            "maturity": "stable"
-          },
-          {
-            "name": "gh copilot suggest",
-            "available": true,
-            "tier": "free",
-            "maturity": "stable"
-          },
-          {
-            "name": "gh copilot explain",
-            "available": true,
-            "tier": "free",
-            "maturity": "stable"
-          },
-          {
-            "name": "Multi-step Workflows",
-            "available": true,
-            "tier": "pro",
-            "maturity": "stable"
-          }
-        ]
-      },
-      "gemini-cli": {
-        "count": 0,
-        "capabilities": []
-      },
-      "vscode-copilot": {
-        "count": 0,
-        "capabilities": []
-      }
-    },
-    "context-awareness": {
-      "claude-code": {
         "count": 1,
         "capabilities": [
           {
-            "name": "Extended Context Window",
+            "name": "Terminal CLI",
             "available": true,
             "tier": "pro",
             "maturity": "stable"
@@ -401,16 +381,16 @@
         "count": 2,
         "capabilities": [
           {
-            "name": "Git Context Awareness",
+            "name": "Terminal CLI",
             "available": true,
-            "tier": "free",
-            "maturity": "stable"
+            "tier": "pro",
+            "maturity": "beta"
           },
           {
-            "name": "GitHub Context Integration",
+            "name": "Command Suggestions",
             "available": true,
-            "tier": "free",
-            "maturity": "stable"
+            "tier": "pro",
+            "maturity": "beta"
           }
         ]
       },
@@ -418,9 +398,53 @@
         "count": 1,
         "capabilities": [
           {
-            "name": "Large Context Window",
+            "name": "Terminal CLI",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 0,
+        "capabilities": []
+      }
+    },
+    "context-awareness": {
+      "claude-code": {
+        "count": 2,
+        "capabilities": [
+          {
+            "name": "Context Window",
             "available": true,
             "tier": "pro",
+            "maturity": "stable"
+          },
+          {
+            "name": "Custom Context Files",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 0,
+        "capabilities": []
+      },
+      "gemini-cli": {
+        "count": 2,
+        "capabilities": [
+          {
+            "name": "Context Window",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          },
+          {
+            "name": "Custom Context Files",
+            "available": true,
+            "tier": "free",
             "maturity": "stable"
           }
         ]
@@ -438,19 +462,25 @@
             "name": "Copilot Spaces",
             "available": true,
             "tier": "enterprise",
-            "maturity": "beta"
+            "maturity": "stable"
           }
         ]
       }
     },
     "customization": {
       "claude-code": {
-        "count": 1,
+        "count": 2,
         "capabilities": [
           {
-            "name": "System Prompts",
+            "name": "Custom Instructions",
             "available": true,
-            "tier": "free",
+            "tier": "pro",
+            "maturity": "stable"
+          },
+          {
+            "name": "Lifecycle Hooks",
+            "available": true,
+            "tier": "pro",
             "maturity": "stable"
           }
         ]
@@ -459,18 +489,24 @@
         "count": 1,
         "capabilities": [
           {
-            "name": "Shell Integration",
+            "name": "Lifecycle Hooks",
             "available": true,
-            "tier": "free",
-            "maturity": "stable"
+            "tier": "pro",
+            "maturity": "beta"
           }
         ]
       },
       "gemini-cli": {
-        "count": 1,
+        "count": 2,
         "capabilities": [
           {
-            "name": "System Instructions",
+            "name": "Custom Instructions",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          },
+          {
+            "name": "Lifecycle Hooks",
             "available": true,
             "tier": "free",
             "maturity": "stable"
@@ -478,13 +514,19 @@
         ]
       },
       "vscode-copilot": {
-        "count": 1,
+        "count": 2,
         "capabilities": [
           {
             "name": "Custom Instructions",
             "available": true,
             "tier": "pro",
             "maturity": "stable"
+          },
+          {
+            "name": "Lifecycle Hooks",
+            "available": true,
+            "tier": "free",
+            "maturity": "beta"
           }
         ]
       }
@@ -494,9 +536,9 @@
         "count": 1,
         "capabilities": [
           {
-            "name": "Bug Detection and Fixing",
+            "name": "Debugging",
             "available": true,
-            "tier": "free",
+            "tier": "pro",
             "maturity": "stable"
           }
         ]
@@ -505,10 +547,10 @@
         "count": 1,
         "capabilities": [
           {
-            "name": "Error Explanation",
+            "name": "Debugging",
             "available": true,
-            "tier": "free",
-            "maturity": "stable"
+            "tier": "pro",
+            "maturity": "beta"
           }
         ]
       },
@@ -516,7 +558,7 @@
         "count": 1,
         "capabilities": [
           {
-            "name": "Debugging Assistance",
+            "name": "Debugging",
             "available": true,
             "tier": "free",
             "maturity": "stable"
@@ -527,7 +569,7 @@
         "count": 1,
         "capabilities": [
           {
-            "name": "Fix Suggestions",
+            "name": "Debugging",
             "available": true,
             "tier": "free",
             "maturity": "stable"
@@ -540,16 +582,23 @@
         "count": 1,
         "capabilities": [
           {
-            "name": "Documentation Writing",
+            "name": "Documentation Generation",
             "available": true,
-            "tier": "free",
+            "tier": "pro",
             "maturity": "stable"
           }
         ]
       },
       "copilot-cli": {
-        "count": 0,
-        "capabilities": []
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Documentation Generation",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          }
+        ]
       },
       "gemini-cli": {
         "count": 1,
@@ -572,43 +621,6 @@
             "maturity": "stable"
           }
         ]
-      }
-    },
-    "ide-integration": {
-      "claude-code": {
-        "count": 0,
-        "capabilities": []
-      },
-      "copilot-cli": {
-        "count": 0,
-        "capabilities": []
-      },
-      "gemini-cli": {
-        "count": 3,
-        "capabilities": [
-          {
-            "name": "Cloud Workstations Integration",
-            "available": true,
-            "tier": "enterprise",
-            "maturity": "stable"
-          },
-          {
-            "name": "VS Code Extension",
-            "available": true,
-            "tier": "enterprise",
-            "maturity": "stable"
-          },
-          {
-            "name": "IntelliJ Integration",
-            "available": true,
-            "tier": "enterprise",
-            "maturity": "stable"
-          }
-        ]
-      },
-      "vscode-copilot": {
-        "count": 0,
-        "capabilities": []
       }
     },
     "language-support": {
@@ -618,14 +630,21 @@
           {
             "name": "Multi-language Support",
             "available": true,
-            "tier": "free",
+            "tier": "pro",
             "maturity": "stable"
           }
         ]
       },
       "copilot-cli": {
-        "count": 0,
-        "capabilities": []
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Multi-language Support",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          }
+        ]
       },
       "gemini-cli": {
         "count": 1,
@@ -639,8 +658,15 @@
         ]
       },
       "vscode-copilot": {
-        "count": 0,
-        "capabilities": []
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Multi-language Support",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
       }
     },
     "model-selection": {
@@ -660,7 +686,7 @@
         "count": 1,
         "capabilities": [
           {
-            "name": "Multiple Model Support",
+            "name": "Model Selection",
             "available": true,
             "tier": "pro",
             "maturity": "stable"
@@ -673,22 +699,29 @@
         "count": 1,
         "capabilities": [
           {
-            "name": "Multi-file Code Understanding",
+            "name": "Multi-file Editing",
             "available": true,
-            "tier": "free",
+            "tier": "pro",
             "maturity": "stable"
           }
         ]
       },
       "copilot-cli": {
-        "count": 0,
-        "capabilities": []
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Multi-file Editing",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          }
+        ]
       },
       "gemini-cli": {
         "count": 1,
         "capabilities": [
           {
-            "name": "Multi-file Understanding",
+            "name": "Multi-file Editing",
             "available": true,
             "tier": "free",
             "maturity": "stable"
@@ -699,7 +732,7 @@
         "count": 1,
         "capabilities": [
           {
-            "name": "Copilot Edits",
+            "name": "Multi-file Editing",
             "available": true,
             "tier": "pro",
             "maturity": "stable"
@@ -707,14 +740,114 @@
         ]
       }
     },
-    "performance": {
+    "observability": {
       "claude-code": {
-        "count": 1,
+        "count": 3,
         "capabilities": [
           {
-            "name": "Vision Capabilities",
+            "name": "Prompt and Context Inspector",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          },
+          {
+            "name": "Debug Logging",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          },
+          {
+            "name": "Usage Tracking",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 3,
+        "capabilities": [
+          {
+            "name": "Prompt and Context Inspector",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          },
+          {
+            "name": "Debug Logging",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          },
+          {
+            "name": "Usage Tracking",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          }
+        ]
+      },
+      "gemini-cli": {
+        "count": 3,
+        "capabilities": [
+          {
+            "name": "Prompt and Context Inspector",
             "available": true,
             "tier": "free",
+            "maturity": "stable"
+          },
+          {
+            "name": "Debug Logging",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          },
+          {
+            "name": "Usage Tracking",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 3,
+        "capabilities": [
+          {
+            "name": "Prompt and Context Inspector",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          },
+          {
+            "name": "Debug Logging",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          },
+          {
+            "name": "Usage Tracking",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      }
+    },
+    "performance": {
+      "claude-code": {
+        "count": 2,
+        "capabilities": [
+          {
+            "name": "Extended Thinking",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          },
+          {
+            "name": "Vision",
+            "available": true,
+            "tier": "pro",
             "maturity": "stable"
           }
         ]
@@ -724,16 +857,10 @@
         "capabilities": []
       },
       "gemini-cli": {
-        "count": 2,
+        "count": 1,
         "capabilities": [
           {
-            "name": "Multimodal Capabilities",
-            "available": true,
-            "tier": "free",
-            "maturity": "stable"
-          },
-          {
-            "name": "Code Execution",
+            "name": "Token Caching",
             "available": true,
             "tier": "free",
             "maturity": "stable"
@@ -752,7 +879,7 @@
           {
             "name": "Security Analysis",
             "available": true,
-            "tier": "free",
+            "tier": "pro",
             "maturity": "stable"
           }
         ]
@@ -773,16 +900,10 @@
         ]
       },
       "vscode-copilot": {
-        "count": 2,
+        "count": 1,
         "capabilities": [
           {
-            "name": "Code Vulnerability Detection",
-            "available": true,
-            "tier": "business",
-            "maturity": "stable"
-          },
-          {
-            "name": "Public Code Filter",
+            "name": "Security Analysis",
             "available": true,
             "tier": "business",
             "maturity": "stable"
@@ -797,14 +918,21 @@
           {
             "name": "Test Generation",
             "available": true,
-            "tier": "free",
+            "tier": "pro",
             "maturity": "stable"
           }
         ]
       },
       "copilot-cli": {
-        "count": 0,
-        "capabilities": []
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Test Generation",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          }
+        ]
       },
       "gemini-cli": {
         "count": 1,

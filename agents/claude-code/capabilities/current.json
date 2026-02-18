@@ -1,207 +1,587 @@
 {
   "agent": {
-    "name": "Claude for Coding",
+    "name": "Claude Code",
     "vendor": "Anthropic",
-    "version": "Claude 3.5 Sonnet (as of 2026-02-17)",
-    "lastUpdated": "2026-02-17T19:49:34.318Z"
+    "version": "Current (as of 2026-02-18)",
+    "lastUpdated": "2026-02-18T05:00:00.000Z"
   },
   "capabilities": [
     {
+      "category": "agent-orchestration",
+      "name": "Agent Mode",
+      "description": "Agentic coding tool that autonomously reads codebase, edits files, runs commands, and self-corrects. Plans approach, implements across multiple files, verifies results.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - agentic coding tool capabilities",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://code.claude.com/docs/en/changelog",
+          "description": "Claude Code changelog - agent mode updates and improvements",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "agent-orchestration",
+      "name": "Sub-agents",
+      "description": "Spawn multiple Claude Code agents to work on different parts of a task simultaneously. A lead agent coordinates work, assigns subtasks, and merges results.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - sub-agent orchestration for parallel task execution",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://code.claude.com/docs/en/changelog",
+          "description": "Claude Code changelog - sub-agent feature releases",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
       "category": "code-generation",
       "name": "Code Generation",
-      "description": "Generate code in multiple programming languages from natural language descriptions",
+      "description": "Generate code in multiple programming languages from natural language descriptions, including full feature implementations across multiple files",
       "available": true,
-      "tier": "free",
+      "tier": "pro",
       "maturityLevel": "stable",
-      "requirements": ["Claude API access or claude.ai subscription"]
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - code generation from natural language",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
     },
     {
       "category": "code-explanation",
-      "name": "Code Analysis",
-      "description": "Analyze and explain existing code, including complex algorithms",
+      "name": "Code Explanation",
+      "description": "Analyze and explain existing code, trace through complex logic, understand entire codebases",
       "available": true,
-      "tier": "free",
-      "maturityLevel": "stable"
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - code analysis and explanation capabilities",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
     },
     {
       "category": "debugging",
-      "name": "Bug Detection and Fixing",
-      "description": "Identify bugs and suggest fixes in code",
+      "name": "Debugging",
+      "description": "Trace bugs through codebase, identify root causes, and implement fixes. Can run tests and verify fixes work.",
       "available": true,
-      "tier": "free",
-      "maturityLevel": "stable"
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - debugging with test execution and fix verification",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
     },
     {
       "category": "code-refactoring",
       "name": "Code Refactoring",
-      "description": "Refactor code for better performance, readability, or maintainability",
+      "description": "Refactor code across multiple files with coordinated changes",
       "available": true,
-      "tier": "free",
-      "maturityLevel": "stable"
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - multi-file refactoring capabilities",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
     },
     {
       "category": "testing",
       "name": "Test Generation",
-      "description": "Generate unit tests and test cases",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable"
-    },
-    {
-      "category": "documentation",
-      "name": "Documentation Writing",
-      "description": "Generate code documentation, README files, and API documentation",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable"
-    },
-    {
-      "category": "chat-assistance",
-      "name": "Interactive Coding Chat",
-      "description": "Interactive conversation about code with context retention",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable"
-    },
-    {
-      "category": "context-awareness",
-      "name": "Extended Context Window",
-      "description": "200K token context window for processing large codebases",
+      "description": "Generate tests, run them, and fix failures iteratively",
       "available": true,
       "tier": "pro",
       "maturityLevel": "stable",
-      "limitations": ["API usage depends on tier"]
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - test generation with iterative fixing",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "documentation",
+      "name": "Documentation Generation",
+      "description": "Generate code documentation, README files, and API documentation",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - documentation generation capabilities",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "chat-assistance",
+      "name": "Chat Assistance",
+      "description": "Interactive conversational coding assistance with full codebase context",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - interactive conversational coding assistance",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
     },
     {
       "category": "multi-file-editing",
-      "name": "Multi-file Code Understanding",
-      "description": "Understand and work with multiple files and complex project structures",
+      "name": "Multi-file Editing",
+      "description": "Direct file creation, editing, and deletion across entire projects with coordinated changes",
       "available": true,
-      "tier": "free",
-      "maturityLevel": "stable"
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - direct file creation and editing across projects",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "command-line",
+      "name": "Terminal CLI",
+      "description": "Full-featured CLI for working directly in your terminal. Runs shell commands, manages git, executes build pipelines.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - full-featured CLI for terminal-based development",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://code.claude.com/docs/en/changelog",
+          "description": "Claude Code changelog - CLI feature updates",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "context-awareness",
+      "name": "Context Window",
+      "description": "200K token context window (1M in beta) with automatic context management across codebase exploration",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - context window management",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
+          "description": "Anthropic model documentation - context window specifications",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "context-awareness",
+      "name": "Custom Context Files",
+      "description": "CLAUDE.md files for project-specific coding standards, architecture decisions, preferred libraries, and review checklists",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - CLAUDE.md project-specific context files",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "api-integration",
+      "name": "MCP Support",
+      "description": "Model Context Protocol integration for connecting to external tools - Jira, Slack, Google Drive, databases, and custom tooling",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/tutorials/set-up-mcp",
+          "description": "Claude Code MCP integration tutorial - connecting external tools",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - Model Context Protocol support",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "customization",
+      "name": "Custom Instructions",
+      "description": "Custom slash commands (skills) for reusable workflows, plus CLAUDE.md files for project-specific coding standards and instructions",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - custom slash commands (skills) and CLAUDE.md files",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "collaboration",
+      "name": "Git Integration",
+      "description": "Direct git operations: staging, committing, branching, creating PRs. GitHub Actions and GitLab CI/CD integration for automated code review and issue triage.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - git operations and CI/CD integration",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "language-support",
+      "name": "Multi-language Support",
+      "description": "Support for all major programming languages",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - multi-language programming support",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
     },
     {
       "category": "security",
       "name": "Security Analysis",
       "description": "Identify security vulnerabilities and suggest secure coding practices",
       "available": true,
-      "tier": "free",
-      "maturityLevel": "stable"
-    },
-    {
-      "category": "language-support",
-      "name": "Multi-language Support",
-      "description": "Support for 100+ programming languages",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable"
-    },
-    {
-      "category": "api-integration",
-      "name": "API Access",
-      "description": "RESTful API for integrating Claude into custom tools and workflows",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable",
-      "requirements": ["API key required"]
-    },
-    {
-      "category": "api-integration",
-      "name": "Tool Use (Function Calling)",
-      "description": "Claude can use external tools and APIs via function calling",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable"
-    },
-    {
-      "category": "api-integration",
-      "name": "Computer Use (Beta)",
-      "description": "Claude can interact with computer interfaces, including IDEs",
-      "available": true,
       "tier": "pro",
-      "maturityLevel": "beta",
-      "limitations": ["API only", "Still in development"]
-    },
-    {
-      "category": "customization",
-      "name": "System Prompts",
-      "description": "Customize Claude's behavior with system prompts",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable"
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - security vulnerability identification",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
     },
     {
       "category": "performance",
-      "name": "Vision Capabilities",
-      "description": "Analyze images including code screenshots and diagrams",
+      "name": "Extended Thinking",
+      "description": "Extended thinking mode for complex reasoning tasks, architecture decisions, and multi-step problem solving",
       "available": true,
-      "tier": "free",
-      "maturityLevel": "stable"
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - extended thinking mode for complex reasoning",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
+          "description": "Anthropic model documentation - extended thinking capabilities",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "performance",
+      "name": "Vision",
+      "description": "Analyze images including code screenshots, diagrams, wireframes, and error messages",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - image analysis capabilities",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
+          "description": "Anthropic model documentation - vision capabilities",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "observability",
+      "name": "Prompt and Context Inspector",
+      "description": "/context visualizes current context usage as a colored grid. /compact manages context size with optional focus instructions. Status line (configurable via /statusline) displays context window usage continuously. CLAUDE.md content visible as project context.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - /context, /compact, and /statusline commands",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://code.claude.com/docs/en/changelog",
+          "description": "Claude Code changelog - context inspection feature updates",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "observability",
+      "name": "Debug Logging",
+      "description": "--debug flag with category filtering (e.g. 'api,hooks', 'api,mcp', '!statsig'). --verbose for full turn-by-turn output (Ctrl+O toggle in session). /debug reads session debug log. /doctor checks installation health: MCP server errors, settings validation, keybinding issues, context warnings. MCP servers debuggable via 'claude mcp list/get' and /mcp. OpenTelemetry (OTLP) metric export via OTEL_METRICS_EXPORTER.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - --debug flag, /debug, /doctor commands",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://code.claude.com/docs/en/changelog",
+          "description": "Claude Code changelog - debugging feature updates",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "observability",
+      "name": "Usage Tracking",
+      "description": "/cost shows total cost ($), API duration, wall duration, and code changes (lines added/removed). /stats shows daily usage, session history, streaks, and model preferences. /usage shows subscription plan limits and rate limit status. /export saves conversation to file or clipboard with JSON and stream-JSON output formats for programmatic analysis.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - /cost, /stats, /usage, /export commands",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://code.claude.com/docs/en/changelog",
+          "description": "Claude Code changelog - usage tracking feature updates",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
+    },
+    {
+      "category": "customization",
+      "name": "Lifecycle Hooks",
+      "description": "Eight hook events (PreToolUse, PostToolUse, SessionStart, Stop, SubagentStart, SubagentStop, PreCompact, UserPromptSubmit) run shell commands at agent lifecycle points. PreToolUse supports allow/deny/modify with tool name matchers. Configured in .claude/settings.json or .claude/settings.local.json. Hooks receive JSON on stdin and return decisions on stdout.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - eight hook events configured in .claude/settings.json",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        },
+        {
+          "url": "https://code.claude.com/docs/en/changelog",
+          "description": "Claude Code changelog - lifecycle hooks feature releases",
+          "verifiedDate": "2026-02-18",
+          "status": "active"
+        }
+      ]
     }
   ],
   "integrations": [
     {
-      "platform": "Claude.ai",
+      "platform": "Terminal CLI",
       "supported": true,
-      "features": ["Web interface", "Chat", "Code generation", "File uploads"]
-    },
-    {
-      "platform": "API",
-      "supported": true,
-      "features": ["RESTful API", "Python SDK", "TypeScript SDK"]
+      "features": [
+        "File editing",
+        "Command execution",
+        "Git operations",
+        "MCP tools",
+        "Sub-agents"
+      ]
     },
     {
       "platform": "VS Code",
       "supported": true,
-      "features": ["Via GitHub Copilot Extensions", "Via third-party extensions"]
+      "features": [
+        "Inline diffs",
+        "@-mentions",
+        "Plan review",
+        "Conversation history"
+      ]
     },
     {
-      "platform": "Cursor IDE",
+      "platform": "JetBrains IDEs",
       "supported": true,
-      "features": ["Native integration", "Code completion", "Chat"]
+      "features": [
+        "Interactive diffs",
+        "Selection context sharing"
+      ]
     },
     {
-      "platform": "Zed",
+      "platform": "Desktop App",
       "supported": true,
-      "features": ["Native integration"]
+      "features": [
+        "Visual diff review",
+        "Multiple sessions",
+        "Cloud sessions"
+      ]
+    },
+    {
+      "platform": "Web (claude.ai/code)",
+      "supported": true,
+      "features": [
+        "No local setup",
+        "Long-running tasks",
+        "Parallel tasks"
+      ]
+    },
+    {
+      "platform": "Slack",
+      "supported": true,
+      "features": [
+        "Bug report to PR pipeline",
+        "@Claude mentions"
+      ]
+    },
+    {
+      "platform": "GitHub Actions",
+      "supported": true,
+      "features": [
+        "PR review",
+        "Issue triage",
+        "Automated code fixes"
+      ]
+    },
+    {
+      "platform": "GitLab CI/CD",
+      "supported": true,
+      "features": [
+        "MR review",
+        "Automated workflows"
+      ]
     }
   ],
   "models": [
     {
-      "name": "Claude 3.5 Sonnet",
+      "name": "Claude Opus 4.6",
       "provider": "Anthropic",
       "available": true,
-      "tier": "free"
+      "tier": "pro",
+      "note": "Most intelligent, recommended for complex tasks"
     },
     {
-      "name": "Claude 3.5 Haiku",
+      "name": "Claude Sonnet 4.6",
       "provider": "Anthropic",
       "available": true,
-      "tier": "free"
+      "tier": "pro",
+      "note": "Best speed/intelligence balance"
     },
     {
-      "name": "Claude 3 Opus",
+      "name": "Claude Haiku 4.5",
       "provider": "Anthropic",
       "available": true,
-      "tier": "free"
-    },
-    {
-      "name": "Claude 3 Sonnet",
-      "provider": "Anthropic",
-      "available": true,
-      "tier": "free"
-    },
-    {
-      "name": "Claude 3 Haiku",
-      "provider": "Anthropic",
-      "available": true,
-      "tier": "free"
+      "tier": "pro",
+      "note": "Fastest model"
     }
   ],
   "documentation": {
-    "officialDocs": "https://docs.anthropic.com/",
-    "releaseNotes": "https://docs.anthropic.com/en/api/changelog",
+    "officialDocs": "https://code.claude.com/docs/en/overview",
+    "releaseNotes": "https://code.claude.com/docs/en/changelog",
     "github": "https://github.com/anthropics",
-    "apiDocs": "https://docs.anthropic.com/en/api/getting-started"
+    "apiDocs": "https://platform.claude.com/docs/en/docs/about-claude/models"
   }
 }

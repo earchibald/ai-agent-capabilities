@@ -18,6 +18,21 @@ REPO_ROOT = Path(__file__).parent.parent.parent
 AGENTS_DIR = REPO_ROOT / "agents"
 SCHEMA_DIR = REPO_ROOT / "framework" / "schemas"
 
+# Load valid categories from schema
+VALID_CATEGORIES = set()
+VALID_TIERS = set()
+VALID_MATURITY = set()
+VALID_STATUS = set()
+_schema_file = SCHEMA_DIR / "capability-schema.json"
+if _schema_file.exists():
+    with open(_schema_file, 'r') as f:
+        _schema = json.load(f)
+    cap_props = _schema.get('properties', {}).get('capabilities', {}).get('items', {}).get('properties', {})
+    VALID_CATEGORIES = set(cap_props.get('category', {}).get('enum', []))
+    VALID_TIERS = set(cap_props.get('tier', {}).get('enum', []))
+    VALID_MATURITY = set(cap_props.get('maturityLevel', {}).get('enum', []))
+    VALID_STATUS = set(cap_props.get('status', {}).get('enum', []))
+
 def load_json(filepath: Path) -> dict:
     """Load and parse a JSON file."""
     try:
@@ -30,17 +45,18 @@ def load_json(filepath: Path) -> dict:
 def validate_capability_file(filepath: Path) -> Tuple[bool, List[str]]:
     """Validate a capability file against expected structure."""
     errors = []
+    warnings = []
     data = load_json(filepath)
-    
+
     if not data:
-        return False, ["Could not load file"]
-    
+        return False, ["Could not load file"], []
+
     # Check required top-level keys
     required_keys = ['agent', 'capabilities']
     for key in required_keys:
         if key not in data:
             errors.append(f"Missing required key: {key}")
-    
+
     # Validate agent info
     if 'agent' in data:
         agent = data['agent']
@@ -48,7 +64,7 @@ def validate_capability_file(filepath: Path) -> Tuple[bool, List[str]]:
         for key in required_agent_keys:
             if key not in agent:
                 errors.append(f"Missing agent key: {key}")
-    
+
     # Validate capabilities
     if 'capabilities' in data:
         if not isinstance(data['capabilities'], list):
@@ -58,13 +74,51 @@ def validate_capability_file(filepath: Path) -> Tuple[bool, List[str]]:
                 if not isinstance(cap, dict):
                     errors.append(f"Capability {i} is not a dict")
                     continue
-                
+
+                cap_name = cap.get('name', '?')
+
                 required_cap_keys = ['category', 'name', 'description', 'available']
                 for key in required_cap_keys:
                     if key not in cap:
-                        errors.append(f"Capability {i} missing key: {key}")
-    
-    return len(errors) == 0, errors
+                        errors.append(f"Capability {i} ({cap_name}) missing key: {key}")
+
+                # Validate category against schema enum
+                cat = cap.get('category')
+                if cat and VALID_CATEGORIES and cat not in VALID_CATEGORIES:
+                    errors.append(f"Capability {i} ({cap_name}) invalid category: '{cat}'")
+
+                # Validate tier against schema enum
+                tier = cap.get('tier')
+                if tier and VALID_TIERS and tier not in VALID_TIERS:
+                    errors.append(f"Capability {i} ({cap_name}) invalid tier: '{tier}'")
+
+                # Validate maturity against schema enum
+                maturity = cap.get('maturityLevel')
+                if maturity and VALID_MATURITY and maturity not in VALID_MATURITY:
+                    errors.append(f"Capability {i} ({cap_name}) invalid maturity: '{maturity}'")
+
+                # Validate status against schema enum
+                status = cap.get('status')
+                if status and VALID_STATUS and status not in VALID_STATUS:
+                    errors.append(f"Capability {i} ({cap_name}) invalid status: '{status}'")
+
+                # Warn if sources missing
+                if 'sources' not in cap or not cap.get('sources'):
+                    warnings.append(f"Capability {i} ({cap_name}) missing sources")
+                else:
+                    # Validate source objects
+                    for j, src in enumerate(cap['sources']):
+                        if not isinstance(src, dict):
+                            errors.append(f"Capability {i} ({cap_name}) source {j} is not a dict")
+                            continue
+                        for req_key in ['url', 'description', 'verifiedDate']:
+                            if req_key not in src:
+                                errors.append(f"Capability {i} ({cap_name}) source {j} missing: {req_key}")
+                        src_status = src.get('status')
+                        if src_status and VALID_STATUS and src_status not in VALID_STATUS:
+                            errors.append(f"Capability {i} ({cap_name}) source {j} invalid status: '{src_status}'")
+
+    return len(errors) == 0, errors, warnings
 
 def validate_release_file(filepath: Path) -> Tuple[bool, List[str]]:
     """Validate a release note file."""
@@ -118,7 +172,6 @@ def main():
     required_scripts = [
         REPO_ROOT / "framework" / "scripts" / "generate_comparison.py",
         REPO_ROOT / "framework" / "scripts" / "fetch_releases.py",
-        REPO_ROOT / "framework" / "scripts" / "update_automation.sh"
     ]
     
     for script in required_scripts:
@@ -135,13 +188,14 @@ def main():
     # Validate capability files
     print("3. Validating capability files...")
     agents = [d for d in AGENTS_DIR.iterdir() if d.is_dir()]
-    
+    all_warnings = []
+
     for agent_dir in sorted(agents):
         agent_name = agent_dir.name
         cap_file = agent_dir / "capabilities" / "current.json"
-        
+
         if cap_file.exists():
-            valid, errors = validate_capability_file(cap_file)
+            valid, errors, warnings = validate_capability_file(cap_file)
             if valid:
                 print(f"  ✅ {agent_name}/capabilities/current.json")
             else:
@@ -149,6 +203,9 @@ def main():
                 for error in errors:
                     print(f"      - {error}")
                 all_passed = False
+            all_warnings.extend(
+                f"{agent_name}: {w}" for w in warnings
+            )
         else:
             print(f"  ⚠️  {agent_name}/capabilities/current.json - NOT FOUND")
     print()
@@ -193,7 +250,14 @@ def main():
         else:
             print(f"  ⚠️  {comp_file.name} - NOT FOUND (run generate_comparison.py)")
     print()
-    
+
+    # Show warnings (non-blocking)
+    if all_warnings:
+        print(f"6. Warnings ({len(all_warnings)})...")
+        for w in all_warnings:
+            print(f"  ⚠️  {w}")
+        print()
+
     # Summary
     print("=" * 60)
     if all_passed:

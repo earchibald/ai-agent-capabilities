@@ -244,6 +244,60 @@ def generate_markdown_comparison() -> str:
     return "\n".join(md)
 
 
+def generate_sources_index() -> Dict[str, Any]:
+    """Generate a deduplicated, time-sorted index of all source citations."""
+    agents = get_all_agents()
+
+    # Collect all sources with their citing capabilities
+    sources_map: Dict[str, Dict[str, Any]] = {}  # keyed by URL
+
+    for agent in agents:
+        data = load_agent_capabilities(agent)
+        if not data:
+            continue
+
+        for cap in data.get('capabilities', []):
+            for src in cap.get('sources', []):
+                url = src.get('url', '')
+                if not url:
+                    continue
+
+                if url not in sources_map:
+                    sources_map[url] = {
+                        "url": url,
+                        "description": src.get('description', ''),
+                        "publishedDate": src.get('publishedDate'),
+                        "verifiedDate": src.get('verifiedDate', ''),
+                        "status": src.get('status', 'active'),
+                        "supersededBy": src.get('supersededBy'),
+                        "citedBy": []
+                    }
+
+                sources_map[url]["citedBy"].append({
+                    "agent": agent,
+                    "capability": cap.get('name', '')
+                })
+
+    # Sort: active sources by publishedDate desc, then deprecated, then alphabetical by URL
+    def sort_key(entry):
+        status = entry.get('status', 'active')
+        status_order = 0 if status == 'active' else 1
+        pub_date = entry.get('publishedDate') or '0000-00-00'
+        # Negate date for descending sort by using reverse string
+        return (status_order, pub_date == '0000-00-00', pub_date, entry['url'])
+
+    sorted_sources = sorted(sources_map.values(), key=sort_key)
+    # Reverse the active ones so newest publishedDate is first
+    active = [s for s in sorted_sources if s.get('status', 'active') == 'active']
+    active.sort(key=lambda s: s.get('publishedDate') or '0000-00-00', reverse=True)
+    non_active = [s for s in sorted_sources if s.get('status', 'active') != 'active']
+
+    return {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "sources": active + non_active
+    }
+
+
 def main():
     """Main function to generate all comparisons."""
     print("Generating capability comparisons...")
@@ -268,11 +322,18 @@ def main():
     markdown = generate_markdown_comparison()
     with open(COMPARISONS_DIR / "README.md", 'w') as f:
         f.write(markdown)
-    
+
+    # Generate sources index
+    print("  - Sources index...")
+    sources_index = generate_sources_index()
+    with open(COMPARISONS_DIR / "sources-index.json", 'w') as f:
+        json.dump(sources_index, f, indent=2)
+
     print("✅ Comparison files generated successfully!")
     print(f"   - {COMPARISONS_DIR / 'comparison-matrix.json'}")
     print(f"   - {COMPARISONS_DIR / 'capability-summary.json'}")
     print(f"   - {COMPARISONS_DIR / 'README.md'}")
+    print(f"   - {COMPARISONS_DIR / 'sources-index.json'}")
 
 
 if __name__ == "__main__":
