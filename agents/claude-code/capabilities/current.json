@@ -498,6 +498,48 @@
           "sourceGranularity": "dedicated"
         }
       ]
+    },
+    {
+      "category": "customization",
+      "name": "Extension System",
+      "terminology": "Plugins",
+      "description": "Plugins bundle skills, agents, hooks, MCP servers, and LSP servers into distributable packages. Installed from marketplaces via /plugin install, from GitHub repos, or loaded locally with --plugin-dir. Skills are namespaced (e.g. /plugin-name:skill) to avoid conflicts. Plugin manifests (.claude-plugin/plugin.json) define metadata, version, and author. Marketplaces are Git repositories with an index.json catalog.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/plugins",
+          "description": "Claude Code Plugins documentation - create and distribute plugins with skills, agents, hooks, and MCP servers",
+          "verifiedDate": "2026-02-18",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://code.claude.com/docs/en/discover-plugins",
+          "description": "Claude Code Discover and install plugins - marketplace browsing and installation",
+          "verifiedDate": "2026-02-18",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "model-selection",
+      "name": "Model Selection",
+      "description": "Choose between multiple Claude models via --model flag or /model command. Available models: Claude Opus 4.6 (most intelligent, complex tasks), Claude Sonnet 4.6 (best speed/intelligence balance), Claude Haiku 4.5 (fastest). Model can be set per-session, per-project via CLAUDE.md, or via ANTHROPIC_MODEL environment variable.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/overview",
+          "description": "Claude Code overview - model selection and configuration options",
+          "verifiedDate": "2026-02-18",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Claude Code supports multiple models including Claude Opus 4.6, Sonnet 4.6, and Haiku 4.5, selectable via --model flag or /model command during sessions."
+        }
+      ]
     }
   ],
   "integrations": [

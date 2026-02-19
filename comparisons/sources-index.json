@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-18T17:25:29.172209+00:00",
+  "generated_at": "2026-02-19T07:22:39.842412+00:00",
   "sources": [
     {
       "url": "https://ai.google.dev/gemini-api/docs",
@@ -156,6 +156,20 @@
       ]
     },
     {
+      "url": "https://code.claude.com/docs/en/discover-plugins",
+      "description": "Claude Code Discover and install plugins - marketplace browsing and installation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "claude-code",
+          "capability": "Extension System"
+        }
+      ]
+    },
+    {
       "url": "https://code.claude.com/docs/en/github-actions",
       "description": "Claude Code GitHub Actions documentation - automated PR review and issue triage",
       "publishedDate": null,
@@ -194,6 +208,34 @@
         {
           "agent": "claude-code",
           "capability": "MCP Support"
+        }
+      ]
+    },
+    {
+      "url": "https://code.claude.com/docs/en/overview",
+      "description": "Claude Code overview - model selection and configuration options",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "claude-code",
+          "capability": "Model Selection"
+        }
+      ]
+    },
+    {
+      "url": "https://code.claude.com/docs/en/plugins",
+      "description": "Claude Code Plugins documentation - create and distribute plugins with skills, agents, hooks, and MCP servers",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "claude-code",
+          "capability": "Extension System"
         }
       ]
     },
@@ -254,6 +296,48 @@
       ]
     },
     {
+      "url": "https://code.visualstudio.com/docs/configure/telemetry",
+      "description": "VS Code telemetry documentation (Developer: Show Telemetry, telemetry.log)",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Usage Tracking"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/agents/overview",
+      "description": "VS Code Copilot Agent Mode documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Agent Mode"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/agents/third-party-agents",
+      "description": "VS Code Copilot Extensions documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Extension System"
+        }
+      ]
+    },
+    {
       "url": "https://code.visualstudio.com/docs/copilot/ai-powered-suggestions",
       "description": "VS Code Copilot AI-powered suggestions documentation",
       "publishedDate": null,
@@ -286,20 +370,6 @@
       ]
     },
     {
-      "url": "https://code.visualstudio.com/docs/copilot/chat/agent-mode",
-      "description": "VS Code Copilot Agent Mode documentation",
-      "publishedDate": null,
-      "verifiedDate": "2026-02-18",
-      "status": "active",
-      "supersededBy": null,
-      "citedBy": [
-        {
-          "agent": "vscode-copilot",
-          "capability": "Agent Mode"
-        }
-      ]
-    },
-    {
       "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat",
       "description": "VS Code Copilot Chat documentation",
       "publishedDate": null,
@@ -326,7 +396,7 @@
       ]
     },
     {
-      "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-edits",
+      "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat#_builtin-chat-modes",
       "description": "VS Code Copilot Edits (multi-file editing) documentation",
       "publishedDate": null,
       "verifiedDate": "2026-02-18",
@@ -340,7 +410,7 @@
       ]
     },
     {
-      "url": "https://code.visualstudio.com/docs/copilot/chat/mcp-servers",
+      "url": "https://code.visualstudio.com/docs/copilot/customization/mcp-servers",
       "description": "VS Code Copilot MCP servers documentation",
       "publishedDate": null,
       "verifiedDate": "2026-02-18",
@@ -358,7 +428,7 @@
       ]
     },
     {
-      "url": "https://code.visualstudio.com/docs/copilot/copilot-customization",
+      "url": "https://code.visualstudio.com/docs/copilot/customization/overview",
       "description": "VS Code Copilot customization documentation (instructions, prompt files, custom agents)",
       "publishedDate": null,
       "verifiedDate": "2026-02-18",
@@ -372,48 +442,6 @@
         {
           "agent": "vscode-copilot",
           "capability": "Lifecycle Hooks"
-        }
-      ]
-    },
-    {
-      "url": "https://code.visualstudio.com/docs/copilot/copilot-extensions",
-      "description": "VS Code Copilot Extensions documentation",
-      "publishedDate": null,
-      "verifiedDate": "2026-02-18",
-      "status": "active",
-      "supersededBy": null,
-      "citedBy": [
-        {
-          "agent": "vscode-copilot",
-          "capability": "Extensions"
-        }
-      ]
-    },
-    {
-      "url": "https://code.visualstudio.com/docs/copilot/copilot-settings",
-      "description": "VS Code Copilot settings reference (developer/debug settings including Chat Debug View)",
-      "publishedDate": null,
-      "verifiedDate": "2026-02-18",
-      "status": "active",
-      "supersededBy": null,
-      "citedBy": [
-        {
-          "agent": "vscode-copilot",
-          "capability": "Prompt and Context Inspector"
-        }
-      ]
-    },
-    {
-      "url": "https://code.visualstudio.com/docs/copilot/debugging-with-copilot",
-      "description": "VS Code debugging with Copilot documentation",
-      "publishedDate": null,
-      "verifiedDate": "2026-02-18",
-      "status": "active",
-      "supersededBy": null,
-      "citedBy": [
-        {
-          "agent": "vscode-copilot",
-          "capability": "Debugging"
         }
       ]
     },
@@ -432,8 +460,8 @@
       ]
     },
     {
-      "url": "https://code.visualstudio.com/docs/copilot/setup",
-      "description": "VS Code Copilot setup documentation (troubleshooting, output channels, trace logging)",
+      "url": "https://code.visualstudio.com/docs/copilot/guides/debug-with-copilot",
+      "description": "VS Code debugging with Copilot documentation",
       "publishedDate": null,
       "verifiedDate": "2026-02-18",
       "status": "active",
@@ -441,12 +469,12 @@
       "citedBy": [
         {
           "agent": "vscode-copilot",
-          "capability": "Debug Logging"
+          "capability": "Debugging"
         }
       ]
     },
     {
-      "url": "https://code.visualstudio.com/docs/copilot/testing",
+      "url": "https://code.visualstudio.com/docs/copilot/guides/test-with-copilot",
       "description": "VS Code Copilot testing documentation",
       "publishedDate": null,
       "verifiedDate": "2026-02-18",
@@ -460,7 +488,21 @@
       ]
     },
     {
-      "url": "https://code.visualstudio.com/docs/copilot/workspace-context",
+      "url": "https://code.visualstudio.com/docs/copilot/reference/copilot-settings",
+      "description": "VS Code Copilot settings reference (developer/debug settings including Chat Debug View)",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Prompt and Context Inspector"
+        }
+      ]
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/reference/workspace-context",
       "description": "VS Code Copilot workspace context documentation",
       "publishedDate": null,
       "verifiedDate": "2026-02-18",
@@ -474,8 +516,8 @@
       ]
     },
     {
-      "url": "https://code.visualstudio.com/docs/getstarted/telemetry",
-      "description": "VS Code telemetry documentation (Developer: Show Telemetry, telemetry.log)",
+      "url": "https://code.visualstudio.com/docs/copilot/setup",
+      "description": "VS Code Copilot setup documentation (troubleshooting, output channels, trace logging)",
       "publishedDate": null,
       "verifiedDate": "2026-02-18",
       "status": "active",
@@ -483,7 +525,7 @@
       "citedBy": [
         {
           "agent": "vscode-copilot",
-          "capability": "Usage Tracking"
+          "capability": "Debug Logging"
         }
       ]
     },
@@ -502,21 +544,35 @@
       ]
     },
     {
-      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/tutorials/set-up-mcp",
-      "description": "Claude Code MCP setup tutorial - step-by-step MCP server configuration",
+      "url": "https://docs.github.com/en/copilot/building-copilot-extensions",
+      "description": "Building GitHub Copilot Extensions documentation",
       "publishedDate": null,
       "verifiedDate": "2026-02-18",
       "status": "active",
       "supersededBy": null,
       "citedBy": [
         {
-          "agent": "claude-code",
-          "capability": "MCP Support"
+          "agent": "vscode-copilot",
+          "capability": "Extension System"
         }
       ]
     },
     {
-      "url": "https://docs.github.com/en/copilot/about-github-copilot/github-copilot-features",
+      "url": "https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent",
+      "description": "GitHub Copilot Agent Mode documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Agent Mode"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/get-started/features",
       "description": "GitHub Copilot features overview (includes language support details)",
       "publishedDate": null,
       "verifiedDate": "2026-02-18",
@@ -530,8 +586,8 @@
       ]
     },
     {
-      "url": "https://docs.github.com/en/copilot/building-copilot-extensions",
-      "description": "Building GitHub Copilot Extensions documentation",
+      "url": "https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies",
+      "description": "GitHub Copilot policies (includes public code suggestion matching filter)",
       "publishedDate": null,
       "verifiedDate": "2026-02-18",
       "status": "active",
@@ -539,34 +595,42 @@
       "citedBy": [
         {
           "agent": "vscode-copilot",
-          "capability": "Extensions"
+          "capability": "Security Analysis"
         }
       ]
     },
     {
-      "url": "https://docs.github.com/en/copilot/copilot-cli",
-      "description": "Copilot CLI overview - agent mode as core capability",
+      "url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
+      "description": "GitHub Copilot Chat in IDE documentation",
       "publishedDate": null,
       "verifiedDate": "2026-02-18",
       "status": "active",
       "supersededBy": null,
       "citedBy": [
         {
-          "agent": "copilot-cli",
-          "capability": "Agent Mode"
+          "agent": "vscode-copilot",
+          "capability": "Chat Assistance"
         },
         {
-          "agent": "copilot-cli",
-          "capability": "Terminal CLI"
+          "agent": "vscode-copilot",
+          "capability": "Multi-file Editing"
         },
         {
-          "agent": "copilot-cli",
-          "capability": "Multi-language Support"
+          "agent": "vscode-copilot",
+          "capability": "Code Explanation"
+        },
+        {
+          "agent": "vscode-copilot",
+          "capability": "Documentation Generation"
+        },
+        {
+          "agent": "vscode-copilot",
+          "capability": "Workspace Context"
         }
       ]
     },
     {
-      "url": "https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot",
+      "url": "https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions",
       "description": "GitHub Copilot custom instructions documentation",
       "publishedDate": null,
       "verifiedDate": "2026-02-18",
@@ -580,16 +644,16 @@
       ]
     },
     {
-      "url": "https://docs.github.com/en/copilot/customizing-copilot/extending-copilot-in-vs-code/using-mcp-servers-in-vs-code",
-      "description": "GitHub docs: using MCP servers in VS Code with Copilot",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-finding-installing",
+      "description": "Copilot CLI Plugins - finding and installing plugins from marketplaces, GitHub, or local paths",
       "publishedDate": null,
       "verifiedDate": "2026-02-18",
       "status": "active",
       "supersededBy": null,
       "citedBy": [
         {
-          "agent": "vscode-copilot",
-          "capability": "MCP Support"
+          "agent": "copilot-cli",
+          "capability": "Extension System"
         }
       ]
     },
@@ -607,11 +671,19 @@
         },
         {
           "agent": "copilot-cli",
+          "capability": "Agent Mode"
+        },
+        {
+          "agent": "copilot-cli",
           "capability": "Code Generation"
         },
         {
           "agent": "copilot-cli",
           "capability": "Multi-file Editing"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Terminal CLI"
         },
         {
           "agent": "copilot-cli",
@@ -639,13 +711,25 @@
         },
         {
           "agent": "copilot-cli",
+          "capability": "Multi-language Support"
+        },
+        {
+          "agent": "copilot-cli",
           "capability": "Lifecycle Hooks"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Code Explanation"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Code Refactoring"
         }
       ]
     },
     {
-      "url": "https://docs.github.com/en/copilot/managing-copilot/managing-copilot-policies",
-      "description": "GitHub Copilot policies (includes public code suggestion matching filter)",
+      "url": "https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions",
+      "description": "GitHub Copilot code suggestions in IDE documentation",
       "publishedDate": null,
       "verifiedDate": "2026-02-18",
       "status": "active",
@@ -653,7 +737,67 @@
       "citedBy": [
         {
           "agent": "vscode-copilot",
-          "capability": "Security Analysis"
+          "capability": "Code Completion"
+        },
+        {
+          "agent": "vscode-copilot",
+          "capability": "Code Generation"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions#next-edit-suggestions",
+      "description": "GitHub Copilot Next Edit Suggestions in IDE",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Next Edit Suggestions"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp/extend-copilot-chat-with-mcp",
+      "description": "GitHub docs: using MCP servers in VS Code with Copilot",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "MCP Support"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/how-tos/use-ai-models/change-the-chat-model",
+      "description": "GitHub Copilot changing the AI model documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Model Selection"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review",
+      "description": "GitHub Copilot code review documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Code Review"
         }
       ]
     },
@@ -720,149 +864,7 @@
       ]
     },
     {
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/ai-models/changing-the-ai-model-for-copilot-chat",
-      "description": "GitHub Copilot changing the AI model documentation",
-      "publishedDate": null,
-      "verifiedDate": "2026-02-18",
-      "status": "active",
-      "supersededBy": null,
-      "citedBy": [
-        {
-          "agent": "vscode-copilot",
-          "capability": "Model Selection"
-        }
-      ]
-    },
-    {
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide",
-      "description": "GitHub Copilot Chat in IDE documentation",
-      "publishedDate": null,
-      "verifiedDate": "2026-02-18",
-      "status": "active",
-      "supersededBy": null,
-      "citedBy": [
-        {
-          "agent": "vscode-copilot",
-          "capability": "Chat Assistance"
-        },
-        {
-          "agent": "vscode-copilot",
-          "capability": "Code Explanation"
-        },
-        {
-          "agent": "vscode-copilot",
-          "capability": "Documentation Generation"
-        },
-        {
-          "agent": "vscode-copilot",
-          "capability": "Workspace Context"
-        }
-      ]
-    },
-    {
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/code-review",
-      "description": "GitHub Copilot code review documentation",
-      "publishedDate": null,
-      "verifiedDate": "2026-02-18",
-      "status": "active",
-      "supersededBy": null,
-      "citedBy": [
-        {
-          "agent": "vscode-copilot",
-          "capability": "Code Review"
-        }
-      ]
-    },
-    {
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/copilot-edits",
-      "description": "GitHub Copilot Edits documentation",
-      "publishedDate": null,
-      "verifiedDate": "2026-02-18",
-      "status": "active",
-      "supersededBy": null,
-      "citedBy": [
-        {
-          "agent": "vscode-copilot",
-          "capability": "Multi-file Editing"
-        }
-      ]
-    },
-    {
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/debugging-errors-with-github-copilot",
-      "description": "GitHub Copilot debugging errors documentation",
-      "publishedDate": null,
-      "verifiedDate": "2026-02-18",
-      "status": "active",
-      "supersededBy": null,
-      "citedBy": [
-        {
-          "agent": "vscode-copilot",
-          "capability": "Debugging"
-        }
-      ]
-    },
-    {
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot",
-      "description": "GitHub Copilot code suggestions in IDE documentation",
-      "publishedDate": null,
-      "verifiedDate": "2026-02-18",
-      "status": "active",
-      "supersededBy": null,
-      "citedBy": [
-        {
-          "agent": "vscode-copilot",
-          "capability": "Code Completion"
-        },
-        {
-          "agent": "vscode-copilot",
-          "capability": "Code Generation"
-        }
-      ]
-    },
-    {
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot#next-edit-suggestions",
-      "description": "GitHub Copilot Next Edit Suggestions in IDE",
-      "publishedDate": null,
-      "verifiedDate": "2026-02-18",
-      "status": "active",
-      "supersededBy": null,
-      "citedBy": [
-        {
-          "agent": "vscode-copilot",
-          "capability": "Next Edit Suggestions"
-        }
-      ]
-    },
-    {
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/refactoring-code-with-github-copilot",
-      "description": "GitHub Copilot refactoring code documentation",
-      "publishedDate": null,
-      "verifiedDate": "2026-02-18",
-      "status": "active",
-      "supersededBy": null,
-      "citedBy": [
-        {
-          "agent": "vscode-copilot",
-          "capability": "Code Refactoring"
-        }
-      ]
-    },
-    {
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/using-agent-mode",
-      "description": "GitHub Copilot Agent Mode documentation",
-      "publishedDate": null,
-      "verifiedDate": "2026-02-18",
-      "status": "active",
-      "supersededBy": null,
-      "citedBy": [
-        {
-          "agent": "vscode-copilot",
-          "capability": "Agent Mode"
-        }
-      ]
-    },
-    {
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/using-copilot-spaces",
+      "url": "https://docs.github.com/en/copilot/responsible-use/copilot-spaces",
       "description": "GitHub Copilot Spaces documentation",
       "publishedDate": null,
       "verifiedDate": "2026-02-18",
@@ -876,7 +878,35 @@
       ]
     },
     {
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/writing-tests-with-github-copilot",
+      "url": "https://docs.github.com/en/copilot/tutorials/copilot-chat-cookbook/debug-errors",
+      "description": "GitHub Copilot debugging errors documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Debugging"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/tutorials/refactor-code",
+      "description": "GitHub Copilot refactoring code documentation",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "vscode-copilot",
+          "capability": "Code Refactoring"
+        }
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/tutorials/write-tests",
       "description": "GitHub Copilot writing tests documentation",
       "publishedDate": null,
       "verifiedDate": "2026-02-18",
@@ -886,6 +916,20 @@
         {
           "agent": "vscode-copilot",
           "capability": "Test Generation"
+        }
+      ]
+    },
+    {
+      "url": "https://geminicli.com/docs/extensions/",
+      "description": "Gemini CLI Extensions documentation - packaging and distributing extensions with prompts, MCP servers, commands, themes, and hooks",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "gemini-cli",
+          "capability": "Extension System"
         }
       ]
     },
@@ -1022,6 +1066,14 @@
         {
           "agent": "gemini-cli",
           "capability": "Usage Tracking"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Code Refactoring"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Model Selection"
         }
       ]
     },
@@ -1056,7 +1108,7 @@
       ]
     },
     {
-      "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
       "description": "Anthropic model documentation - context window specifications",
       "publishedDate": null,
       "verifiedDate": "2026-02-18",
@@ -1074,6 +1126,20 @@
         {
           "agent": "claude-code",
           "capability": "Vision"
+        }
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/agents-and-tools/claude-code/tutorials/set-up-mcp",
+      "description": "Claude Code MCP setup tutorial - step-by-step MCP server configuration",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-18",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "claude-code",
+          "capability": "MCP Support"
         }
       ]
     }

@@ -113,6 +113,11 @@ def validate_capability_file(filepath: Path) -> Tuple[bool, List[str], List[str]
                 if status and VALID_STATUS and status not in VALID_STATUS:
                     errors.append(f"Capability {i} ({cap_name}) invalid status: '{status}'")
 
+                # Validate terminology field type
+                terminology = cap.get('terminology')
+                if terminology is not None and not isinstance(terminology, str):
+                    errors.append(f"Capability {i} ({cap_name}) terminology must be a string")
+
                 # Source validation
                 if 'sources' not in cap or not cap.get('sources'):
                     warnings.append(f"Capability {i} ({cap_name}) missing sources")
@@ -338,9 +343,64 @@ def main():
     print(f"  Sources verified within 30 days: {verified_within_30d}/{total_sources}")
     print()
 
+    # Semantic gap detection
+    print("7. Semantic gap detection...")
+    agent_cap_map = {}  # agent_slug -> set of capability names
+    cap_agent_map = {}  # capability_name -> set of agent slugs
+    terminology_map = {}  # capability_name -> {agent_slug: terminology}
+    for agent_dir in sorted(agents):
+        agent_name = agent_dir.name
+        cap_file = agent_dir / "capabilities" / "current.json"
+        if not cap_file.exists():
+            continue
+        data = load_json(cap_file)
+        cap_names = set()
+        for cap in data.get('capabilities', []):
+            name = cap.get('name')
+            if not name:
+                continue
+            cap_names.add(name)
+            if name not in cap_agent_map:
+                cap_agent_map[name] = set()
+            cap_agent_map[name].add(agent_name)
+            # Track terminology
+            term = cap.get('terminology')
+            if term:
+                if name not in terminology_map:
+                    terminology_map[name] = {}
+                terminology_map[name][agent_name] = term
+        agent_cap_map[agent_name] = cap_names
+
+    num_agents = len(agent_cap_map)
+    gap_count = 0
+    for cap_name, agent_set in sorted(cap_agent_map.items()):
+        missing_from = set(agent_cap_map.keys()) - agent_set
+        if missing_from and len(agent_set) >= num_agents - 1:
+            for missing_agent in sorted(missing_from):
+                all_warnings.append(
+                    f"Semantic gap: '{cap_name}' present in {len(agent_set)}/{num_agents} agents, missing from {missing_agent}"
+                )
+                gap_count += 1
+
+    # Terminology consistency: if any agent has terminology for a capability, all should
+    for cap_name, terms in terminology_map.items():
+        agents_with_cap = cap_agent_map.get(cap_name, set())
+        agents_missing_term = agents_with_cap - set(terms.keys())
+        if agents_missing_term:
+            for a in sorted(agents_missing_term):
+                all_warnings.append(
+                    f"Terminology gap: '{cap_name}' has terminology for {sorted(terms.keys())} but not {a}"
+                )
+
+    if gap_count == 0:
+        print("  + No semantic gaps detected (all capabilities present in all agents or unique)")
+    else:
+        print(f"  ~ {gap_count} semantic gap(s) detected (see warnings)")
+    print()
+
     # Show warnings (non-blocking)
     if all_warnings:
-        print(f"7. Warnings ({len(all_warnings)})...")
+        print(f"8. Warnings ({len(all_warnings)})...")
         for w in all_warnings:
             print(f"  ~ {w}")
         print()

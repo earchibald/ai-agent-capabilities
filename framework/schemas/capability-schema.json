@@ -62,6 +62,10 @@
             "type": "string",
             "description": "Name of the capability"
           },
+          "terminology": {
+            "type": "string",
+            "description": "Agent-specific term for this capability when it differs from the canonical name (e.g. 'Plugins' vs 'Extensions')"
+          },
           "description": {
             "type": "string",
             "description": "Detailed description"

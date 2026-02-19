@@ -1,14 +1,14 @@
 # AI Agent Capability Comparison
 
-*Generated: 2026-02-18 17:25:29 UTC*
+*Generated: 2026-02-19 07:22:39 UTC*
 
 ## Overview
 
 | Agent | Vendor | Total Capabilities |
 |-------|--------|-------------------|
-| Claude Code | Anthropic | 24 |
-| GitHub Copilot CLI | GitHub / Microsoft | 14 |
-| Gemini CLI | Google | 22 |
+| Claude Code | Anthropic | 26 |
+| GitHub Copilot CLI | GitHub / Microsoft | 17 |
+| Gemini CLI | Google | 25 |
 | GitHub Copilot (VS Code) | GitHub / Microsoft | 24 |
 
 ## Capabilities by Category
@@ -19,7 +19,6 @@
 | Capability | claude-code | copilot-cli | gemini-cli | vscode-copilot |
 |------------|------|------|------|------|
 | Agent Mode | ✅ (pro) | ✅ (pro) | ✅ (free) | ✅ (pro) |
-| Extensions | ❌ | ❌ | ❌ | ✅ (pro) |
 | Sub-agents | ✅ (pro) | ❌ | ❌ | ❌ |
 
 ### Api Integration
@@ -46,7 +45,7 @@
 
 | Capability | claude-code | copilot-cli | gemini-cli | vscode-copilot |
 |------------|------|------|------|------|
-| Code Explanation | ✅ (pro) | ❌ | ✅ (free) | ✅ (free) |
+| Code Explanation | ✅ (pro) | ✅ (pro) | ✅ (free) | ✅ (free) |
 
 ### Code Generation
 
@@ -58,7 +57,7 @@
 
 | Capability | claude-code | copilot-cli | gemini-cli | vscode-copilot |
 |------------|------|------|------|------|
-| Code Refactoring | ✅ (pro) | ❌ | ❌ | ✅ (free) |
+| Code Refactoring | ✅ (pro) | ✅ (pro) | ✅ (free) | ✅ (free) |
 
 ### Collaboration
 
@@ -88,6 +87,7 @@
 | Capability | claude-code | copilot-cli | gemini-cli | vscode-copilot |
 |------------|------|------|------|------|
 | Custom Instructions | ✅ (pro) | ❌ | ✅ (free) | ✅ (pro) |
+| Extension System | ✅ (pro) | ✅ (pro) | ✅ (free) | ✅ (pro) |
 | Lifecycle Hooks | ✅ (pro) | ✅ (pro) | ✅ (free) | ✅ (free) |
 
 ### Debugging
@@ -112,7 +112,7 @@
 
 | Capability | claude-code | copilot-cli | gemini-cli | vscode-copilot |
 |------------|------|------|------|------|
-| Model Selection | ❌ | ❌ | ❌ | ✅ (pro) |
+| Model Selection | ✅ (pro) | ❌ | ✅ (free) | ✅ (pro) |
 
 ### Multi File Editing
 

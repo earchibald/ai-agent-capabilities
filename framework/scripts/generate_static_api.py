@@ -165,6 +165,7 @@ def generate_capabilities_list(agents: Dict[str, Any]) -> Dict[str, Any]:
                 'available': cap.get('available', False),
                 'tier': cap.get('tier', ''),
                 'maturityLevel': cap.get('maturityLevel', ''),
+                'terminology': cap.get('terminology', ''),
                 'status': cap.get('status', '')
             })
 
@@ -190,6 +191,7 @@ def generate_comparison(cap_name: str, cap_slug: str, agents: Dict[str, Any]) ->
                     'name': data.get('agent', {}).get('name', agent_slug),
                     'available': cap.get('available', False),
                     'description': cap.get('description', ''),
+                    'terminology': cap.get('terminology', ''),
                     'tier': cap.get('tier', ''),
                     'maturityLevel': cap.get('maturityLevel', ''),
                     'status': cap.get('status', ''),

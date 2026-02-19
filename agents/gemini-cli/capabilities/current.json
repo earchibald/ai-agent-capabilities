@@ -493,6 +493,62 @@
           "sourceGranularity": "dedicated"
         }
       ]
+    },
+    {
+      "category": "customization",
+      "name": "Extension System",
+      "terminology": "Extensions",
+      "description": "Extensions package prompts, MCP servers, custom commands, themes, hooks, sub-agents, and agent skills into distributable units. Installed from GitHub repos via 'gemini extensions install URL'. Browsable gallery at geminicli.com/extensions/. Managed via /extensions list in interactive mode or 'gemini extensions' CLI command group.",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://geminicli.com/docs/extensions/",
+          "description": "Gemini CLI Extensions documentation - packaging and distributing extensions with prompts, MCP servers, commands, themes, and hooks",
+          "verifiedDate": "2026-02-18",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "code-refactoring",
+      "name": "Code Refactoring",
+      "description": "Refactor code through agent mode — rename variables, extract functions, restructure files, and apply design patterns. Operates across multiple files with full codebase context via sandbox file operations.",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - agent mode with multi-file code editing and refactoring capabilities",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini CLI's agentic mode autonomously reads, edits, and restructures code across multiple files to implement refactoring and generation tasks."
+        }
+      ]
+    },
+    {
+      "category": "model-selection",
+      "name": "Model Selection",
+      "description": "Choose between multiple Gemini models via --model flag. Available models: Gemini 2.5 Flash (default), Gemini 3 Pro, Gemini 3 Flash. Model can be set per-session or in .gemini/settings.json configuration.",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - model selection via --model flag and configuration",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini CLI supports selecting between Gemini models via --model flag including Gemini 2.5 Flash, Gemini 3 Pro, and Gemini 3 Flash."
+        }
+      ]
     }
   ],
   "integrations": [

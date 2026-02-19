@@ -111,6 +111,9 @@ function maturityBadge(level) {
 
 // ── Detail panel HTML ────────────────────────────────────
 function detailPanelHTML(cap) {
+  const terminology = cap.terminology
+    ? `<p style="font-size:.8rem;color:var(--text-muted);margin-bottom:.5rem">Known as <strong>${escHtml(cap.terminology)}</strong> in this agent</p>`
+    : '';
   const limitations = (cap.limitations || []).map(l => `<li>${escHtml(l)}</li>`).join('');
   const requirements = (cap.requirements || []).map(r => `<li>${escHtml(r)}</li>`).join('');
   const sources = (cap.sources || []).map(s => {
@@ -131,6 +134,7 @@ function detailPanelHTML(cap) {
     <div class="detail-panel">
       <div class="detail-section" style="grid-column:1/-1">
         <h4>Description</h4>
+        ${terminology}
         <p>${escHtml(cap.description || '')}</p>
       </div>
       ${limitations ? `<div class="detail-section"><h4>Limitations</h4><ul>${limitations}</ul></div>` : ''}
@@ -242,7 +246,8 @@ function renderCompareTable() {
           const check = ad.available ? `<span class="cell-check">✓</span>` : `<span class="cell-dash">—</span>`;
           const tier = ad.available ? tierBadge(ad.tier) : '';
           const mat  = ad.available ? maturityBadge(ad.maturityLevel) : '';
-          return `<td class="col-agent"><div class="cell-available">${check}${tier}${mat}</div></td>`;
+          const term = ad.available && ad.terminology ? `<span style="font-size:.7rem;color:var(--text-muted)">${escHtml(ad.terminology)}</span>` : '';
+          return `<td class="col-agent"><div class="cell-available">${check}${term}${tier}${mat}</div></td>`;
         }).join('')}
       </tr>`;
       if (isExpanded) {

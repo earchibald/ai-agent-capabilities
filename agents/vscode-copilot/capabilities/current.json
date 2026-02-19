@@ -82,9 +82,10 @@
       ]
     },
     {
-      "category": "agent-orchestration",
-      "name": "Extensions",
-      "description": "Third-party agent extensions and custom agent skills that integrate into Copilot workflows",
+      "category": "customization",
+      "name": "Extension System",
+      "terminology": "Extensions",
+      "description": "Third-party agent extensions and custom agent skills that integrate into Copilot workflows. Distributed via the VS Code marketplace and GitHub Copilot Extensions marketplace. Extensions can provide custom tools, agent skills, and slash commands.",
       "available": true,
       "tier": "pro",
       "maturityLevel": "stable",

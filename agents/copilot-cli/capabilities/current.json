@@ -314,6 +314,60 @@
           "excerpt": "Copilot CLI supports lifecycle hooks configured in .github/hooks/hooks.json for session, prompt, and tool events."
         }
       ]
+    },
+    {
+      "category": "customization",
+      "name": "Extension System",
+      "terminology": "Plugins",
+      "description": "Plugins extend Copilot CLI functionality. Installed from marketplaces (copilot plugin install NAME@MARKETPLACE), GitHub repos (copilot plugin install OWNER/REPO:PATH), or local paths. Managed via copilot plugin list/update/uninstall. Stored in ~/.copilot/installed-plugins/.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-finding-installing",
+          "description": "Copilot CLI Plugins - finding and installing plugins from marketplaces, GitHub, or local paths",
+          "verifiedDate": "2026-02-18",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "code-explanation",
+      "name": "Code Explanation",
+      "description": "Explain code, shell commands, and error messages. Dedicated 'gh copilot explain' command for shell command explanation. Agent mode can explain any code in the project through natural language conversation.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+          "description": "Using Copilot CLI - gh copilot explain command for code and command explanation",
+          "verifiedDate": "2026-02-18",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Use 'gh copilot explain' to get explanations of shell commands, code snippets, and error messages directly in your terminal."
+        }
+      ]
+    },
+    {
+      "category": "code-refactoring",
+      "name": "Code Refactoring",
+      "description": "Refactor code through agent mode — rename variables, extract functions, restructure files, and apply design patterns across the codebase via natural language instructions.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+          "description": "Using Copilot CLI - agent mode for code refactoring and multi-file editing",
+          "verifiedDate": "2026-02-18",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Copilot CLI agent mode autonomously reads, edits, and restructures code across multiple files to implement refactoring tasks."
+        }
+      ]
     }
   ],
   "integrations": [

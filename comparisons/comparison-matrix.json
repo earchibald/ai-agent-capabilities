@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-18T17:25:29.168312+00:00",
+  "generated_at": "2026-02-19T07:22:39.839753+00:00",
   "agents": [
     "claude-code",
     "copilot-cli",
@@ -70,16 +70,10 @@
         ]
       },
       "vscode-copilot": {
-        "count": 2,
+        "count": 1,
         "capabilities": [
           {
             "name": "Agent Mode",
-            "available": true,
-            "tier": "pro",
-            "maturity": "stable"
-          },
-          {
-            "name": "Extensions",
             "available": true,
             "tier": "pro",
             "maturity": "stable"
@@ -222,8 +216,15 @@
         ]
       },
       "copilot-cli": {
-        "count": 0,
-        "capabilities": []
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Code Explanation",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
       },
       "gemini-cli": {
         "count": 1,
@@ -307,12 +308,26 @@
         ]
       },
       "copilot-cli": {
-        "count": 0,
-        "capabilities": []
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Code Refactoring",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
       },
       "gemini-cli": {
-        "count": 0,
-        "capabilities": []
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Code Refactoring",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
       },
       "vscode-copilot": {
         "count": 1,
@@ -469,7 +484,7 @@
     },
     "customization": {
       "claude-code": {
-        "count": 2,
+        "count": 3,
         "capabilities": [
           {
             "name": "Custom Instructions",
@@ -479,6 +494,12 @@
           },
           {
             "name": "Lifecycle Hooks",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          },
+          {
+            "name": "Extension System",
             "available": true,
             "tier": "pro",
             "maturity": "stable"
@@ -486,18 +507,24 @@
         ]
       },
       "copilot-cli": {
-        "count": 1,
+        "count": 2,
         "capabilities": [
           {
             "name": "Lifecycle Hooks",
             "available": true,
             "tier": "pro",
             "maturity": "beta"
+          },
+          {
+            "name": "Extension System",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
           }
         ]
       },
       "gemini-cli": {
-        "count": 2,
+        "count": 3,
         "capabilities": [
           {
             "name": "Custom Instructions",
@@ -510,12 +537,24 @@
             "available": true,
             "tier": "free",
             "maturity": "stable"
+          },
+          {
+            "name": "Extension System",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
           }
         ]
       },
       "vscode-copilot": {
-        "count": 2,
+        "count": 3,
         "capabilities": [
+          {
+            "name": "Extension System",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          },
           {
             "name": "Custom Instructions",
             "available": true,
@@ -671,16 +710,30 @@
     },
     "model-selection": {
       "claude-code": {
-        "count": 0,
-        "capabilities": []
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Model Selection",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
       },
       "copilot-cli": {
         "count": 0,
         "capabilities": []
       },
       "gemini-cli": {
-        "count": 0,
-        "capabilities": []
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Model Selection",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
       },
       "vscode-copilot": {
         "count": 1,
