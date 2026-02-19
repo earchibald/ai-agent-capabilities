@@ -27,7 +27,7 @@
           "excerpt": "The command-line interface (CLI) for GitHub Copilot allows you to use Copilot directly from your terminal for autonomous task execution."
         },
         {
-          "url": "https://docs.github.com/en/copilot/copilot-cli",
+          "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
           "description": "Copilot CLI overview - agent mode as core capability",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -84,7 +84,7 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://docs.github.com/en/copilot/copilot-cli",
+          "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
           "description": "Copilot CLI overview - terminal-based AI assistant for development workflows",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -214,7 +214,7 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://docs.github.com/en/copilot/copilot-cli",
+          "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
           "description": "Copilot CLI overview - multi-language programming support",
           "verifiedDate": "2026-02-18",
           "status": "active",

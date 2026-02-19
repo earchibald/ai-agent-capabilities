@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-18T17:23:31.202677+00:00",
+  "generated_at": "2026-02-19T03:33:47.034513+00:00",
   "pass": "relevance",
   "results": [
     {
@@ -14,7 +14,7 @@
     },
     {
       "capability": "Code Completion",
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot",
+      "url": "https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions",
       "granularity": "dedicated",
       "relevant": true,
       "checks": {
@@ -34,7 +34,7 @@
     },
     {
       "capability": "Next Edit Suggestions",
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot#next-edit-suggestions",
+      "url": "https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions#next-edit-suggestions",
       "granularity": "section",
       "relevant": false,
       "checks": {
@@ -44,20 +44,22 @@
     },
     {
       "capability": "Agent Mode",
-      "url": "https://code.visualstudio.com/docs/copilot/chat/agent-mode",
+      "url": "https://code.visualstudio.com/docs/copilot/agents/overview",
       "granularity": "dedicated",
-      "relevant": false,
+      "relevant": true,
       "checks": {
-        "page_reachable": false
+        "name_found": false,
+        "keyword_ratio": 1.0
       }
     },
     {
       "capability": "Agent Mode",
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/using-agent-mode",
+      "url": "https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent",
       "granularity": "dedicated",
-      "relevant": false,
+      "relevant": true,
       "checks": {
-        "page_reachable": false
+        "name_found": true,
+        "keyword_ratio": 1.0
       }
     },
     {
@@ -71,11 +73,12 @@
     },
     {
       "capability": "Extensions",
-      "url": "https://code.visualstudio.com/docs/copilot/copilot-extensions",
+      "url": "https://code.visualstudio.com/docs/copilot/agents/third-party-agents",
       "granularity": "dedicated",
-      "relevant": false,
+      "relevant": true,
       "checks": {
-        "page_reachable": false
+        "name_found": true,
+        "keyword_ratio": 1.0
       }
     },
     {
@@ -90,7 +93,7 @@
     },
     {
       "capability": "Code Generation",
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot",
+      "url": "https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions",
       "granularity": "dedicated",
       "relevant": true,
       "checks": {
@@ -110,7 +113,7 @@
     },
     {
       "capability": "Chat Assistance",
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide",
+      "url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
       "granularity": "dedicated",
       "relevant": true,
       "checks": {
@@ -120,7 +123,7 @@
     },
     {
       "capability": "Multi-file Editing",
-      "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-edits",
+      "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat#_builtin-chat-modes",
       "granularity": "dedicated",
       "relevant": true,
       "checks": {
@@ -130,11 +133,12 @@
     },
     {
       "capability": "Multi-file Editing",
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/copilot-edits",
+      "url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
       "granularity": "dedicated",
       "relevant": false,
       "checks": {
-        "page_reachable": false
+        "name_found": false,
+        "keyword_ratio": 0.0
       }
     },
     {
@@ -149,7 +153,7 @@
     },
     {
       "capability": "Code Explanation",
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide",
+      "url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
       "granularity": "dedicated",
       "relevant": true,
       "checks": {
@@ -159,20 +163,22 @@
     },
     {
       "capability": "Debugging",
-      "url": "https://code.visualstudio.com/docs/copilot/debugging-with-copilot",
+      "url": "https://code.visualstudio.com/docs/copilot/guides/debug-with-copilot",
       "granularity": "dedicated",
-      "relevant": false,
+      "relevant": true,
       "checks": {
-        "page_reachable": false
+        "name_found": true,
+        "keyword_ratio": 1.0
       }
     },
     {
       "capability": "Debugging",
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/debugging-errors-with-github-copilot",
+      "url": "https://docs.github.com/en/copilot/tutorials/copilot-chat-cookbook/debug-errors",
       "granularity": "dedicated",
-      "relevant": false,
+      "relevant": true,
       "checks": {
-        "page_reachable": false
+        "name_found": true,
+        "keyword_ratio": 1.0
       }
     },
     {
@@ -187,29 +193,32 @@
     },
     {
       "capability": "Code Refactoring",
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/refactoring-code-with-github-copilot",
+      "url": "https://docs.github.com/en/copilot/tutorials/refactor-code",
       "granularity": "dedicated",
-      "relevant": false,
+      "relevant": true,
       "checks": {
-        "page_reachable": false
+        "name_found": true,
+        "keyword_ratio": 1.0
       }
     },
     {
       "capability": "Test Generation",
-      "url": "https://code.visualstudio.com/docs/copilot/testing",
+      "url": "https://code.visualstudio.com/docs/copilot/guides/test-with-copilot",
       "granularity": "dedicated",
-      "relevant": false,
+      "relevant": true,
       "checks": {
-        "page_reachable": false
+        "name_found": true,
+        "keyword_ratio": 1.0
       }
     },
     {
       "capability": "Test Generation",
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/writing-tests-with-github-copilot",
+      "url": "https://docs.github.com/en/copilot/tutorials/write-tests",
       "granularity": "dedicated",
-      "relevant": false,
+      "relevant": true,
       "checks": {
-        "page_reachable": false
+        "name_found": false,
+        "keyword_ratio": 1.0
       }
     },
     {
@@ -224,7 +233,7 @@
     },
     {
       "capability": "Documentation Generation",
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide",
+      "url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
       "granularity": "dedicated",
       "relevant": true,
       "checks": {
@@ -234,7 +243,7 @@
     },
     {
       "capability": "Workspace Context",
-      "url": "https://code.visualstudio.com/docs/copilot/workspace-context",
+      "url": "https://code.visualstudio.com/docs/copilot/reference/workspace-context",
       "granularity": "dedicated",
       "relevant": true,
       "checks": {
@@ -244,7 +253,7 @@
     },
     {
       "capability": "Workspace Context",
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide",
+      "url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
       "granularity": "dedicated",
       "relevant": true,
       "checks": {
@@ -254,11 +263,12 @@
     },
     {
       "capability": "Copilot Spaces",
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/using-copilot-spaces",
+      "url": "https://docs.github.com/en/copilot/responsible-use/copilot-spaces",
       "granularity": "dedicated",
-      "relevant": false,
+      "relevant": true,
       "checks": {
-        "page_reachable": false
+        "name_found": true,
+        "keyword_ratio": 1.0
       }
     },
     {
@@ -283,7 +293,7 @@
     },
     {
       "capability": "Model Selection",
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/ai-models/changing-the-ai-model-for-copilot-chat",
+      "url": "https://docs.github.com/en/copilot/how-tos/use-ai-models/change-the-chat-model",
       "granularity": "dedicated",
       "relevant": true,
       "checks": {
@@ -293,7 +303,7 @@
     },
     {
       "capability": "MCP Support",
-      "url": "https://code.visualstudio.com/docs/copilot/chat/mcp-servers",
+      "url": "https://code.visualstudio.com/docs/copilot/customization/mcp-servers",
       "granularity": "dedicated",
       "relevant": true,
       "checks": {
@@ -303,16 +313,17 @@
     },
     {
       "capability": "MCP Support",
-      "url": "https://docs.github.com/en/copilot/customizing-copilot/extending-copilot-in-vs-code/using-mcp-servers-in-vs-code",
+      "url": "https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp/extend-copilot-chat-with-mcp",
       "granularity": "dedicated",
-      "relevant": false,
+      "relevant": true,
       "checks": {
-        "page_reachable": false
+        "name_found": false,
+        "keyword_ratio": 1.0
       }
     },
     {
       "capability": "Custom Instructions",
-      "url": "https://code.visualstudio.com/docs/copilot/copilot-customization",
+      "url": "https://code.visualstudio.com/docs/copilot/customization/overview",
       "granularity": "dedicated",
       "relevant": true,
       "checks": {
@@ -322,7 +333,7 @@
     },
     {
       "capability": "Custom Instructions",
-      "url": "https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot",
+      "url": "https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions",
       "granularity": "dedicated",
       "relevant": true,
       "checks": {
@@ -332,7 +343,7 @@
     },
     {
       "capability": "Code Review",
-      "url": "https://docs.github.com/en/copilot/using-github-copilot/code-review",
+      "url": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review",
       "granularity": "dedicated",
       "relevant": true,
       "checks": {
@@ -351,16 +362,17 @@
     },
     {
       "capability": "Security Analysis",
-      "url": "https://docs.github.com/en/copilot/managing-copilot/managing-copilot-policies",
+      "url": "https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies",
       "granularity": "excerpt",
       "relevant": false,
       "checks": {
-        "page_reachable": false
+        "exact_match": false,
+        "prefix_match": false
       }
     },
     {
       "capability": "Multi-language Support",
-      "url": "https://docs.github.com/en/copilot/about-github-copilot/github-copilot-features",
+      "url": "https://docs.github.com/en/copilot/get-started/features",
       "granularity": "excerpt",
       "relevant": false,
       "checks": {
@@ -380,7 +392,7 @@
     },
     {
       "capability": "Prompt and Context Inspector",
-      "url": "https://code.visualstudio.com/docs/copilot/copilot-settings",
+      "url": "https://code.visualstudio.com/docs/copilot/reference/copilot-settings",
       "granularity": "excerpt",
       "relevant": false,
       "checks": {
@@ -410,7 +422,7 @@
     },
     {
       "capability": "Debug Logging",
-      "url": "https://code.visualstudio.com/docs/copilot/chat/mcp-servers",
+      "url": "https://code.visualstudio.com/docs/copilot/customization/mcp-servers",
       "granularity": "dedicated",
       "relevant": true,
       "checks": {
@@ -420,7 +432,7 @@
     },
     {
       "capability": "Usage Tracking",
-      "url": "https://code.visualstudio.com/docs/getstarted/telemetry",
+      "url": "https://code.visualstudio.com/docs/configure/telemetry",
       "granularity": "excerpt",
       "relevant": false,
       "checks": {
@@ -440,7 +452,7 @@
     },
     {
       "capability": "Lifecycle Hooks",
-      "url": "https://code.visualstudio.com/docs/copilot/copilot-customization",
+      "url": "https://code.visualstudio.com/docs/copilot/customization/overview",
       "granularity": "dedicated",
       "relevant": true,
       "checks": {

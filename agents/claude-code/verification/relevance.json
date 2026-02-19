@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-18T17:23:31.201356+00:00",
+  "generated_at": "2026-02-19T03:33:47.033218+00:00",
   "pass": "relevance",
   "results": [
     {
@@ -134,7 +134,7 @@
     },
     {
       "capability": "Context Window",
-      "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
       "granularity": "excerpt",
       "relevant": false,
       "checks": {
@@ -164,7 +164,7 @@
     },
     {
       "capability": "MCP Support",
-      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/tutorials/set-up-mcp",
+      "url": "https://platform.claude.com/docs/en/agents-and-tools/claude-code/tutorials/set-up-mcp",
       "granularity": "dedicated",
       "relevant": true,
       "checks": {
@@ -244,7 +244,7 @@
     },
     {
       "capability": "Extended Thinking",
-      "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
       "granularity": "excerpt",
       "relevant": false,
       "checks": {
@@ -264,7 +264,7 @@
     },
     {
       "capability": "Vision",
-      "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
       "granularity": "excerpt",
       "relevant": false,
       "checks": {

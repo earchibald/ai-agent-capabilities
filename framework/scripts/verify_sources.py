@@ -2,15 +2,21 @@
 """
 Source Verification Pipeline
 
-Three-pass verification of source citations:
-  Pass 1: URL Reachability (HTTP HEAD, no LLM)
-  Pass 2: Content Relevance (keyword/anchor/excerpt matching)
-  Pass 3: Semantic Verification (LLM-assisted, on demand)
+Three-pass verification of source citations, with autonomous maintenance mode.
 
 Usage:
-  python3 verify_sources.py              # Run passes 1 and 2
-  python3 verify_sources.py --pass3      # Also run pass 3 (requires OPENAI_API_KEY or similar)
-  python3 verify_sources.py --agent gemini-cli  # Verify one agent only
+  python3 verify_sources.py                        # Run passes 1 and 2
+  python3 verify_sources.py --pass3                # Also run pass 3 (requires LLM API)
+  python3 verify_sources.py --agent gemini-cli     # Verify one agent only
+  python3 verify_sources.py --fix-redirects        # Auto-update redirected URLs to canonical targets
+  python3 verify_sources.py --apply-fixes fixes.json  # Apply a URL replacement mapping file
+  python3 verify_sources.py --report               # Print fix report from last reachability run
+
+Maintenance workflow:
+  1. Run normally to produce reachability.json for each agent
+  2. --fix-redirects reads those results, updates data files with canonical URLs
+  3. For 404s: create a fixes.json mapping (old_url → new_url) then --apply-fixes
+  4. Re-run to confirm all sources are healthy
 """
 
 import json
@@ -315,14 +321,246 @@ def print_summary(pass_name: str, all_results: Dict[str, Any]):
                     print(f"          Checks: {r['checks']}")
 
 
+def load_reachability_results(agents: List[str]) -> Dict[str, list]:
+    """Load saved reachability.json results for each agent."""
+    all_results = {}
+    for agent in agents:
+        result_file = AGENTS_DIR / agent / "verification" / "reachability.json"
+        if result_file.exists():
+            with open(result_file) as f:
+                data = json.load(f)
+            all_results[agent] = data.get('results', [])
+    return all_results
+
+
+def fix_redirects(agents: List[str], dry_run: bool = False) -> dict:
+    """
+    Auto-fix maintenance pass: update redirected source URLs to their canonical targets.
+
+    Reads saved reachability.json results, identifies redirects, and rewrites
+    the source URL in each agent's current.json to the final redirect destination.
+    Updates verifiedDate for all fixed sources.
+
+    Returns a summary of changes made.
+    """
+    reachability = load_reachability_results(agents)
+    if not reachability:
+        print("No reachability results found. Run verification first.")
+        return {}
+
+    today = date.today().isoformat()
+    all_changes = {}
+
+    for agent in agents:
+        cap_file = AGENTS_DIR / agent / "capabilities" / "current.json"
+        if not cap_file.exists():
+            continue
+
+        agent_results = reachability.get(agent, [])
+        if not agent_results:
+            continue
+
+        # Build redirect map: old_url → canonical_url
+        redirect_map: Dict[str, str] = {}
+        for r in agent_results:
+            if r.get('redirected') and r.get('redirect_url'):
+                old_url = r['url']
+                # Strip fragment from old URL to match base URL
+                old_base = old_url.split('#')[0]
+                new_url = r['redirect_url']
+                # Preserve fragment if present in original
+                fragment = old_url.split('#')[1] if '#' in old_url else None
+                if fragment:
+                    # Try to keep fragment unless new URL already has one
+                    if '#' not in new_url:
+                        new_url_with_frag = new_url + '#' + fragment
+                    else:
+                        new_url_with_frag = new_url
+                    redirect_map[old_url] = new_url_with_frag
+                else:
+                    redirect_map[old_base] = new_url
+
+        if not redirect_map:
+            continue
+
+        with open(cap_file) as f:
+            data = json.load(f)
+
+        changes = []
+        for cap in data.get('capabilities', []):
+            for src in cap.get('sources', []):
+                old_url = src.get('url', '')
+                old_base = old_url.split('#')[0]
+                new_url = redirect_map.get(old_url) or redirect_map.get(old_base)
+
+                if new_url and new_url != old_url:
+                    changes.append({
+                        'capability': cap['name'],
+                        'old_url': old_url,
+                        'new_url': new_url
+                    })
+                    if not dry_run:
+                        src['url'] = new_url
+                        src['verifiedDate'] = today
+
+        if changes and not dry_run:
+            with open(cap_file, 'w') as f:
+                json.dump(data, f, indent=2)
+                f.write('\n')
+
+        all_changes[agent] = changes
+
+    return all_changes
+
+
+def apply_fixes(agents: List[str], fixes_file: Path, dry_run: bool = False) -> dict:
+    """
+    Apply a URL replacement mapping to all agent data files.
+
+    The fixes file is a JSON object mapping old URLs to new URLs:
+      {
+        "https://old.example.com/moved-page": "https://old.example.com/new-location",
+        ...
+      }
+
+    Also accepts extended format with granularity override:
+      {
+        "https://old.example.com/moved-page": {
+          "url": "https://old.example.com/new-location",
+          "sourceGranularity": "dedicated"
+        }
+      }
+
+    Updates verifiedDate for all fixed sources.
+    Returns a summary of changes made.
+    """
+    with open(fixes_file) as f:
+        raw_fixes = json.load(f)
+
+    # Normalise to {old_url: {url, sourceGranularity?}}
+    fixes: Dict[str, dict] = {}
+    for old_url, value in raw_fixes.items():
+        if isinstance(value, str):
+            fixes[old_url] = {'url': value}
+        elif isinstance(value, dict):
+            fixes[old_url] = value
+
+    today = date.today().isoformat()
+    all_changes = {}
+
+    for agent in agents:
+        cap_file = AGENTS_DIR / agent / "capabilities" / "current.json"
+        if not cap_file.exists():
+            continue
+
+        with open(cap_file) as f:
+            data = json.load(f)
+
+        changes = []
+        for cap in data.get('capabilities', []):
+            for src in cap.get('sources', []):
+                old_url = src.get('url', '')
+                if old_url in fixes:
+                    fix = fixes[old_url]
+                    new_url = fix['url']
+                    changes.append({
+                        'capability': cap['name'],
+                        'old_url': old_url,
+                        'new_url': new_url,
+                        'granularity_change': fix.get('sourceGranularity')
+                    })
+                    if not dry_run:
+                        src['url'] = new_url
+                        src['verifiedDate'] = today
+                        if 'sourceGranularity' in fix:
+                            src['sourceGranularity'] = fix['sourceGranularity']
+                            # Remove excerpt if upgrading from excerpt to dedicated/section
+                            if fix['sourceGranularity'] in ('dedicated', 'section'):
+                                src.pop('excerpt', None)
+
+        if changes and not dry_run:
+            with open(cap_file, 'w') as f:
+                json.dump(data, f, indent=2)
+                f.write('\n')
+
+        all_changes[agent] = changes
+
+    return all_changes
+
+
+def print_fix_report(all_changes: dict, fix_type: str, dry_run: bool = False):
+    """Print a human-readable report of what was or would be changed."""
+    prefix = "[DRY RUN] Would fix" if dry_run else "Fixed"
+    total = sum(len(v) for v in all_changes.values())
+
+    if total == 0:
+        print("  No changes needed.")
+        return
+
+    print(f"  {prefix} {total} source URL(s):")
+    print()
+    for agent, changes in all_changes.items():
+        if not changes:
+            continue
+        print(f"  {agent}:")
+        for c in changes:
+            print(f"    [{c['capability']}]")
+            print(f"      - {c['old_url']}")
+            print(f"      + {c['new_url']}")
+            if c.get('granularity_change'):
+                print(f"      * sourceGranularity → {c['granularity_change']}")
+        print()
+
+
+def report_broken(agents: List[str]):
+    """Print a summary of broken (404) sources from saved reachability results."""
+    reachability = load_reachability_results(agents)
+    if not reachability:
+        print("No reachability results found. Run verification first.")
+        return
+
+    any_broken = False
+    for agent, results in reachability.items():
+        broken = [r for r in results if not r.get('reachable') and r.get('error')]
+        if not broken:
+            continue
+        any_broken = True
+        print(f"\n  {agent} ({len(broken)} broken):")
+        seen_urls = set()
+        for r in broken:
+            url = r['url'].split('#')[0]
+            if url in seen_urls:
+                continue
+            seen_urls.add(url)
+            print(f"    [{r['capability']}] {url}")
+            print(f"      Error: {r['error']}")
+
+    if not any_broken:
+        print("  No broken sources found.")
+    else:
+        print()
+        print("  To fix: create a fixes.json mapping old→new URLs and run:")
+        print("    python3 verify_sources.py --apply-fixes fixes.json")
+
+
+
+
 def main():
     parser = argparse.ArgumentParser(description='Verify source citations')
     parser.add_argument('--agent', help='Verify only this agent')
     parser.add_argument('--pass3', action='store_true', help='Also run semantic verification (pass 3)')
     parser.add_argument('--pass', dest='only_pass', type=int, help='Run only this pass (1, 2, or 3)')
+    parser.add_argument('--fix-redirects', action='store_true',
+                        help='Auto-update redirected URLs to their canonical targets')
+    parser.add_argument('--apply-fixes', metavar='FIXES_JSON',
+                        help='Apply a URL replacement mapping file (JSON: old_url → new_url)')
+    parser.add_argument('--report', action='store_true',
+                        help='Print report of broken sources from last reachability run')
+    parser.add_argument('--dry-run', action='store_true',
+                        help='With --fix-redirects or --apply-fixes: show what would change without writing')
     args = parser.parse_args()
 
-    # Determine which agents to verify
+    # Determine which agents to operate on
     if args.agent:
         agents = [args.agent]
     else:
@@ -330,6 +568,46 @@ def main():
             d.name for d in AGENTS_DIR.iterdir()
             if d.is_dir() and (d / "capabilities" / "current.json").exists()
         ])
+
+    # --- Maintenance modes (don't run verification passes) ---
+
+    if args.report:
+        print("Broken sources report")
+        print("-" * 40)
+        report_broken(agents)
+        return
+
+    if args.fix_redirects:
+        print("Fixing redirected URLs → canonical targets")
+        print("-" * 40)
+        if args.dry_run:
+            print("(DRY RUN - no files will be modified)")
+            print()
+        changes = fix_redirects(agents, dry_run=args.dry_run)
+        print_fix_report(changes, 'redirect', dry_run=args.dry_run)
+        if not args.dry_run and any(v for v in changes.values()):
+            print("Run verification again to confirm fixes:")
+            print("  python3 verify_sources.py")
+        return
+
+    if args.apply_fixes:
+        fixes_file = Path(args.apply_fixes)
+        if not fixes_file.exists():
+            print(f"Error: fixes file not found: {fixes_file}")
+            sys.exit(1)
+        print(f"Applying URL fixes from {fixes_file.name}")
+        print("-" * 40)
+        if args.dry_run:
+            print("(DRY RUN - no files will be modified)")
+            print()
+        changes = apply_fixes(agents, fixes_file, dry_run=args.dry_run)
+        print_fix_report(changes, 'applied', dry_run=args.dry_run)
+        if not args.dry_run and any(v for v in changes.values()):
+            print("Run verification again to confirm fixes:")
+            print("  python3 verify_sources.py")
+        return
+
+    # --- Normal verification passes ---
 
     run_pass1 = args.only_pass is None or args.only_pass == 1
     run_pass2 = args.only_pass is None or args.only_pass == 2
@@ -366,6 +644,10 @@ def main():
 
     print("Verification complete.")
     print(f"Results saved to agents/*/verification/")
+    print()
+    print("To auto-fix redirects:  python3 verify_sources.py --fix-redirects")
+    print("To apply manual fixes:  python3 verify_sources.py --apply-fixes fixes.json")
+    print("To view broken sources: python3 verify_sources.py --report")
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-18T17:22:37.243728+00:00",
+  "generated_at": "2026-02-19T03:33:10.821935+00:00",
   "pass": "reachability",
   "results": [
     {
@@ -121,10 +121,10 @@
     },
     {
       "capability": "Context Window",
-      "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
       "status_code": 200,
-      "redirected": true,
-      "redirect_url": "https://platform.claude.com/docs/en/about-claude/models/overview",
+      "redirected": false,
+      "redirect_url": null,
       "error": null,
       "reachable": true
     },
@@ -148,10 +148,10 @@
     },
     {
       "capability": "MCP Support",
-      "url": "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/tutorials/set-up-mcp",
+      "url": "https://platform.claude.com/docs/en/agents-and-tools/claude-code/tutorials/set-up-mcp",
       "status_code": 200,
-      "redirected": true,
-      "redirect_url": "https://platform.claude.com/docs/en/agents-and-tools/claude-code/tutorials/set-up-mcp",
+      "redirected": false,
+      "redirect_url": null,
       "error": null,
       "reachable": true
     },
@@ -220,10 +220,10 @@
     },
     {
       "capability": "Extended Thinking",
-      "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
       "status_code": 200,
-      "redirected": true,
-      "redirect_url": "https://platform.claude.com/docs/en/about-claude/models/overview",
+      "redirected": false,
+      "redirect_url": null,
       "error": null,
       "reachable": true
     },
@@ -238,10 +238,10 @@
     },
     {
       "capability": "Vision",
-      "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
       "status_code": 200,
-      "redirected": true,
-      "redirect_url": "https://platform.claude.com/docs/en/about-claude/models/overview",
+      "redirected": false,
+      "redirect_url": null,
       "error": null,
       "reachable": true
     },

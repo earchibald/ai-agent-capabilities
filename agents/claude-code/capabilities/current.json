@@ -237,7 +237,7 @@
           "excerpt": "Claude Code is an AI-powered coding assistant that helps you build features, fix bugs, and automate development tasks. It understands your entire codebase and can work across multiple files and tools."
         },
         {
-          "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
+          "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
           "description": "Anthropic model documentation - context window specifications",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -279,7 +279,7 @@
           "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/tutorials/set-up-mcp",
+          "url": "https://platform.claude.com/docs/en/agents-and-tools/claude-code/tutorials/set-up-mcp",
           "description": "Claude Code MCP setup tutorial - step-by-step MCP server configuration",
           "verifiedDate": "2026-02-18",
           "sourceGranularity": "dedicated"
@@ -389,7 +389,7 @@
           "excerpt": "Claude Code is an AI-powered coding assistant that helps you build features, fix bugs, and automate development tasks. It understands your entire codebase and can work across multiple files and tools."
         },
         {
-          "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
+          "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
           "description": "Anthropic model documentation - extended thinking capabilities",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -416,7 +416,7 @@
           "excerpt": "Claude Code is an AI-powered coding assistant that helps you build features, fix bugs, and automate development tasks. It understands your entire codebase and can work across multiple files and tools."
         },
         {
-          "url": "https://platform.claude.com/docs/en/docs/about-claude/models",
+          "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
           "description": "Anthropic model documentation - vision capabilities",
           "verifiedDate": "2026-02-18",
           "status": "active",

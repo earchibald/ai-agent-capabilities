@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-18T17:22:37.244973+00:00",
+  "generated_at": "2026-02-19T03:33:10.823026+00:00",
   "pass": "reachability",
   "results": [
     {
@@ -13,12 +13,12 @@
     },
     {
       "capability": "Agent Mode",
-      "url": "https://docs.github.com/en/copilot/copilot-cli",
-      "status_code": 404,
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
       "redirected": false,
       "redirect_url": null,
-      "error": "HTTP Error 404: Not Found",
-      "reachable": false
+      "error": null,
+      "reachable": true
     },
     {
       "capability": "Code Generation",
@@ -40,12 +40,12 @@
     },
     {
       "capability": "Terminal CLI",
-      "url": "https://docs.github.com/en/copilot/copilot-cli",
-      "status_code": 404,
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
       "redirected": false,
       "redirect_url": null,
-      "error": "HTTP Error 404: Not Found",
-      "reachable": false
+      "error": null,
+      "reachable": true
     },
     {
       "capability": "Terminal CLI",
@@ -112,12 +112,12 @@
     },
     {
       "capability": "Multi-language Support",
-      "url": "https://docs.github.com/en/copilot/copilot-cli",
-      "status_code": 404,
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
       "redirected": false,
       "redirect_url": null,
-      "error": "HTTP Error 404: Not Found",
-      "reachable": false
+      "error": null,
+      "reachable": true
     },
     {
       "capability": "Multi-language Support",

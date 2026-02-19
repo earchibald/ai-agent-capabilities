@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-18T17:23:31.201966+00:00",
+  "generated_at": "2026-02-19T03:33:47.033777+00:00",
   "pass": "relevance",
   "results": [
     {
@@ -14,11 +14,12 @@
     },
     {
       "capability": "Agent Mode",
-      "url": "https://docs.github.com/en/copilot/copilot-cli",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "granularity": "excerpt",
       "relevant": false,
       "checks": {
-        "page_reachable": false
+        "exact_match": false,
+        "prefix_match": false
       }
     },
     {
@@ -43,11 +44,12 @@
     },
     {
       "capability": "Terminal CLI",
-      "url": "https://docs.github.com/en/copilot/copilot-cli",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "granularity": "excerpt",
       "relevant": false,
       "checks": {
-        "page_reachable": false
+        "exact_match": false,
+        "prefix_match": false
       }
     },
     {
@@ -122,11 +124,12 @@
     },
     {
       "capability": "Multi-language Support",
-      "url": "https://docs.github.com/en/copilot/copilot-cli",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "granularity": "excerpt",
       "relevant": false,
       "checks": {
-        "page_reachable": false
+        "exact_match": false,
+        "prefix_match": false
       }
     },
     {

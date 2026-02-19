@@ -23,7 +23,7 @@
           "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot",
+          "url": "https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions",
           "description": "GitHub Copilot code suggestions in IDE documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -48,7 +48,7 @@
           "sourceGranularity": "section"
         },
         {
-          "url": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot#next-edit-suggestions",
+          "url": "https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions#next-edit-suggestions",
           "description": "GitHub Copilot Next Edit Suggestions in IDE",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -66,14 +66,14 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.visualstudio.com/docs/copilot/chat/agent-mode",
+          "url": "https://code.visualstudio.com/docs/copilot/agents/overview",
           "description": "VS Code Copilot Agent Mode documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
           "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://docs.github.com/en/copilot/using-github-copilot/using-agent-mode",
+          "url": "https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent",
           "description": "GitHub Copilot Agent Mode documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -98,7 +98,7 @@
           "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://code.visualstudio.com/docs/copilot/copilot-extensions",
+          "url": "https://code.visualstudio.com/docs/copilot/agents/third-party-agents",
           "description": "VS Code Copilot Extensions documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -123,7 +123,7 @@
           "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot",
+          "url": "https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions",
           "description": "GitHub Copilot code suggestions documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -151,7 +151,7 @@
           "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide",
+          "url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
           "description": "GitHub Copilot Chat in IDE documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -169,14 +169,14 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-edits",
+          "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat#_builtin-chat-modes",
           "description": "VS Code Copilot Edits (multi-file editing) documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
           "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://docs.github.com/en/copilot/using-github-copilot/copilot-edits",
+          "url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
           "description": "GitHub Copilot Edits documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -201,7 +201,7 @@
           "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide",
+          "url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
           "description": "GitHub Copilot Chat in IDE (includes explain functionality)",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -219,14 +219,14 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.visualstudio.com/docs/copilot/debugging-with-copilot",
+          "url": "https://code.visualstudio.com/docs/copilot/guides/debug-with-copilot",
           "description": "VS Code debugging with Copilot documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
           "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://docs.github.com/en/copilot/using-github-copilot/debugging-errors-with-github-copilot",
+          "url": "https://docs.github.com/en/copilot/tutorials/copilot-chat-cookbook/debug-errors",
           "description": "GitHub Copilot debugging errors documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -251,7 +251,7 @@
           "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://docs.github.com/en/copilot/using-github-copilot/refactoring-code-with-github-copilot",
+          "url": "https://docs.github.com/en/copilot/tutorials/refactor-code",
           "description": "GitHub Copilot refactoring code documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -269,14 +269,14 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.visualstudio.com/docs/copilot/testing",
+          "url": "https://code.visualstudio.com/docs/copilot/guides/test-with-copilot",
           "description": "VS Code Copilot testing documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
           "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://docs.github.com/en/copilot/using-github-copilot/writing-tests-with-github-copilot",
+          "url": "https://docs.github.com/en/copilot/tutorials/write-tests",
           "description": "GitHub Copilot writing tests documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -301,7 +301,7 @@
           "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide",
+          "url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
           "description": "GitHub Copilot Chat in IDE (includes documentation generation)",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -319,14 +319,14 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.visualstudio.com/docs/copilot/workspace-context",
+          "url": "https://code.visualstudio.com/docs/copilot/reference/workspace-context",
           "description": "VS Code Copilot workspace context documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
           "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://docs.github.com/en/copilot/using-github-copilot/asking-github-copilot-questions-in-your-ide",
+          "url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
           "description": "GitHub Copilot Chat context and workspace references",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -344,7 +344,7 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://docs.github.com/en/copilot/using-github-copilot/using-copilot-spaces",
+          "url": "https://docs.github.com/en/copilot/responsible-use/copilot-spaces",
           "description": "GitHub Copilot Spaces documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -377,7 +377,7 @@
           "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://docs.github.com/en/copilot/using-github-copilot/ai-models/changing-the-ai-model-for-copilot-chat",
+          "url": "https://docs.github.com/en/copilot/how-tos/use-ai-models/change-the-chat-model",
           "description": "GitHub Copilot changing the AI model documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -395,14 +395,14 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.visualstudio.com/docs/copilot/chat/mcp-servers",
+          "url": "https://code.visualstudio.com/docs/copilot/customization/mcp-servers",
           "description": "VS Code Copilot MCP servers documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
           "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://docs.github.com/en/copilot/customizing-copilot/extending-copilot-in-vs-code/using-mcp-servers-in-vs-code",
+          "url": "https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp/extend-copilot-chat-with-mcp",
           "description": "GitHub docs: using MCP servers in VS Code with Copilot",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -420,14 +420,14 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.visualstudio.com/docs/copilot/copilot-customization",
+          "url": "https://code.visualstudio.com/docs/copilot/customization/overview",
           "description": "VS Code Copilot customization documentation (instructions, prompt files, custom agents)",
           "verifiedDate": "2026-02-18",
           "status": "active",
           "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://docs.github.com/en/copilot/customizing-copilot/adding-custom-instructions-for-github-copilot",
+          "url": "https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions",
           "description": "GitHub Copilot custom instructions documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -445,7 +445,7 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://docs.github.com/en/copilot/using-github-copilot/code-review",
+          "url": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review",
           "description": "GitHub Copilot code review documentation",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -470,7 +470,7 @@
           "sourceGranularity": "dedicated"
         },
         {
-          "url": "https://docs.github.com/en/copilot/managing-copilot/managing-copilot-policies",
+          "url": "https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies",
           "description": "GitHub Copilot policies (includes public code suggestion matching filter)",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -489,7 +489,7 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://docs.github.com/en/copilot/about-github-copilot/github-copilot-features",
+          "url": "https://docs.github.com/en/copilot/get-started/features",
           "description": "GitHub Copilot features overview (includes language support details)",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -516,7 +516,7 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.visualstudio.com/docs/copilot/copilot-settings",
+          "url": "https://code.visualstudio.com/docs/copilot/reference/copilot-settings",
           "description": "VS Code Copilot settings reference (developer/debug settings including Chat Debug View)",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -551,7 +551,7 @@
           "excerpt": "VS Code Copilot setup documentation covering troubleshooting, output channels, and trace-level logging configuration."
         },
         {
-          "url": "https://code.visualstudio.com/docs/copilot/chat/mcp-servers",
+          "url": "https://code.visualstudio.com/docs/copilot/customization/mcp-servers",
           "description": "VS Code Copilot MCP servers (includes MCP debugging and development mode)",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -569,7 +569,7 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.visualstudio.com/docs/getstarted/telemetry",
+          "url": "https://code.visualstudio.com/docs/configure/telemetry",
           "description": "VS Code telemetry documentation (Developer: Show Telemetry, telemetry.log)",
           "verifiedDate": "2026-02-18",
           "status": "active",
@@ -598,7 +598,7 @@
       "status": "active",
       "sources": [
         {
-          "url": "https://code.visualstudio.com/docs/copilot/copilot-customization",
+          "url": "https://code.visualstudio.com/docs/copilot/customization/overview",
           "description": "VS Code Copilot customization documentation (lifecycle hooks configuration)",
           "verifiedDate": "2026-02-18",
           "status": "active",
