@@ -399,10 +399,12 @@ def main():
     print()
 
     # 8. Check pricing files
-    print("\n8. Checking pricing files...")
+    print()
+    print("8. Checking pricing files...")
     today = date.today()
-    for agent_slug in ['claude-code', 'copilot-cli', 'gemini-cli', 'vscode-copilot']:
-        pricing_file = AGENTS_DIR / agent_slug / "pricing" / "current.json"
+    for agent_dir in sorted(agents):
+        agent_slug = agent_dir.name
+        pricing_file = agent_dir / "pricing" / "current.json"
         if not pricing_file.exists():
             all_warnings.append(f"{agent_slug}: Missing pricing/current.json")
             continue
@@ -411,11 +413,14 @@ def main():
                 pricing = json.load(f)
             last = pricing.get('lastUpdated', '')
             if last:
-                age = (today - date.fromisoformat(last)).days
-                if age > 30:
-                    all_warnings.append(f"{agent_slug}: pricing/current.json is {age} days old (lastUpdated: {last})")
-                else:
-                    print(f"  + {agent_slug}/pricing/current.json ({age}d old)")
+                try:
+                    age = (today - date.fromisoformat(last)).days
+                    if age > 30:
+                        all_warnings.append(f"{agent_slug}: pricing/current.json is {age} days old (lastUpdated: {last})")
+                    else:
+                        print(f"  + {agent_slug}/pricing/current.json ({age}d old)")
+                except ValueError:
+                    all_warnings.append(f"{agent_slug}: pricing/current.json has invalid lastUpdated format: {last!r}")
             else:
                 all_warnings.append(f"{agent_slug}: pricing/current.json missing lastUpdated field")
         except json.JSONDecodeError as e:
