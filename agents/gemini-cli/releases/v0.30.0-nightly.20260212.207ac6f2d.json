@@ -1,0 +1,16 @@
+{
+  "version": "v0.30.0-nightly.20260212.207ac6f2d",
+  "releaseDate": "2026-02-12",
+  "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.30.0-nightly.20260212.207ac6f2d",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "## What's Changed\n* Show notification when there's a conflict with an extensions command by @chrstnb in https://github.com/google-gemini/gemini-cli/pull/17890\n* fix(cli): dismiss '?' shortcuts help on hotkeys and active states by @LyalinDotCom in https://github.com/google-gemini/gemini-cli/pull/18583\n* fix(core): prioritize conditional policy rules and harden Plan Mode by @Abhijit-2592 in https://github.com/google-gemini/gemini-cli/pull/18882\n* feat(core): refine Plan Mode system prompt for agentic execution by @NTaylorMullen in https://github.com/google-gemini/gemini-cli/pull/18799\n* feat(plan): create metrics for usage of `AskUser` tool by @Adib234 in https://github.com/google-gemini/gemini-cli/pull/18820\n* feat(cli): support Ctrl-Z suspension by @scidomino in https://github.com/google-gemini/gemini-cli/pull/18931\n* fix(github-actions): use robot PAT for release creation to trigger release notes by @SandyTao520 in https://github.com/google-gemini/gemini-cli/pull/18794\n* feat: add strict seatbelt profiles and remove unusable closed profiles by @SandyTao520 in https://github.com/google-gemini/gemini-cli/pull/18876\n* chore: cleanup unused and add unlisted dependencies in packages/a2a-server by @adamfweidman in https://github.com/google-gemini/gemini-cli/pull/18916\n* fix(plan): isolate plan files per session by @Adib234 in https://github.com/google-gemini/gemini-cli/pull/18757\n* fix: character truncation in raw markdown mode by @jackwotherspoon in https://github.com/google-gemini/gemini-cli/pull/18938\n* feat(cli): prototype clean UI toggle and minimal-mode bleed-through by @LyalinDotCom in https://github.com/google-gemini/gemini-cli/pull/18683\n* ui(polish) blend background color with theme by @jacob314 in https://github.com/google-gemini/gemini-cli/pull/18802\n\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.30.0-nightly.20260212.099aa9621...v0.30.0-nightly.20260212.207ac6f2d",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "Gemini CLI"
+}

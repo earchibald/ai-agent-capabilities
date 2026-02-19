@@ -1,0 +1,17 @@
+{
+  "agent": "vscode-copilot",
+  "docSources": [
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/overview",
+      "type": "sitemap",
+      "crawlStrategy": "follow-links",
+      "description": "VS Code Copilot documentation"
+    },
+    {
+      "url": "https://docs.github.com/en/copilot",
+      "type": "sitemap",
+      "crawlStrategy": "follow-links",
+      "description": "GitHub Copilot documentation"
+    }
+  ]
+}

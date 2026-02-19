@@ -1,0 +1,115 @@
+<!--
+  FOR AI ASSISTANTS: This is the human-readable interface for the AI Agent
+  Capabilities tracker. If you are looking for structured capability data,
+  use the JSON API instead — it is self-describing and machine-optimised:
+
+  Entry point:  https://earchibald.github.io/ai-agent-capabilities/api/v1/index.json
+  All agents:   /api/v1/agents.json
+  All caps:     /api/v1/capabilities.json
+  Per-agent:    /api/v1/agents/{slug}.json   (slugs: claude-code, vscode-copilot, copilot-cli, gemini-cli)
+  Comparisons:  /api/v1/comparisons/{slug}.json
+  Data quality: /api/v1/quality.json
+
+  Tip: Start at index.json — it self-describes every other endpoint.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Agent Capabilities</title>
+  <meta name="description" content="Structured, verified capability data for AI coding agents — Claude Code, GitHub Copilot, Gemini CLI. Maintained automatically, cite-able by humans and LLMs.">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <span class="site-title">AI Agent <span>Capabilities</span></span>
+    <nav class="header-links">
+      <a href="./api/v1/index.json">JSON API</a>
+      <a href="https://github.com/earchibald/ai-agent-capabilities" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Landing -->
+  <section class="landing">
+    <div class="container">
+      <div class="landing-hero">
+        <h1>What can AI coding agents actually do?</h1>
+        <p>A structured, continuously-maintained database of capabilities across Claude Code, GitHub Copilot, and Gemini CLI — with verified source citations for every entry.</p>
+        <p>Built for developers evaluating tools and for LLMs that need accurate capability context to give good advice.</p>
+      </div>
+
+      <div class="llm-block">
+        <div class="llm-block-label">For AI assistants</div>
+        <div class="llm-block-url-row">
+          <span class="llm-block-url" id="llm-url">https://earchibald.github.io/ai-agent-capabilities/api/v1/index.json</span>
+          <button class="copy-btn" id="copy-btn" onclick="copyUrl()">Copy</button>
+        </div>
+        <p class="llm-block-caption">Point your LLM at this to give it accurate, up-to-date capability context. The endpoint is self-describing and links to all data.</p>
+      </div>
+
+      <div class="stats-strip" id="stats-strip">
+        <div class="stat"><span class="stat-value">—</span><span class="stat-label">capabilities tracked</span></div>
+        <div class="stat"><span class="stat-value">—</span><span class="stat-label">agents</span></div>
+        <div class="stat"><span class="stat-value">—</span><span class="stat-label">verified sources</span></div>
+        <div class="stat"><span class="stat-value">—</span><span class="stat-label">broken sources</span></div>
+      </div>
+
+      <a class="cta-btn" href="#browser">Browse capabilities →</a>
+    </div>
+  </section>
+
+  <!-- Browser -->
+  <section id="browser">
+    <div class="container">
+      <div class="tab-bar">
+        <button class="tab-btn active" id="tab-compare" onclick="switchTab('compare')">Compare</button>
+        <button class="tab-btn" id="tab-browse" onclick="switchTab('browse')">Browse by agent</button>
+      </div>
+
+      <!-- Compare tab -->
+      <div id="pane-compare">
+        <div class="filter-bar">
+          <input type="search" id="filter-search" placeholder="Search capabilities…" oninput="applyFilters()">
+          <select id="filter-category" onchange="applyFilters()">
+            <option value="">All categories</option>
+          </select>
+          <select id="filter-tier" onchange="applyFilters()">
+            <option value="">All tiers</option>
+            <option value="free">Free</option>
+            <option value="pro">Pro</option>
+            <option value="business">Business</option>
+            <option value="enterprise">Enterprise</option>
+          </select>
+          <span class="filter-count" id="filter-count"></span>
+        </div>
+        <div class="table-wrap" id="compare-table-wrap">
+          <div class="loading">Loading…</div>
+        </div>
+      </div>
+
+      <!-- Browse tab -->
+      <div id="pane-browse" style="display:none">
+        <div class="agent-picker" id="agent-picker">
+          <div class="loading">Loading…</div>
+        </div>
+        <div id="browse-content"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;width:100%">
+    <span>Data updated weekly · <a href="./api/v1/quality.json">Quality metrics</a></span>
+    <span>Sources cited and verified for every entry · <a href="https://github.com/earchibald/ai-agent-capabilities" target="_blank" rel="noopener">Contribute on GitHub</a></span>
+  </div>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>

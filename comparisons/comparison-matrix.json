@@ -1,0 +1,961 @@
+{
+  "generated_at": "2026-02-18T17:25:29.168312+00:00",
+  "agents": [
+    "claude-code",
+    "copilot-cli",
+    "gemini-cli",
+    "vscode-copilot"
+  ],
+  "categories": [
+    "agent-orchestration",
+    "api-integration",
+    "chat-assistance",
+    "code-completion",
+    "code-explanation",
+    "code-generation",
+    "code-refactoring",
+    "collaboration",
+    "command-line",
+    "context-awareness",
+    "customization",
+    "debugging",
+    "documentation",
+    "language-support",
+    "model-selection",
+    "multi-file-editing",
+    "observability",
+    "performance",
+    "security",
+    "testing"
+  ],
+  "comparison": {
+    "agent-orchestration": {
+      "claude-code": {
+        "count": 2,
+        "capabilities": [
+          {
+            "name": "Agent Mode",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          },
+          {
+            "name": "Sub-agents",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Agent Mode",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          }
+        ]
+      },
+      "gemini-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Agent Mode",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 2,
+        "capabilities": [
+          {
+            "name": "Agent Mode",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          },
+          {
+            "name": "Extensions",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      }
+    },
+    "api-integration": {
+      "claude-code": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "MCP Support",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 0,
+        "capabilities": []
+      },
+      "gemini-cli": {
+        "count": 2,
+        "capabilities": [
+          {
+            "name": "MCP Support",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          },
+          {
+            "name": "Google Search Grounding",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "MCP Support",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      }
+    },
+    "chat-assistance": {
+      "claude-code": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Chat Assistance",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Chat Assistance",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          }
+        ]
+      },
+      "gemini-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Chat Assistance",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Chat Assistance",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      }
+    },
+    "code-completion": {
+      "claude-code": {
+        "count": 0,
+        "capabilities": []
+      },
+      "copilot-cli": {
+        "count": 0,
+        "capabilities": []
+      },
+      "gemini-cli": {
+        "count": 0,
+        "capabilities": []
+      },
+      "vscode-copilot": {
+        "count": 2,
+        "capabilities": [
+          {
+            "name": "Code Completion",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          },
+          {
+            "name": "Next Edit Suggestions",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      }
+    },
+    "code-explanation": {
+      "claude-code": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Code Explanation",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 0,
+        "capabilities": []
+      },
+      "gemini-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Code Explanation",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Code Explanation",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      }
+    },
+    "code-generation": {
+      "claude-code": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Code Generation",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Code Generation",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          }
+        ]
+      },
+      "gemini-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Code Generation",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Code Generation",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      }
+    },
+    "code-refactoring": {
+      "claude-code": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Code Refactoring",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 0,
+        "capabilities": []
+      },
+      "gemini-cli": {
+        "count": 0,
+        "capabilities": []
+      },
+      "vscode-copilot": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Code Refactoring",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      }
+    },
+    "collaboration": {
+      "claude-code": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Git Integration",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 0,
+        "capabilities": []
+      },
+      "gemini-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Git Integration",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Code Review",
+            "available": true,
+            "tier": "enterprise",
+            "maturity": "stable"
+          }
+        ]
+      }
+    },
+    "command-line": {
+      "claude-code": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Terminal CLI",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 2,
+        "capabilities": [
+          {
+            "name": "Terminal CLI",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          },
+          {
+            "name": "Command Suggestions",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          }
+        ]
+      },
+      "gemini-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Terminal CLI",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 0,
+        "capabilities": []
+      }
+    },
+    "context-awareness": {
+      "claude-code": {
+        "count": 2,
+        "capabilities": [
+          {
+            "name": "Context Window",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          },
+          {
+            "name": "Custom Context Files",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 0,
+        "capabilities": []
+      },
+      "gemini-cli": {
+        "count": 2,
+        "capabilities": [
+          {
+            "name": "Context Window",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          },
+          {
+            "name": "Custom Context Files",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 2,
+        "capabilities": [
+          {
+            "name": "Workspace Context",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          },
+          {
+            "name": "Copilot Spaces",
+            "available": true,
+            "tier": "enterprise",
+            "maturity": "stable"
+          }
+        ]
+      }
+    },
+    "customization": {
+      "claude-code": {
+        "count": 2,
+        "capabilities": [
+          {
+            "name": "Custom Instructions",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          },
+          {
+            "name": "Lifecycle Hooks",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Lifecycle Hooks",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          }
+        ]
+      },
+      "gemini-cli": {
+        "count": 2,
+        "capabilities": [
+          {
+            "name": "Custom Instructions",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          },
+          {
+            "name": "Lifecycle Hooks",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 2,
+        "capabilities": [
+          {
+            "name": "Custom Instructions",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          },
+          {
+            "name": "Lifecycle Hooks",
+            "available": true,
+            "tier": "free",
+            "maturity": "beta"
+          }
+        ]
+      }
+    },
+    "debugging": {
+      "claude-code": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Debugging",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Debugging",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          }
+        ]
+      },
+      "gemini-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Debugging",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Debugging",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      }
+    },
+    "documentation": {
+      "claude-code": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Documentation Generation",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Documentation Generation",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          }
+        ]
+      },
+      "gemini-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Documentation Generation",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Documentation Generation",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      }
+    },
+    "language-support": {
+      "claude-code": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Multi-language Support",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Multi-language Support",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          }
+        ]
+      },
+      "gemini-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Multi-language Support",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Multi-language Support",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      }
+    },
+    "model-selection": {
+      "claude-code": {
+        "count": 0,
+        "capabilities": []
+      },
+      "copilot-cli": {
+        "count": 0,
+        "capabilities": []
+      },
+      "gemini-cli": {
+        "count": 0,
+        "capabilities": []
+      },
+      "vscode-copilot": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Model Selection",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      }
+    },
+    "multi-file-editing": {
+      "claude-code": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Multi-file Editing",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Multi-file Editing",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          }
+        ]
+      },
+      "gemini-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Multi-file Editing",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Multi-file Editing",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      }
+    },
+    "observability": {
+      "claude-code": {
+        "count": 3,
+        "capabilities": [
+          {
+            "name": "Prompt and Context Inspector",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          },
+          {
+            "name": "Debug Logging",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          },
+          {
+            "name": "Usage Tracking",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 3,
+        "capabilities": [
+          {
+            "name": "Prompt and Context Inspector",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          },
+          {
+            "name": "Debug Logging",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          },
+          {
+            "name": "Usage Tracking",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          }
+        ]
+      },
+      "gemini-cli": {
+        "count": 3,
+        "capabilities": [
+          {
+            "name": "Prompt and Context Inspector",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          },
+          {
+            "name": "Debug Logging",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          },
+          {
+            "name": "Usage Tracking",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 3,
+        "capabilities": [
+          {
+            "name": "Prompt and Context Inspector",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          },
+          {
+            "name": "Debug Logging",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          },
+          {
+            "name": "Usage Tracking",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      }
+    },
+    "performance": {
+      "claude-code": {
+        "count": 2,
+        "capabilities": [
+          {
+            "name": "Extended Thinking",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          },
+          {
+            "name": "Vision",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 0,
+        "capabilities": []
+      },
+      "gemini-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Token Caching",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 0,
+        "capabilities": []
+      }
+    },
+    "security": {
+      "claude-code": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Security Analysis",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 0,
+        "capabilities": []
+      },
+      "gemini-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Security Analysis",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Security Analysis",
+            "available": true,
+            "tier": "business",
+            "maturity": "stable"
+          }
+        ]
+      }
+    },
+    "testing": {
+      "claude-code": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Test Generation",
+            "available": true,
+            "tier": "pro",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "copilot-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Test Generation",
+            "available": true,
+            "tier": "pro",
+            "maturity": "beta"
+          }
+        ]
+      },
+      "gemini-cli": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Test Generation",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      },
+      "vscode-copilot": {
+        "count": 1,
+        "capabilities": [
+          {
+            "name": "Test Generation",
+            "available": true,
+            "tier": "free",
+            "maturity": "stable"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "generated_at": "2026-02-19T05:09:26.530868+00:00",
+  "pass": "reachability",
+  "results": [
+    {
+      "capability": "Agent Mode",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Agent Mode",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Code Generation",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Multi-file Editing",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Terminal CLI",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Terminal CLI",
+      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Command Suggestions",
+      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Command Suggestions",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Debugging",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Test Generation",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Documentation Generation",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Chat Assistance",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Multi-language Support",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Multi-language Support",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Prompt and Context Inspector",
+      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Debug Logging",
+      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Usage Tracking",
+      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Lifecycle Hooks",
+      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Lifecycle Hooks",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^python3 framework/scripts/validate_framework\\.py$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python3 framework/scripts/generate_comparison\\.py$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python3 framework/scripts/fetch_releases\\.py 2>&1$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python3 framework/scripts/validate_framework\\.py && python3 framework/scripts/generate_comparison\\.py$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

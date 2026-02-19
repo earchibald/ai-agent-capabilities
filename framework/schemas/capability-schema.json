@@ -1,0 +1,235 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI Agent Capability Schema",
+  "description": "Schema for documenting AI agent capabilities across different platforms",
+  "type": "object",
+  "properties": {
+    "agent": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the AI agent"
+        },
+        "vendor": {
+          "type": "string",
+          "description": "Vendor/organization providing the agent"
+        },
+        "version": {
+          "type": "string",
+          "description": "Version or release date"
+        },
+        "lastUpdated": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last update timestamp"
+        }
+      },
+      "required": ["name", "vendor", "version", "lastUpdated"]
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "enum": [
+              "code-completion",
+              "code-generation",
+              "chat-assistance",
+              "code-explanation",
+              "code-refactoring",
+              "testing",
+              "debugging",
+              "documentation",
+              "command-line",
+              "multi-file-editing",
+              "context-awareness",
+              "language-support",
+              "ide-integration",
+              "api-integration",
+              "customization",
+              "security",
+              "performance",
+              "collaboration",
+              "model-selection",
+              "agent-orchestration",
+              "observability"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "description": "Name of the capability"
+          },
+          "description": {
+            "type": "string",
+            "description": "Detailed description"
+          },
+          "available": {
+            "type": "boolean",
+            "description": "Whether this capability is available"
+          },
+          "tier": {
+            "type": "string",
+            "enum": ["free", "pro", "business", "enterprise"],
+            "description": "Pricing tier where capability is available"
+          },
+          "introducedIn": {
+            "type": "string",
+            "description": "Version or date when capability was introduced"
+          },
+          "maturityLevel": {
+            "type": "string",
+            "enum": ["experimental", "beta", "stable", "deprecated"],
+            "description": "Maturity level of the capability"
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Known limitations"
+          },
+          "requirements": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Requirements for using this capability"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["active", "deprecated", "modified", "unknown"],
+            "description": "Record status: active=verified current, deprecated=removed/replaced, modified=changed since last verification, unknown=unconfirmed"
+          },
+          "deprecatedDate": {
+            "type": ["string", "null"],
+            "format": "date",
+            "description": "When this capability was deprecated (null if active)"
+          },
+          "supersededBy": {
+            "type": ["string", "null"],
+            "description": "Name of the capability that replaced this one"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "url": {
+                  "type": "string",
+                  "format": "uri",
+                  "description": "Authoritative source URL"
+                },
+                "description": {
+                  "type": "string",
+                  "description": "Brief label for the source"
+                },
+                "publishedDate": {
+                  "type": ["string", "null"],
+                  "format": "date",
+                  "description": "When the upstream page was published/last updated (null if unknown)"
+                },
+                "verifiedDate": {
+                  "type": "string",
+                  "format": "date",
+                  "description": "When we confirmed the fact from this source"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": ["active", "deprecated", "modified", "unknown"],
+                  "description": "Source status: active=current, deprecated=removed, modified=changed since verification, unknown=unconfirmed"
+                },
+                "supersededBy": {
+                  "type": ["string", "null"],
+                  "format": "uri",
+                  "description": "URL of the replacement source"
+                },
+                "sourceGranularity": {
+                  "type": "string",
+                  "enum": ["dedicated", "section", "excerpt"],
+                  "description": "How specific the source URL is: dedicated=about this capability, section=URL has #anchor to relevant section, excerpt=broad URL with quoted evidence"
+                },
+                "excerpt": {
+                  "type": "string",
+                  "minLength": 50,
+                  "maxLength": 300,
+                  "description": "Verbatim excerpt from the source page that evidences the capability claim. Required when sourceGranularity is 'excerpt'."
+                }
+              },
+              "required": ["url", "description", "verifiedDate", "sourceGranularity"]
+            },
+            "description": "Authoritative source citations for this capability"
+          }
+        },
+        "required": ["category", "name", "description", "available"]
+      }
+    },
+    "integrations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "platform": {
+            "type": "string",
+            "description": "Integration platform (IDE, CLI, etc.)"
+          },
+          "supported": {
+            "type": "boolean"
+          },
+          "features": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Model name"
+          },
+          "provider": {
+            "type": "string",
+            "description": "Model provider"
+          },
+          "available": {
+            "type": "boolean"
+          },
+          "tier": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "documentation": {
+      "type": "object",
+      "properties": {
+        "officialDocs": {
+          "type": "string",
+          "format": "uri"
+        },
+        "releaseNotes": {
+          "type": "string",
+          "format": "uri"
+        },
+        "github": {
+          "type": "string",
+          "format": "uri"
+        },
+        "apiDocs": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    }
+  },
+  "required": ["agent", "capabilities"]
+}

@@ -1,0 +1,104 @@
+name: Update Agent Capabilities
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # Allow manual trigger
+  
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  fetch-releases:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Fetch latest release notes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 framework/scripts/fetch_releases.py
+      
+      - name: Check for changes
+        id: check-changes
+        run: |
+          if [ -n "$(git status --porcelain agents/*/releases/)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Create Pull Request
+        if: steps.check-changes.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: 'chore: update release notes'
+          title: 'Update Agent Release Notes'
+          body: |
+            ## New Release Notes Detected
+            
+            This PR adds new release notes for tracked AI agents.
+            
+            ### Action Required
+            
+            Please review the new release notes and update capability files:
+            
+            1. Review files in `agents/*/releases/`
+            2. Update `agents/*/capabilities/current.json` with any new capabilities
+            3. Run `python3 framework/scripts/generate_comparison.py` to update comparisons
+            4. Merge this PR
+            
+            ### Files Changed
+            
+            See the changed files for details on which agents have new releases.
+          branch: auto-update-releases
+          delete-branch: true
+          labels: |
+            automated
+            releases
+  
+  update-comparisons:
+    runs-on: ubuntu-latest
+    # Only run on main branch when capability files change
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Generate capability comparisons
+        run: |
+          python3 framework/scripts/generate_comparison.py
+      
+      - name: Check for changes
+        id: check-changes
+        run: |
+          if [ -n "$(git status --porcelain comparisons/)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push changes
+        if: steps.check-changes.outputs.has_changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add comparisons/
+          git commit -m "chore: update capability comparisons"
+          git push

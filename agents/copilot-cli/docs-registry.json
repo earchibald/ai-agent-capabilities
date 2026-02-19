@@ -1,0 +1,17 @@
+{
+  "agent": "copilot-cli",
+  "docSources": [
+    {
+      "url": "https://docs.github.com/en/copilot/github-copilot-in-the-cli",
+      "type": "sitemap",
+      "crawlStrategy": "follow-links",
+      "description": "GitHub Copilot CLI documentation"
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/github-copilot-in-the-cli/using-github-copilot-in-the-cli",
+      "type": "reference",
+      "crawlStrategy": "single-page",
+      "description": "Copilot CLI usage guide"
+    }
+  ]
+}

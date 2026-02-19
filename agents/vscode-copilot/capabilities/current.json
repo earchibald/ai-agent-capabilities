@@ -1,0 +1,732 @@
+{
+  "agent": {
+    "name": "GitHub Copilot (VS Code)",
+    "vendor": "GitHub / Microsoft",
+    "version": "Current (as of 2026-02-18)",
+    "lastUpdated": "2026-02-18T05:00:00.000Z"
+  },
+  "capabilities": [
+    {
+      "category": "code-completion",
+      "name": "Code Completion",
+      "description": "Real-time inline code suggestions as you type, from single-line completions to full function implementations",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/ai-powered-suggestions",
+          "description": "VS Code Copilot AI-powered suggestions documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions",
+          "description": "GitHub Copilot code suggestions in IDE documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "code-completion",
+      "name": "Next Edit Suggestions",
+      "description": "Predicts ripple effects of changes across your project and suggests follow-up edits",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/ai-powered-suggestions#_next-edit-suggestions",
+          "description": "VS Code Copilot Next Edit Suggestions (NES) documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "section"
+        },
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions#next-edit-suggestions",
+          "description": "GitHub Copilot Next Edit Suggestions in IDE",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "section"
+        }
+      ]
+    },
+    {
+      "category": "agent-orchestration",
+      "name": "Agent Mode",
+      "description": "Autonomous coding agent that breaks work into steps, edits files, runs commands, and self-corrects. Supports local, background, and cloud agents.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/agents/overview",
+          "description": "VS Code Copilot Agent Mode documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent",
+          "description": "GitHub Copilot Agent Mode documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "agent-orchestration",
+      "name": "Extensions",
+      "description": "Third-party agent extensions and custom agent skills that integrate into Copilot workflows",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/copilot/building-copilot-extensions",
+          "description": "Building GitHub Copilot Extensions documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/agents/third-party-agents",
+          "description": "VS Code Copilot Extensions documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "code-generation",
+      "name": "Code Generation",
+      "description": "Generate entire functions and code blocks from comments, signatures, or natural language descriptions",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/ai-powered-suggestions",
+          "description": "VS Code Copilot AI-powered code generation and suggestions",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/get-code-suggestions/get-ide-code-suggestions",
+          "description": "GitHub Copilot code suggestions documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "chat-assistance",
+      "name": "Chat Assistance",
+      "description": "Interactive chat panel and inline chat (Cmd+I) for coding questions, explanations, and targeted refactoring",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "limitations": [
+        "50 chat requests per month on Free tier"
+      ],
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat",
+          "description": "VS Code Copilot Chat documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
+          "description": "GitHub Copilot Chat in IDE documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "multi-file-editing",
+      "name": "Multi-file Editing",
+      "description": "Make changes across multiple files with natural language instructions via Copilot Edits",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat#_builtin-chat-modes",
+          "description": "VS Code Copilot Edits (multi-file editing) documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
+          "description": "GitHub Copilot Edits documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "code-explanation",
+      "name": "Code Explanation",
+      "description": "Explain selected code or entire files in natural language",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat",
+          "description": "VS Code Copilot Chat documentation (includes code explanation via /explain)",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
+          "description": "GitHub Copilot Chat in IDE (includes explain functionality)",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "debugging",
+      "name": "Debugging",
+      "description": "Identify bugs and suggest fixes with AI-powered diagnostics",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/guides/debug-with-copilot",
+          "description": "VS Code debugging with Copilot documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://docs.github.com/en/copilot/tutorials/copilot-chat-cookbook/debug-errors",
+          "description": "GitHub Copilot debugging errors documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "code-refactoring",
+      "name": "Code Refactoring",
+      "description": "Refactor code with AI assistance via chat or inline suggestions",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat",
+          "description": "VS Code Copilot Chat documentation (includes refactoring via inline chat)",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://docs.github.com/en/copilot/tutorials/refactor-code",
+          "description": "GitHub Copilot refactoring code documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "testing",
+      "name": "Test Generation",
+      "description": "Generate unit tests for selected code",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/guides/test-with-copilot",
+          "description": "VS Code Copilot testing documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://docs.github.com/en/copilot/tutorials/write-tests",
+          "description": "GitHub Copilot writing tests documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "documentation",
+      "name": "Documentation Generation",
+      "description": "Generate code documentation, commit messages, and PR descriptions",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat",
+          "description": "VS Code Copilot Chat documentation (includes doc generation via slash commands)",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
+          "description": "GitHub Copilot Chat in IDE (includes documentation generation)",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "context-awareness",
+      "name": "Workspace Context",
+      "description": "Understands your entire workspace for contextually relevant suggestions",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/reference/workspace-context",
+          "description": "VS Code Copilot workspace context documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide",
+          "description": "GitHub Copilot Chat context and workspace references",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "context-awareness",
+      "name": "Copilot Spaces",
+      "description": "Shared knowledge base from docs and repositories for improved team accuracy",
+      "available": true,
+      "tier": "enterprise",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/copilot/responsible-use/copilot-spaces",
+          "description": "GitHub Copilot Spaces documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://github.blog/changelog/label/copilot/",
+          "description": "GitHub Copilot changelog (Spaces feature announcements)",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "GitHub Copilot documentation covering AI-powered coding assistance, code completion, and development workflows."
+        }
+      ]
+    },
+    {
+      "category": "model-selection",
+      "name": "Model Selection",
+      "description": "Choose from multiple AI models across providers for different use cases",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
+          "description": "GitHub Copilot supported AI models reference",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/use-ai-models/change-the-chat-model",
+          "description": "GitHub Copilot changing the AI model documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "api-integration",
+      "name": "MCP Support",
+      "description": "Model Context Protocol server integration for connecting to external tools and data sources",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/customization/mcp-servers",
+          "description": "VS Code Copilot MCP servers documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/provide-context/use-mcp/extend-copilot-chat-with-mcp",
+          "description": "GitHub docs: using MCP servers in VS Code with Copilot",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "customization",
+      "name": "Custom Instructions",
+      "description": "Custom coding conventions, specialized agent skills, role-specific custom agents, and prompt files for controlling agent behavior",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/customization/overview",
+          "description": "VS Code Copilot customization documentation (instructions, prompt files, custom agents)",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions",
+          "description": "GitHub Copilot custom instructions documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "collaboration",
+      "name": "Code Review",
+      "description": "AI-powered pull request review that identifies bugs and proposes improvements",
+      "available": true,
+      "tier": "enterprise",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review",
+          "description": "GitHub Copilot code review documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "security",
+      "name": "Security Analysis",
+      "description": "Detect security vulnerabilities in code and filter suggestions matching public code",
+      "available": true,
+      "tier": "business",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/using-github-copilot-code-security",
+          "description": "GitHub Copilot code security responsible use documentation",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies",
+          "description": "GitHub Copilot policies (includes public code suggestion matching filter)",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "GitHub Copilot policies documentation covering organization-level settings including public code suggestion matching filter."
+        }
+      ]
+    },
+    {
+      "category": "language-support",
+      "name": "Multi-language Support",
+      "description": "Support for all major programming languages with optimized suggestions",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/copilot/get-started/features",
+          "description": "GitHub Copilot features overview (includes language support details)",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "GitHub Copilot features overview covering language support, code completion, chat, and AI-powered development capabilities."
+        },
+        {
+          "url": "https://github.com/features/copilot",
+          "description": "GitHub Copilot product page (language support highlights)",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "GitHub Copilot product page highlighting language support, IDE integrations, and AI-powered code assistance capabilities."
+        }
+      ]
+    },
+    {
+      "category": "observability",
+      "name": "Prompt and Context Inspector",
+      "description": "Chat Debug View ('Developer: Show Chat Debug View') showing full per-request details: system prompt, user prompt with resolved mentions, attached context (files, symbols, workspace items), model response, and tool call inputs/outputs. Exportable via right-click. Chat Customization Diagnostics lists all loaded agents, prompt files, instruction files, and skills with load status. Workspace Index Status bar icon shows indexing progress.",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/reference/copilot-settings",
+          "description": "VS Code Copilot settings reference (developer/debug settings including Chat Debug View)",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "VS Code Copilot settings reference covering developer and debug settings including Chat Debug View configuration options."
+        },
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/faq",
+          "description": "VS Code Copilot FAQ and troubleshooting (diagnostic commands)",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "VS Code Copilot FAQ and troubleshooting documentation covering diagnostic commands and common issues resolution."
+        }
+      ]
+    },
+    {
+      "category": "observability",
+      "name": "Debug Logging",
+      "description": "Two Output panel channels ('GitHub Copilot' and 'GitHub Copilot Chat') with trace-level logging via 'Developer: Set Log Level'. MCP server debugging via 'MCP: Show Output' and development mode with file watching (auto-restart) and debugger attachment (Node.js, Python). Chat Diagnostics command for network reachability checks. Nine dedicated MCP management commands in Command Palette.",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/setup",
+          "description": "VS Code Copilot setup documentation (troubleshooting, output channels, trace logging)",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "VS Code Copilot setup documentation covering troubleshooting, output channels, and trace-level logging configuration."
+        },
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/customization/mcp-servers",
+          "description": "VS Code Copilot MCP servers (includes MCP debugging and development mode)",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "observability",
+      "name": "Usage Tracking",
+      "description": "Telemetry inspection via 'Developer: Show Telemetry' and telemetry.log access. Session-level metrics visible in Chat Debug View response details. Extension developers can instrument via createTelemetryLogger() and onDidReceiveFeedback() APIs for tracking success metrics.",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/configure/telemetry",
+          "description": "VS Code telemetry documentation (Developer: Show Telemetry, telemetry.log)",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "VS Code telemetry documentation covering Developer: Show Telemetry command, telemetry.log access, and privacy settings."
+        },
+        {
+          "url": "https://code.visualstudio.com/api/extension-guides/telemetry",
+          "description": "VS Code Extension API telemetry guide (createTelemetryLogger, onDidReceiveFeedback)",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "customization",
+      "name": "Lifecycle Hooks",
+      "description": "Eight hook events (SessionStart, UserPromptSubmit, PreToolUse, PostToolUse, PreCompact, SubagentStart, SubagentStop, Stop) execute shell commands at agent lifecycle points. PreToolUse can allow/deny/modify tool input; PostToolUse can block further processing. Configured in .github/hooks/*.json or .claude/settings.json (cross-tool compatible format). /hooks command opens interactive configuration UI.",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "beta",
+      "limitations": [
+        "Preview as of VS Code 1.109.3, configuration format may change"
+      ],
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/customization/overview",
+          "description": "VS Code Copilot customization documentation (lifecycle hooks configuration)",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://code.visualstudio.com/updates/v1_109",
+          "description": "VS Code v1.109 release notes (lifecycle hooks preview announcement)",
+          "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "VS Code v1.109 release notes covering new features including lifecycle hooks preview announcement for Copilot."
+        }
+      ]
+    }
+  ],
+  "integrations": [
+    {
+      "platform": "VS Code",
+      "supported": true,
+      "features": [
+        "Code completion",
+        "Chat",
+        "Edits",
+        "Agent mode",
+        "Inline chat",
+        "Terminal"
+      ]
+    },
+    {
+      "platform": "JetBrains IDEs",
+      "supported": true,
+      "features": [
+        "Code completion",
+        "Chat"
+      ]
+    },
+    {
+      "platform": "Neovim",
+      "supported": true,
+      "features": [
+        "Code completion"
+      ]
+    },
+    {
+      "platform": "Visual Studio",
+      "supported": true,
+      "features": [
+        "Code completion",
+        "Chat"
+      ]
+    },
+    {
+      "platform": "Eclipse",
+      "supported": true,
+      "features": [
+        "Code completion",
+        "Chat"
+      ]
+    },
+    {
+      "platform": "Xcode",
+      "supported": true,
+      "features": [
+        "Code completion",
+        "Chat"
+      ]
+    },
+    {
+      "platform": "GitHub.com",
+      "supported": true,
+      "features": [
+        "PR summaries",
+        "Code reviews",
+        "Chat"
+      ]
+    },
+    {
+      "platform": "GitHub Mobile",
+      "supported": true,
+      "features": [
+        "Chat",
+        "Code search"
+      ]
+    }
+  ],
+  "models": [
+    {
+      "name": "GPT-5",
+      "provider": "OpenAI",
+      "available": true,
+      "tier": "pro"
+    },
+    {
+      "name": "GPT-5.2-Codex",
+      "provider": "OpenAI",
+      "available": true,
+      "tier": "pro"
+    },
+    {
+      "name": "Claude Opus 4.6",
+      "provider": "Anthropic",
+      "available": true,
+      "tier": "pro"
+    },
+    {
+      "name": "Claude Sonnet 4.6",
+      "provider": "Anthropic",
+      "available": true,
+      "tier": "pro"
+    },
+    {
+      "name": "Gemini 2.5 Pro",
+      "provider": "Google",
+      "available": true,
+      "tier": "pro"
+    },
+    {
+      "name": "Gemini 3 Pro",
+      "provider": "Google",
+      "available": true,
+      "tier": "pro"
+    }
+  ],
+  "documentation": {
+    "officialDocs": "https://docs.github.com/en/copilot",
+    "releaseNotes": "https://github.blog/changelog/label/copilot/",
+    "github": "https://github.com/features/copilot",
+    "apiDocs": "https://docs.github.com/en/copilot/building-copilot-extensions"
+  }
+}
