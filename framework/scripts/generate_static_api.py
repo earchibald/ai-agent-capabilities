@@ -106,6 +106,19 @@ def generate_index(agents: Dict[str, Any], quality: Dict[str, Any]) -> Dict[str,
         'version': '1.0.0',
         'description': 'Structured capability data for AI coding agents, with verified source citations',
         'lastUpdated': datetime.now(timezone.utc).isoformat(),
+        'usage': (
+            'This is the discovery endpoint for the AI Agent Capabilities Tracker. '
+            'It contains structured, source-cited capability data for AI coding agents. '
+            'Base URL: https://earchibald.github.io/ai-agent-capabilities. '
+            'All endpoint paths below are relative to that base URL. '
+            'To look up a specific agent\'s capabilities, find it in the "agents" array and fetch its "endpoint". '
+            'Each agent endpoint returns a full capability list with descriptions, tier requirements, '
+            'maturity levels, and verified source citations. '
+            'To compare a capability across all agents, fetch /api/v1/capabilities.json to list all '
+            'known capabilities, then fetch the "comparisonEndpoint" for any capability to get a '
+            'side-by-side breakdown. '
+            'To check data freshness and source quality, fetch /api/v1/quality.json.'
+        ),
         'dataQuality': quality,
         'endpoints': {
             'agents': '/api/v1/agents.json',
