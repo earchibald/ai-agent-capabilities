@@ -61,9 +61,15 @@ async function init() {
 function renderStats(index) {
   const q = index.dataQuality;
   const strip = document.getElementById('stats-strip');
-  const date = index.lastUpdated
-    ? new Date(index.lastUpdated).toLocaleDateString('en-GB', {day:'numeric',month:'short',year:'numeric'})
-    : '';
+  const date = (() => {
+    if (!index.lastUpdated) return '';
+    const d = new Date(index.lastUpdated);
+    const month = d.toLocaleString('en-US', {month: 'long', timeZone: 'UTC'});
+    const day = d.getUTCDate();
+    const hh = String(d.getUTCHours()).padStart(2, '0');
+    const mm = String(d.getUTCMinutes()).padStart(2, '0');
+    return `${month} ${day} ${hh}:${mm} UTC`;
+  })();
   strip.innerHTML = `
     <div class="stat"><span class="stat-value">${q.totalCapabilities}</span><span class="stat-label">capabilities tracked</span></div>
     <div class="stat"><span class="stat-value">${index.agents.length}</span><span class="stat-label">agents</span></div>
