@@ -117,12 +117,10 @@ jobs:
             core.setOutput('skip_copilot', skipCopilot ? 'true' : 'false');
 
       # Assign the Copilot coding agent using the dedicated agent_assignment API.
-      # Requires a PAT (COPILOT_PAT) with repo scope from a user with a Copilot seat.
-      # Without this secret the step is skipped — the issue still exists for manual assignment.
       - name: Assign Copilot coding agent
-        if: steps.create-issue.outputs.issue_number != '' && steps.create-issue.outputs.skip_copilot != 'true' && secrets.COPILOT_PAT != ''
+        if: steps.create-issue.outputs.issue_number != '' && steps.create-issue.outputs.skip_copilot != 'true'
         env:
-          GH_TOKEN: ${{ secrets.COPILOT_PAT }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ steps.create-issue.outputs.issue_number }}
           REPO: ${{ github.repository }}
         run: |
