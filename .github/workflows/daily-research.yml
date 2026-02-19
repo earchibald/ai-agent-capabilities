@@ -103,11 +103,27 @@ jobs:
               return;
             }
 
-            await github.rest.issues.create({
+            const issuePayload = {
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: `[Research] AI agent capability leads — ${today}`,
               body: body,
               labels: ['research-leads', 'maintenance'],
-              assignees: skipCopilot ? [] : ['copilot']
-            });
+            };
+
+            if (!skipCopilot) {
+              try {
+                await github.rest.issues.create({ ...issuePayload, assignees: ['copilot'] });
+                console.log('Issue created with copilot assignee.');
+                return;
+              } catch (e) {
+                if (e.status === 422) {
+                  console.log('copilot is not a valid assignee (422); creating issue without assignee. @copilot mention in body will still trigger it.');
+                } else {
+                  throw e;
+                }
+              }
+            }
+
+            await github.rest.issues.create(issuePayload);
+            console.log('Issue created.');
