@@ -1,15 +1,15 @@
 # AI Agent Capability Comparison
 
-*Generated: 2026-02-19 07:22:39 UTC*
+*Generated: 2026-02-19 20:33:46 UTC*
 
 ## Overview
 
 | Agent | Vendor | Total Capabilities |
 |-------|--------|-------------------|
-| Claude Code | Anthropic | 26 |
-| GitHub Copilot CLI | GitHub / Microsoft | 17 |
+| Claude Code | Anthropic | 24 |
+| GitHub Copilot CLI | GitHub / Microsoft | 21 |
 | Gemini CLI | Google | 25 |
-| GitHub Copilot (VS Code) | GitHub / Microsoft | 24 |
+| GitHub Copilot (VS Code) | GitHub / Microsoft | 27 |
 
 ## Capabilities by Category
 
@@ -19,14 +19,14 @@
 | Capability | claude-code | copilot-cli | gemini-cli | vscode-copilot |
 |------------|------|------|------|------|
 | Agent Mode | ✅ (pro) | ✅ (pro) | ✅ (free) | ✅ (pro) |
-| Sub-agents | ✅ (pro) | ❌ | ❌ | ❌ |
+| Sub-agents | ✅ (pro) | ✅ (pro) | ✅ (free) | ✅ (pro) |
 
 ### Api Integration
 
 | Capability | claude-code | copilot-cli | gemini-cli | vscode-copilot |
 |------------|------|------|------|------|
 | Google Search Grounding | ❌ | ❌ | ✅ (free) | ❌ |
-| MCP Support | ✅ (pro) | ❌ | ✅ (free) | ✅ (pro) |
+| MCP Support | ✅ (pro) | ✅ (pro) | ✅ (free) | ✅ (pro) |
 
 ### Chat Assistance
 
@@ -63,30 +63,26 @@
 
 | Capability | claude-code | copilot-cli | gemini-cli | vscode-copilot |
 |------------|------|------|------|------|
-| Code Review | ❌ | ❌ | ❌ | ✅ (enterprise) |
-| Git Integration | ✅ (pro) | ❌ | ✅ (free) | ❌ |
+| Code Review | ❌ | ❌ | ❌ | ✅ (pro) |
 
 ### Command Line
 
 | Capability | claude-code | copilot-cli | gemini-cli | vscode-copilot |
 |------------|------|------|------|------|
-| Command Suggestions | ❌ | ✅ (pro) | ❌ | ❌ |
 | Terminal CLI | ✅ (pro) | ✅ (pro) | ✅ (free) | ❌ |
 
 ### Context Awareness
 
 | Capability | claude-code | copilot-cli | gemini-cli | vscode-copilot |
 |------------|------|------|------|------|
-| Context Window | ✅ (pro) | ❌ | ✅ (free) | ❌ |
 | Copilot Spaces | ❌ | ❌ | ❌ | ✅ (enterprise) |
-| Custom Context Files | ✅ (pro) | ❌ | ✅ (free) | ❌ |
 | Workspace Context | ❌ | ❌ | ❌ | ✅ (free) |
 
 ### Customization
 
 | Capability | claude-code | copilot-cli | gemini-cli | vscode-copilot |
 |------------|------|------|------|------|
-| Custom Instructions | ✅ (pro) | ❌ | ✅ (free) | ✅ (pro) |
+| Custom Instructions | ✅ (pro) | ✅ (pro) | ✅ (free) | ✅ (pro) |
 | Extension System | ✅ (pro) | ✅ (pro) | ✅ (free) | ✅ (pro) |
 | Lifecycle Hooks | ✅ (pro) | ✅ (pro) | ✅ (free) | ✅ (free) |
 
@@ -112,7 +108,7 @@
 
 | Capability | claude-code | copilot-cli | gemini-cli | vscode-copilot |
 |------------|------|------|------|------|
-| Model Selection | ✅ (pro) | ❌ | ✅ (free) | ✅ (pro) |
+| Model Selection | ✅ (pro) | ✅ (pro) | ✅ (free) | ✅ (pro) |
 
 ### Multi File Editing
 
@@ -132,9 +128,9 @@
 
 | Capability | claude-code | copilot-cli | gemini-cli | vscode-copilot |
 |------------|------|------|------|------|
-| Extended Thinking | ✅ (pro) | ❌ | ❌ | ❌ |
-| Token Caching | ❌ | ❌ | ✅ (free) | ❌ |
-| Vision | ✅ (pro) | ❌ | ❌ | ❌ |
+| Extended Thinking | ✅ (pro) | ✅ (pro) | ✅ (free) | ✅ (pro) |
+| Token Caching | ✅ (pro) | ❌ | ✅ (free) | ❌ |
+| Vision | ✅ (pro) | ❌ | ✅ (free) | ✅ (pro) |
 
 ### Security
 

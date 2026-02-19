@@ -2,8 +2,8 @@
   "agent": {
     "name": "Gemini CLI",
     "vendor": "Google",
-    "version": "v0.29.0 (as of 2026-02-18)",
-    "lastUpdated": "2026-02-18T05:00:00.000Z"
+    "version": "v0.29.0 (as of 2026-02-19)",
+    "lastUpdated": "2026-02-19T05:00:00.000Z"
   },
   "capabilities": [
     {
@@ -30,6 +30,25 @@
           "status": "active",
           "sourceGranularity": "excerpt",
           "excerpt": "Gemini CLI releases tracking agent mode updates, improvements, and new capability releases across versions."
+        }
+      ]
+    },
+    {
+      "category": "agent-orchestration",
+      "name": "Sub-agents",
+      "description": "Gemini CLI can spawn subagent processes to handle specialized subtasks in parallel. Subagents are currently an experimental feature enabling delegation of focused work items to subsidiary agent processes.",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "experimental",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - experimental subagent support for delegating subtasks",
+          "verifiedDate": "2026-02-19",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Subagents are currently an experimental feature. Gemini CLI can delegate tasks to subsidiary subagent processes for specialized work."
         }
       ]
     },
@@ -164,52 +183,6 @@
       ]
     },
     {
-      "category": "context-awareness",
-      "name": "Context Window",
-      "description": "1M token context window for processing large codebases",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable",
-      "status": "active",
-      "sources": [
-        {
-          "url": "https://ai.google.dev/gemini-api/docs",
-          "description": "Gemini API documentation - 1M token context window specifications",
-          "verifiedDate": "2026-02-18",
-          "status": "active",
-          "sourceGranularity": "excerpt",
-          "excerpt": "Access to improved reasoning and 1M token context window for processing large codebases with Gemini API models."
-        },
-        {
-          "url": "https://github.com/google-gemini/gemini-cli",
-          "description": "Gemini CLI repository - context window capabilities",
-          "verifiedDate": "2026-02-18",
-          "status": "active",
-          "sourceGranularity": "excerpt",
-          "excerpt": "Access to improved reasoning and 1M token context window for processing large codebases with Gemini models."
-        }
-      ]
-    },
-    {
-      "category": "context-awareness",
-      "name": "Custom Context Files",
-      "description": "GEMINI.md files for project-specific behavior customization and context",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable",
-      "status": "active",
-      "sources": [
-        {
-          "url": "https://github.com/google-gemini/gemini-cli",
-          "description": "Gemini CLI repository - GEMINI.md project-specific context files",
-          "verifiedDate": "2026-02-18",
-          "status": "active",
-          "sourceGranularity": "excerpt",
-          "excerpt": "Custom context files (GEMINI.md) to tailor behavior for your projects and provide project-specific coding context."
-        }
-      ]
-    },
-    {
       "category": "api-integration",
       "name": "MCP Support",
       "description": "Model Context Protocol server support for integrating custom tools and external data sources",
@@ -294,28 +267,9 @@
       ]
     },
     {
-      "category": "collaboration",
-      "name": "Git Integration",
-      "description": "Execute git operations, PR queries, rebases, and GitHub Actions integration for automated PR reviews and issue triage",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable",
-      "status": "active",
-      "sources": [
-        {
-          "url": "https://github.com/google-gemini/gemini-cli",
-          "description": "Gemini CLI repository - git operations and GitHub Actions integration",
-          "verifiedDate": "2026-02-18",
-          "status": "active",
-          "sourceGranularity": "excerpt",
-          "excerpt": "Gemini CLI brings the power of Gemini directly into your terminal for executing git operations and GitHub Actions integration."
-        }
-      ]
-    },
-    {
       "category": "customization",
       "name": "Custom Instructions",
-      "description": "GEMINI.md context files, configurable system instructions, and multiple output formats (text, JSON, streaming)",
+      "description": "GEMINI.md context files for project-specific behavior, coding standards, and architectural context (auto-loaded from project, user home, and system levels). Configurable system instructions and multiple output formats (text, JSON, streaming). Cascading configuration allows per-project overrides of user/system defaults.",
       "available": true,
       "tier": "free",
       "maturityLevel": "stable",
@@ -324,7 +278,7 @@
         {
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - GEMINI.md context files and configurable system instructions",
-          "verifiedDate": "2026-02-18",
+          "verifiedDate": "2026-02-19",
           "status": "active",
           "sourceGranularity": "excerpt",
           "excerpt": "Custom context files (GEMINI.md) to tailor behavior for your projects with configurable system instructions and output formats."
@@ -371,6 +325,33 @@
     },
     {
       "category": "performance",
+      "name": "Extended Thinking",
+      "description": "Access to Gemini reasoning models (Gemini 2.5 Pro and above) that perform extended chain-of-thought reasoning before responding. Selectable via --model flag for complex problem solving, architecture analysis, and multi-step tasks.",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - access to Gemini reasoning models with extended thinking",
+          "verifiedDate": "2026-02-19",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Access to improved reasoning and 1M token context window for processing large codebases with Gemini API models including Gemini 2.5 Pro."
+        },
+        {
+          "url": "https://ai.google.dev/gemini-api/docs",
+          "description": "Gemini API documentation - reasoning model capabilities",
+          "verifiedDate": "2026-02-19",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Gemini API documentation covering reasoning model capabilities, extended thinking performance, and model-specific features for complex tasks."
+        }
+      ]
+    },
+    {
+      "category": "performance",
       "name": "Token Caching",
       "description": "Built-in token caching for optimized performance and reduced API usage",
       "available": true,
@@ -393,6 +374,25 @@
           "status": "active",
           "sourceGranularity": "excerpt",
           "excerpt": "Gemini API documentation covering token caching support for optimized performance and reduced API usage."
+        }
+      ]
+    },
+    {
+      "category": "performance",
+      "name": "Vision",
+      "description": "Analyze images, PDFs, and sketches as input. Generate applications from visual designs and wireframes, and process visual content for code understanding.",
+      "available": true,
+      "tier": "free",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://github.com/google-gemini/gemini-cli",
+          "description": "Gemini CLI repository - multimodal image and PDF input for code generation",
+          "verifiedDate": "2026-02-19",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Generate new apps from PDFs, images, or sketches using multimodal capabilities and the power of Gemini models."
         }
       ]
     },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-19T07:22:39.842412+00:00",
+  "generated_at": "2026-02-19T20:33:46.888323+00:00",
   "sources": [
     {
       "url": "https://ai.google.dev/gemini-api/docs",
@@ -15,11 +15,11 @@
         },
         {
           "agent": "gemini-cli",
-          "capability": "Context Window"
+          "capability": "Google Search Grounding"
         },
         {
           "agent": "gemini-cli",
-          "capability": "Google Search Grounding"
+          "capability": "Extended Thinking"
         },
         {
           "agent": "gemini-cli",
@@ -73,14 +73,6 @@
         },
         {
           "agent": "claude-code",
-          "capability": "Context Window"
-        },
-        {
-          "agent": "claude-code",
-          "capability": "Git Integration"
-        },
-        {
-          "agent": "claude-code",
           "capability": "Multi-language Support"
         },
         {
@@ -115,14 +107,10 @@
       "url": "https://code.claude.com/docs/en/claude-md",
       "description": "CLAUDE.md documentation - project-specific context files for coding standards and architecture",
       "publishedDate": null,
-      "verifiedDate": "2026-02-18",
+      "verifiedDate": "2026-02-19",
       "status": "active",
       "supersededBy": null,
       "citedBy": [
-        {
-          "agent": "claude-code",
-          "capability": "Custom Context Files"
-        },
         {
           "agent": "claude-code",
           "capability": "Custom Instructions"
@@ -166,20 +154,6 @@
         {
           "agent": "claude-code",
           "capability": "Extension System"
-        }
-      ]
-    },
-    {
-      "url": "https://code.claude.com/docs/en/github-actions",
-      "description": "Claude Code GitHub Actions documentation - automated PR review and issue triage",
-      "publishedDate": null,
-      "verifiedDate": "2026-02-18",
-      "status": "active",
-      "supersededBy": null,
-      "citedBy": [
-        {
-          "agent": "claude-code",
-          "capability": "Git Integration"
         }
       ]
     },
@@ -320,6 +294,10 @@
         {
           "agent": "vscode-copilot",
           "capability": "Agent Mode"
+        },
+        {
+          "agent": "vscode-copilot",
+          "capability": "Sub-agents"
         }
       ]
     },
@@ -431,7 +409,7 @@
       "url": "https://code.visualstudio.com/docs/copilot/customization/overview",
       "description": "VS Code Copilot customization documentation (instructions, prompt files, custom agents)",
       "publishedDate": null,
-      "verifiedDate": "2026-02-18",
+      "verifiedDate": "2026-02-19",
       "status": "active",
       "supersededBy": null,
       "citedBy": [
@@ -631,12 +609,16 @@
     },
     {
       "url": "https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions",
-      "description": "GitHub Copilot custom instructions documentation",
+      "description": "GitHub Copilot custom repository instructions - .github/copilot-instructions.md documentation",
       "publishedDate": null,
-      "verifiedDate": "2026-02-18",
+      "verifiedDate": "2026-02-19",
       "status": "active",
       "supersededBy": null,
       "citedBy": [
+        {
+          "agent": "copilot-cli",
+          "capability": "Custom Instructions"
+        },
         {
           "agent": "vscode-copilot",
           "capability": "Custom Instructions"
@@ -675,6 +657,10 @@
         },
         {
           "agent": "copilot-cli",
+          "capability": "Sub-agents"
+        },
+        {
+          "agent": "copilot-cli",
           "capability": "Code Generation"
         },
         {
@@ -684,10 +670,6 @@
         {
           "agent": "copilot-cli",
           "capability": "Terminal CLI"
-        },
-        {
-          "agent": "copilot-cli",
-          "capability": "Command Suggestions"
         },
         {
           "agent": "copilot-cli",
@@ -712,6 +694,14 @@
         {
           "agent": "copilot-cli",
           "capability": "Multi-language Support"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "MCP Support"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Custom Instructions"
         },
         {
           "agent": "copilot-cli",
@@ -812,6 +802,14 @@
         {
           "agent": "vscode-copilot",
           "capability": "Model Selection"
+        },
+        {
+          "agent": "vscode-copilot",
+          "capability": "Extended Thinking"
+        },
+        {
+          "agent": "vscode-copilot",
+          "capability": "Vision"
         }
       ]
     },
@@ -829,7 +827,11 @@
         },
         {
           "agent": "copilot-cli",
-          "capability": "Command Suggestions"
+          "capability": "Model Selection"
+        },
+        {
+          "agent": "copilot-cli",
+          "capability": "Extended Thinking"
         },
         {
           "agent": "copilot-cli",
@@ -989,6 +991,10 @@
         },
         {
           "agent": "gemini-cli",
+          "capability": "Sub-agents"
+        },
+        {
+          "agent": "gemini-cli",
           "capability": "Code Generation"
         },
         {
@@ -1013,14 +1019,6 @@
         },
         {
           "agent": "gemini-cli",
-          "capability": "Context Window"
-        },
-        {
-          "agent": "gemini-cli",
-          "capability": "Custom Context Files"
-        },
-        {
-          "agent": "gemini-cli",
           "capability": "MCP Support"
         },
         {
@@ -1037,10 +1035,6 @@
         },
         {
           "agent": "gemini-cli",
-          "capability": "Git Integration"
-        },
-        {
-          "agent": "gemini-cli",
           "capability": "Custom Instructions"
         },
         {
@@ -1053,7 +1047,15 @@
         },
         {
           "agent": "gemini-cli",
+          "capability": "Extended Thinking"
+        },
+        {
+          "agent": "gemini-cli",
           "capability": "Token Caching"
+        },
+        {
+          "agent": "gemini-cli",
+          "capability": "Vision"
         },
         {
           "agent": "gemini-cli",
@@ -1109,16 +1111,12 @@
     },
     {
       "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
-      "description": "Anthropic model documentation - context window specifications",
+      "description": "Anthropic model documentation - extended thinking capabilities",
       "publishedDate": null,
       "verifiedDate": "2026-02-18",
       "status": "active",
       "supersededBy": null,
       "citedBy": [
-        {
-          "agent": "claude-code",
-          "capability": "Context Window"
-        },
         {
           "agent": "claude-code",
           "capability": "Extended Thinking"
@@ -1140,6 +1138,20 @@
         {
           "agent": "claude-code",
           "capability": "MCP Support"
+        }
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
+      "description": "Anthropic prompt caching documentation - reduce costs and latency with cached prefixes",
+      "publishedDate": null,
+      "verifiedDate": "2026-02-19",
+      "status": "active",
+      "supersededBy": null,
+      "citedBy": [
+        {
+          "agent": "claude-code",
+          "capability": "Token Caching"
         }
       ]
     }

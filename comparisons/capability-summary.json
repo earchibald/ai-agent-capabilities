@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-02-19T07:22:39.840810+00:00",
+  "generated_at": "2026-02-19T20:33:46.886374+00:00",
   "agents": {
     "claude-code": {
       "name": "Claude Code",
       "vendor": "Anthropic",
-      "version": "Current (as of 2026-02-18)",
-      "total_capabilities": 26,
+      "version": "Current (as of 2026-02-19)",
+      "total_capabilities": 24,
       "by_category": {
         "agent-orchestration": 2,
         "code-generation": 1,
@@ -17,73 +17,72 @@
         "chat-assistance": 1,
         "multi-file-editing": 1,
         "command-line": 1,
-        "context-awareness": 2,
         "api-integration": 1,
         "customization": 3,
-        "collaboration": 1,
         "language-support": 1,
         "security": 1,
-        "performance": 2,
+        "performance": 3,
         "observability": 3,
         "model-selection": 1
       },
       "by_tier": {
-        "pro": 26
+        "pro": 24
       },
       "by_maturity": {
-        "stable": 26
+        "stable": 24
       }
     },
     "copilot-cli": {
       "name": "GitHub Copilot CLI",
       "vendor": "GitHub / Microsoft",
-      "version": "Public Preview (as of 2026-02-18)",
-      "total_capabilities": 17,
+      "version": "Public Preview (as of 2026-02-19)",
+      "total_capabilities": 21,
       "by_category": {
-        "agent-orchestration": 1,
+        "agent-orchestration": 2,
         "code-generation": 1,
         "multi-file-editing": 1,
-        "command-line": 2,
+        "command-line": 1,
         "debugging": 1,
         "testing": 1,
         "documentation": 1,
         "chat-assistance": 1,
         "language-support": 1,
+        "api-integration": 1,
+        "customization": 3,
+        "model-selection": 1,
+        "performance": 1,
         "observability": 3,
-        "customization": 2,
         "code-explanation": 1,
         "code-refactoring": 1
       },
       "by_tier": {
-        "pro": 17
+        "pro": 21
       },
       "by_maturity": {
-        "beta": 14,
-        "stable": 3
+        "beta": 13,
+        "stable": 8
       }
     },
     "gemini-cli": {
       "name": "Gemini CLI",
       "vendor": "Google",
-      "version": "v0.29.0 (as of 2026-02-18)",
+      "version": "v0.29.0 (as of 2026-02-19)",
       "total_capabilities": 25,
       "by_category": {
-        "agent-orchestration": 1,
+        "agent-orchestration": 2,
         "code-generation": 1,
         "code-explanation": 1,
         "debugging": 1,
         "multi-file-editing": 1,
         "command-line": 1,
         "chat-assistance": 1,
-        "context-awareness": 2,
         "api-integration": 2,
         "testing": 1,
         "documentation": 1,
-        "collaboration": 1,
         "customization": 3,
         "language-support": 1,
         "security": 1,
-        "performance": 1,
+        "performance": 3,
         "observability": 3,
         "code-refactoring": 1,
         "model-selection": 1
@@ -92,17 +91,18 @@
         "free": 25
       },
       "by_maturity": {
-        "stable": 25
+        "stable": 24,
+        "experimental": 1
       }
     },
     "vscode-copilot": {
       "name": "GitHub Copilot (VS Code)",
       "vendor": "GitHub / Microsoft",
-      "version": "Current (as of 2026-02-18)",
-      "total_capabilities": 24,
+      "version": "Current (as of 2026-02-19)",
+      "total_capabilities": 27,
       "by_category": {
         "code-completion": 2,
-        "agent-orchestration": 1,
+        "agent-orchestration": 2,
         "customization": 3,
         "code-generation": 1,
         "chat-assistance": 1,
@@ -118,16 +118,17 @@
         "collaboration": 1,
         "security": 1,
         "language-support": 1,
-        "observability": 3
+        "observability": 3,
+        "performance": 2
       },
       "by_tier": {
         "free": 15,
-        "pro": 6,
-        "enterprise": 2,
+        "pro": 10,
+        "enterprise": 1,
         "business": 1
       },
       "by_maturity": {
-        "stable": 23,
+        "stable": 26,
         "beta": 1
       }
     }

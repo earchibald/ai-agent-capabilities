@@ -15,6 +15,10 @@
         "/^python3 framework/scripts/validate_framework\\.py && python3 framework/scripts/generate_comparison\\.py$/": {
             "approve": true,
             "matchCommandLine": true
+        },
+        "/^python3 framework/scripts/generate_static_api\\.py$/": {
+            "approve": true,
+            "matchCommandLine": true
         }
     }
 }

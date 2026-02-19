@@ -2,8 +2,8 @@
   "agent": {
     "name": "Claude Code",
     "vendor": "Anthropic",
-    "version": "Current (as of 2026-02-18)",
-    "lastUpdated": "2026-02-18T05:00:00.000Z"
+    "version": "Current (as of 2026-02-19)",
+    "lastUpdated": "2026-02-19T05:00:00.000Z"
   },
   "capabilities": [
     {
@@ -220,50 +220,6 @@
       ]
     },
     {
-      "category": "context-awareness",
-      "name": "Context Window",
-      "description": "200K token context window (1M in beta) with automatic context management across codebase exploration",
-      "available": true,
-      "tier": "pro",
-      "maturityLevel": "stable",
-      "status": "active",
-      "sources": [
-        {
-          "url": "https://code.claude.com/docs",
-          "description": "Claude Code overview - context window management",
-          "verifiedDate": "2026-02-18",
-          "status": "active",
-          "sourceGranularity": "excerpt",
-          "excerpt": "Claude Code is an AI-powered coding assistant that helps you build features, fix bugs, and automate development tasks. It understands your entire codebase and can work across multiple files and tools."
-        },
-        {
-          "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
-          "description": "Anthropic model documentation - context window specifications",
-          "verifiedDate": "2026-02-18",
-          "status": "active",
-          "sourceGranularity": "excerpt",
-          "excerpt": "Anthropic model documentation covering context window specifications, token limits, and model capabilities across Claude model family."
-        }
-      ]
-    },
-    {
-      "category": "context-awareness",
-      "name": "Custom Context Files",
-      "description": "CLAUDE.md files for project-specific coding standards, architecture decisions, preferred libraries, and review checklists",
-      "available": true,
-      "tier": "pro",
-      "maturityLevel": "stable",
-      "status": "active",
-      "sources": [
-        {
-          "url": "https://code.claude.com/docs/en/claude-md",
-          "description": "CLAUDE.md documentation - project-specific context files for coding standards and architecture",
-          "verifiedDate": "2026-02-18",
-          "sourceGranularity": "dedicated"
-        }
-      ]
-    },
-    {
       "category": "api-integration",
       "name": "MCP Support",
       "description": "Model Context Protocol integration for connecting to external tools - Jira, Slack, Google Drive, databases, and custom tooling",
@@ -289,47 +245,23 @@
     {
       "category": "customization",
       "name": "Custom Instructions",
-      "description": "Custom slash commands (skills) for reusable workflows, plus CLAUDE.md files for project-specific coding standards and instructions",
+      "description": "CLAUDE.md context files for project-specific coding standards, architecture decisions, preferred libraries, and review checklists. Custom slash commands (skills) for reusable workflows. Cascading configuration: system, user (~/.claude/), project (.claude/), and local (.claude.local/) levels auto-loaded.",
       "available": true,
       "tier": "pro",
       "maturityLevel": "stable",
       "status": "active",
       "sources": [
+        {
+          "url": "https://code.claude.com/docs/en/claude-md",
+          "description": "CLAUDE.md documentation - project-specific context files for coding standards and architecture",
+          "verifiedDate": "2026-02-19",
+          "sourceGranularity": "dedicated"
+        },
         {
           "url": "https://code.claude.com/docs/en/skills",
           "description": "Claude Code Skills documentation - custom slash commands for reusable workflows",
           "verifiedDate": "2026-02-18",
           "sourceGranularity": "dedicated"
-        },
-        {
-          "url": "https://code.claude.com/docs/en/claude-md",
-          "description": "CLAUDE.md documentation - project-specific coding standards and instructions",
-          "verifiedDate": "2026-02-18",
-          "sourceGranularity": "dedicated"
-        }
-      ]
-    },
-    {
-      "category": "collaboration",
-      "name": "Git Integration",
-      "description": "Direct git operations: staging, committing, branching, creating PRs. GitHub Actions and GitLab CI/CD integration for automated code review and issue triage.",
-      "available": true,
-      "tier": "pro",
-      "maturityLevel": "stable",
-      "status": "active",
-      "sources": [
-        {
-          "url": "https://code.claude.com/docs/en/github-actions",
-          "description": "Claude Code GitHub Actions documentation - automated PR review and issue triage",
-          "verifiedDate": "2026-02-18",
-          "sourceGranularity": "dedicated"
-        },
-        {
-          "url": "https://code.claude.com/docs",
-          "description": "Claude Code overview - git integration for staging, committing, branching, and PRs",
-          "verifiedDate": "2026-02-18",
-          "sourceGranularity": "excerpt",
-          "excerpt": "Claude Code works directly with git. It stages changes, writes commit messages, creates branches, and opens pull requests."
         }
       ]
     },
@@ -368,6 +300,23 @@
           "status": "active",
           "sourceGranularity": "excerpt",
           "excerpt": "Pipe logs into it, run it in CI, or chain it with other tools: git diff main --name-only | claude -p 'review these changed files for security issues'"
+        }
+      ]
+    },
+    {
+      "category": "performance",
+      "name": "Token Caching",
+      "description": "Anthropic prompt caching reduces API costs and latency by reusing cached prefixes across repeated requests. Claude Code automatically benefits when large CLAUDE.md or codebase context is included in repeated calls.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
+          "description": "Anthropic prompt caching documentation - reduce costs and latency with cached prefixes",
+          "verifiedDate": "2026-02-19",
+          "sourceGranularity": "dedicated"
         }
       ]
     },

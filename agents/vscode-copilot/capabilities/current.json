@@ -2,8 +2,8 @@
   "agent": {
     "name": "GitHub Copilot (VS Code)",
     "vendor": "GitHub / Microsoft",
-    "version": "Current (as of 2026-02-18)",
-    "lastUpdated": "2026-02-18T05:00:00.000Z"
+    "version": "Current (as of 2026-02-19)",
+    "lastUpdated": "2026-02-19T05:00:00.000Z"
   },
   "capabilities": [
     {
@@ -76,6 +76,24 @@
           "url": "https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent",
           "description": "GitHub Copilot Agent Mode documentation",
           "verifiedDate": "2026-02-18",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "agent-orchestration",
+      "name": "Sub-agents",
+      "description": "VS Code Copilot agent mode supports spawning specialized subagent processes for delegated tasks. Copilot's background agent and cloud agent features allow parallel work and task delegation within the IDE, coordinating multi-step development workflows.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://code.visualstudio.com/docs/copilot/agents/overview",
+          "description": "VS Code Copilot Agent Mode documentation - background agents and cloud agent for parallel task delegation",
+          "verifiedDate": "2026-02-19",
           "status": "active",
           "sourceGranularity": "dedicated"
         }
@@ -414,7 +432,7 @@
     {
       "category": "customization",
       "name": "Custom Instructions",
-      "description": "Custom coding conventions, specialized agent skills, role-specific custom agents, and prompt files for controlling agent behavior",
+      "description": "Repository-level coding instructions via .github/copilot-instructions.md (shared across team) and AGENTS.md (agent-aware instructions). Custom coding conventions, specialized agent skills, role-specific custom agents, and prompt files for controlling agent behavior. Instructions are automatically loaded and applied to all agent sessions.",
       "available": true,
       "tier": "pro",
       "maturityLevel": "stable",
@@ -423,14 +441,14 @@
         {
           "url": "https://code.visualstudio.com/docs/copilot/customization/overview",
           "description": "VS Code Copilot customization documentation (instructions, prompt files, custom agents)",
-          "verifiedDate": "2026-02-18",
+          "verifiedDate": "2026-02-19",
           "status": "active",
           "sourceGranularity": "dedicated"
         },
         {
           "url": "https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions",
-          "description": "GitHub Copilot custom instructions documentation",
-          "verifiedDate": "2026-02-18",
+          "description": "GitHub Copilot custom repository instructions - .github/copilot-instructions.md documentation",
+          "verifiedDate": "2026-02-19",
           "status": "active",
           "sourceGranularity": "dedicated"
         }
@@ -441,7 +459,7 @@
       "name": "Code Review",
       "description": "AI-powered pull request review that identifies bugs and proposes improvements",
       "available": true,
-      "tier": "enterprise",
+      "tier": "pro",
       "maturityLevel": "stable",
       "status": "active",
       "sources": [
@@ -583,6 +601,43 @@
           "verifiedDate": "2026-02-18",
           "status": "active",
           "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "performance",
+      "name": "Extended Thinking",
+      "description": "Access to reasoning-capable models (e.g., o3, Claude with extended thinking) via model selection. Reasoning models perform deeper analysis before responding, useful for complex architecture decisions and multi-step problems.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
+          "description": "GitHub Copilot supported AI models - includes reasoning-capable models like o3 and Claude with extended thinking",
+          "verifiedDate": "2026-02-19",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        }
+      ]
+    },
+    {
+      "category": "performance",
+      "name": "Vision",
+      "description": "Analyze images, wireframes, and diagrams as context for code generation and explanation. Supported when using vision-capable models. Use @capability:vision or attach images in chat to provide visual context.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
+          "description": "GitHub Copilot supported AI models - vision-capable models for image analysis",
+          "verifiedDate": "2026-02-19",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "GitHub Copilot supported models documentation covering vision and multimodal capabilities for image input and analysis in chat."
         }
       ]
     },

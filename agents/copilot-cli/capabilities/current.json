@@ -2,8 +2,8 @@
   "agent": {
     "name": "GitHub Copilot CLI",
     "vendor": "GitHub / Microsoft",
-    "version": "Public Preview (as of 2026-02-18)",
-    "lastUpdated": "2026-02-18T05:00:00.000Z"
+    "version": "Public Preview (as of 2026-02-19)",
+    "lastUpdated": "2026-02-19T05:00:00.000Z"
   },
   "capabilities": [
     {
@@ -33,6 +33,25 @@
           "status": "active",
           "sourceGranularity": "excerpt",
           "excerpt": "Copilot CLI overview - the command-line interface for GitHub Copilot provides agent mode as a core autonomous capability."
+        }
+      ]
+    },
+    {
+      "category": "agent-orchestration",
+      "name": "Sub-agents",
+      "description": "Copilot CLI can delegate tasks to built-in subagent processes for specialized work. Built-in agents include: Explore (file/codebase search), Task (coordinate multi-step work), General-purpose, and Code-review. The AI model autonomously selects the appropriate subagent for each subtask.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+          "description": "Using Copilot CLI - subagent delegation with built-in Explore, Task, General-purpose, and Code-review agents",
+          "verifiedDate": "2026-02-19",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "The AI model can delegate a task to a subsidiary subagent process. Built-in agents include Explore, Task, General-purpose, and Code-review."
         }
       ]
     },
@@ -98,33 +117,6 @@
           "status": "active",
           "sourceGranularity": "excerpt",
           "excerpt": "copilot help [topic] Display help information. Help topics include: config, commands, environment, logging, and permissions."
-        }
-      ]
-    },
-    {
-      "category": "command-line",
-      "name": "Command Suggestions",
-      "description": "Suggest and explain shell commands for tasks described in natural language",
-      "available": true,
-      "tier": "pro",
-      "maturityLevel": "beta",
-      "status": "active",
-      "sources": [
-        {
-          "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
-          "description": "CLI command reference - gh copilot suggest and gh copilot explain commands",
-          "verifiedDate": "2026-02-18",
-          "status": "active",
-          "sourceGranularity": "excerpt",
-          "excerpt": "Copilot CLI command reference documenting gh copilot suggest and gh copilot explain commands for shell assistance."
-        },
-        {
-          "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
-          "description": "Using Copilot CLI - how to use command suggestions and explanations",
-          "verifiedDate": "2026-02-18",
-          "status": "active",
-          "sourceGranularity": "excerpt",
-          "excerpt": "Copilot CLI provides command suggestion and explanation capabilities for tasks described in natural language."
         }
       ]
     },
@@ -228,6 +220,89 @@
           "status": "active",
           "sourceGranularity": "excerpt",
           "excerpt": "The command-line interface for GitHub Copilot allows working with multiple programming languages in interactive terminal sessions."
+        }
+      ]
+    },
+    {
+      "category": "api-integration",
+      "name": "MCP Support",
+      "description": "Model Context Protocol server support. The GitHub MCP server is pre-configured out of the box. Additional MCP servers can be added via /mcp add or the copilot mcp command group.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+          "description": "Using Copilot CLI - GitHub MCP server pre-configured, /mcp add for additional servers",
+          "verifiedDate": "2026-02-19",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Copilot CLI comes with the GitHub MCP server already configured. Additional MCP servers can be added via /mcp add or copilot mcp add commands."
+        }
+      ]
+    },
+    {
+      "category": "customization",
+      "name": "Custom Instructions",
+      "description": "Repository-level coding instructions via .github/copilot-instructions.md (shared across team) and AGENTS.md (agent-aware instructions). User-level and organization-level instruction files also supported. Instructions are automatically loaded and applied to all agent sessions.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions",
+          "description": "GitHub Copilot custom repository instructions - .github/copilot-instructions.md documentation",
+          "verifiedDate": "2026-02-19",
+          "status": "active",
+          "sourceGranularity": "dedicated"
+        },
+        {
+          "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+          "description": "Using Copilot CLI - AGENTS.md and instruction file support in agent sessions",
+          "verifiedDate": "2026-02-19",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Copilot CLI automatically loads .github/copilot-instructions.md and AGENTS.md instruction files to customize agent behavior for your repository."
+        }
+      ]
+    },
+    {
+      "category": "model-selection",
+      "name": "Model Selection",
+      "description": "Choose from multiple AI models via --model flag or /model slash command during sessions. Supports OpenAI, Anthropic, and Google models available in your Copilot plan.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
+          "description": "CLI command reference - --model flag and /model slash command for model switching",
+          "verifiedDate": "2026-02-19",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "--model MODEL Use a specific AI model for this session. /model Switch the AI model for the current session."
+        }
+      ]
+    },
+    {
+      "category": "performance",
+      "name": "Extended Thinking",
+      "description": "Access to reasoning-capable models (e.g., o3, Claude with extended thinking) via model selection. Reasoning models perform deeper analysis before responding, useful for complex architecture decisions and multi-step problems.",
+      "available": true,
+      "tier": "pro",
+      "maturityLevel": "stable",
+      "status": "active",
+      "sources": [
+        {
+          "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
+          "description": "CLI command reference - model selection enables access to reasoning-capable models",
+          "verifiedDate": "2026-02-19",
+          "status": "active",
+          "sourceGranularity": "excerpt",
+          "excerpt": "Use --model to select reasoning-capable models including o3 and Claude with extended thinking for complex problem solving."
         }
       ]
     },
