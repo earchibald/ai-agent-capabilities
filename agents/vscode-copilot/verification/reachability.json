@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-19T06:39:47.460077+00:00",
+  "generated_at": "2026-02-19T07:37:22.291482+00:00",
   "pass": "reachability",
   "results": [
     {
@@ -57,7 +57,7 @@
       "reachable": true
     },
     {
-      "capability": "Extensions",
+      "capability": "Extension System",
       "url": "https://docs.github.com/en/copilot/building-copilot-extensions",
       "status_code": 404,
       "redirected": false,
@@ -66,7 +66,7 @@
       "reachable": false
     },
     {
-      "capability": "Extensions",
+      "capability": "Extension System",
       "url": "https://code.visualstudio.com/docs/copilot/agents/third-party-agents",
       "status_code": 200,
       "redirected": false,

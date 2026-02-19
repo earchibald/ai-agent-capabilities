@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-19T06:39:47.459383+00:00",
+  "generated_at": "2026-02-19T07:37:22.290658+00:00",
   "pass": "reachability",
   "results": [
     {
@@ -166,6 +166,33 @@
     },
     {
       "capability": "Lifecycle Hooks",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Extension System",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/plugins-finding-installing",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Code Explanation",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Code Refactoring",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
       "redirected": false,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-19T06:39:47.458785+00:00",
+  "generated_at": "2026-02-19T07:37:22.290094+00:00",
   "pass": "reachability",
   "results": [
     {
@@ -284,6 +284,33 @@
     {
       "capability": "Lifecycle Hooks",
       "url": "https://code.claude.com/docs/en/hooks",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Extension System",
+      "url": "https://code.claude.com/docs/en/plugins",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Extension System",
+      "url": "https://code.claude.com/docs/en/discover-plugins",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Model Selection",
+      "url": "https://code.claude.com/docs/en/overview",
       "status_code": 200,
       "redirected": false,
       "redirect_url": null,

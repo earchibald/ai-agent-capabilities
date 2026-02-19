@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-19T06:40:23.515672+00:00",
+  "generated_at": "2026-02-19T07:38:00.977437+00:00",
   "pass": "relevance",
   "results": [
     {
@@ -63,7 +63,7 @@
       }
     },
     {
-      "capability": "Extensions",
+      "capability": "Extension System",
       "url": "https://docs.github.com/en/copilot/building-copilot-extensions",
       "granularity": "dedicated",
       "relevant": false,
@@ -72,12 +72,12 @@
       }
     },
     {
-      "capability": "Extensions",
+      "capability": "Extension System",
       "url": "https://code.visualstudio.com/docs/copilot/agents/third-party-agents",
       "granularity": "dedicated",
       "relevant": true,
       "checks": {
-        "name_found": true,
+        "name_found": false,
         "keyword_ratio": 1.0
       }
     },

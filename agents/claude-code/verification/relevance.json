@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-19T06:40:23.514451+00:00",
+  "generated_at": "2026-02-19T07:38:00.975996+00:00",
   "pass": "relevance",
   "results": [
     {
@@ -320,6 +320,36 @@
       "checks": {
         "name_found": false,
         "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Extension System",
+      "url": "https://code.claude.com/docs/en/plugins",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Extension System",
+      "url": "https://code.claude.com/docs/en/discover-plugins",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Model Selection",
+      "url": "https://code.claude.com/docs/en/overview",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
       }
     }
   ]

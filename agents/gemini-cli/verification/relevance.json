@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-19T06:40:23.515286+00:00",
+  "generated_at": "2026-02-19T07:38:00.976984+00:00",
   "pass": "relevance",
   "results": [
     {
@@ -310,6 +310,36 @@
       "checks": {
         "name_found": false,
         "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Extension System",
+      "url": "https://geminicli.com/docs/extensions/",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Code Refactoring",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Model Selection",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
       }
     }
   ]

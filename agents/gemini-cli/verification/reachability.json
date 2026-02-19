@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-19T06:39:47.459692+00:00",
+  "generated_at": "2026-02-19T07:37:22.291059+00:00",
   "pass": "reachability",
   "results": [
     {
@@ -275,6 +275,33 @@
     {
       "capability": "Lifecycle Hooks",
       "url": "https://geminicli.com/docs/hooks/",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Extension System",
+      "url": "https://geminicli.com/docs/extensions/",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Code Refactoring",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Model Selection",
+      "url": "https://github.com/google-gemini/gemini-cli",
       "status_code": 200,
       "redirected": false,
       "redirect_url": null,
