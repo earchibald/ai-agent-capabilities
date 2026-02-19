@@ -1,0 +1,175 @@
+{
+  "agent": "claude-code",
+  "lastUpdated": "2026-02-19",
+  "plans": [
+    {
+      "id": "pro",
+      "name": "Claude Pro",
+      "type": "subscription",
+      "billedBy": "anthropic",
+      "price": {
+        "amount": 20,
+        "currency": "USD",
+        "period": "month",
+        "annualOption": { "amount": 200, "currency": "USD", "period": "year" }
+      },
+      "allowance": {
+        "unit": "tokens",
+        "quotas": [
+          { "period": "4h-rolling", "amount": null, "note": "Not publicly documented; varies by model and message length" },
+          { "period": "week", "amount": null, "note": "Not publicly documented; varies by model and message length" }
+        ]
+      },
+      "overage": {
+        "available": true,
+        "model": "pay-as-you-go",
+        "unit": "tokens",
+        "costPerUnit": null,
+        "currency": "USD",
+        "note": "Usage above quota billed at standard Anthropic API rates per model"
+      },
+      "tokenPricing": null,
+      "note": null
+    },
+    {
+      "id": "max-5x",
+      "name": "Claude Max (5x)",
+      "type": "subscription",
+      "billedBy": "anthropic",
+      "price": {
+        "amount": 100,
+        "currency": "USD",
+        "period": "month"
+      },
+      "allowance": {
+        "unit": "tokens",
+        "quotas": [
+          { "period": "4h-rolling", "amount": null, "note": "5x Pro quota; not publicly documented" },
+          { "period": "week", "amount": null, "note": "5x Pro quota; not publicly documented" }
+        ]
+      },
+      "overage": {
+        "available": true,
+        "model": "pay-as-you-go",
+        "unit": "tokens",
+        "costPerUnit": null,
+        "currency": "USD",
+        "note": "Usage above quota billed at standard Anthropic API rates per model"
+      },
+      "tokenPricing": null,
+      "note": "5x the usage quota of Claude Pro"
+    },
+    {
+      "id": "max-20x",
+      "name": "Claude Max (20x)",
+      "type": "subscription",
+      "billedBy": "anthropic",
+      "price": {
+        "amount": 200,
+        "currency": "USD",
+        "period": "month"
+      },
+      "allowance": {
+        "unit": "tokens",
+        "quotas": [
+          { "period": "4h-rolling", "amount": null, "note": "20x Pro quota; not publicly documented" },
+          { "period": "week", "amount": null, "note": "20x Pro quota; not publicly documented" }
+        ]
+      },
+      "overage": {
+        "available": true,
+        "model": "pay-as-you-go",
+        "unit": "tokens",
+        "costPerUnit": null,
+        "currency": "USD",
+        "note": "Usage above quota billed at standard Anthropic API rates per model"
+      },
+      "tokenPricing": null,
+      "note": "20x the usage quota of Claude Pro"
+    },
+    {
+      "id": "anthropic-api",
+      "name": "Anthropic API Key",
+      "type": "pay-per-token",
+      "billedBy": "anthropic",
+      "price": null,
+      "allowance": null,
+      "overage": null,
+      "tokenPricing": [
+        { "model": "claude-opus-4-5", "inputPerMTokens": 15.00, "outputPerMTokens": 75.00, "currency": "USD" },
+        { "model": "claude-sonnet-4-5", "inputPerMTokens": 3.00, "outputPerMTokens": 15.00, "currency": "USD" },
+        { "model": "claude-haiku-3-5", "inputPerMTokens": 0.80, "outputPerMTokens": 4.00, "currency": "USD" }
+      ],
+      "note": "Requires ANTHROPIC_API_KEY. Billed via Anthropic console. Supports all Claude models."
+    },
+    {
+      "id": "aws-bedrock",
+      "name": "Amazon Bedrock",
+      "type": "pay-per-token",
+      "billedBy": "aws",
+      "price": null,
+      "allowance": null,
+      "overage": null,
+      "tokenPricing": [
+        { "model": "claude-opus-4-5", "inputPerMTokens": 15.00, "outputPerMTokens": 75.00, "currency": "USD" },
+        { "model": "claude-sonnet-4-5", "inputPerMTokens": 3.00, "outputPerMTokens": 15.00, "currency": "USD" },
+        { "model": "claude-haiku-3-5", "inputPerMTokens": 0.80, "outputPerMTokens": 4.00, "currency": "USD" }
+      ],
+      "note": "Requires AWS credentials and Bedrock model access. Billed via AWS account."
+    },
+    {
+      "id": "gcp-vertex",
+      "name": "Google Vertex AI",
+      "type": "pay-per-token",
+      "billedBy": "gcp",
+      "price": null,
+      "allowance": null,
+      "overage": null,
+      "tokenPricing": [
+        { "model": "claude-opus-4-5", "inputPerMTokens": 15.00, "outputPerMTokens": 75.00, "currency": "USD" },
+        { "model": "claude-sonnet-4-5", "inputPerMTokens": 3.00, "outputPerMTokens": 15.00, "currency": "USD" }
+      ],
+      "note": "Requires Google Cloud project with Vertex AI API enabled. Billed via GCP account."
+    },
+    {
+      "id": "azure-foundry",
+      "name": "Azure AI Foundry",
+      "type": "pay-per-token",
+      "billedBy": "azure",
+      "price": null,
+      "allowance": null,
+      "overage": null,
+      "tokenPricing": [
+        { "model": "claude-opus-4-5", "inputPerMTokens": 15.00, "outputPerMTokens": 75.00, "currency": "USD" },
+        { "model": "claude-sonnet-4-5", "inputPerMTokens": 3.00, "outputPerMTokens": 15.00, "currency": "USD" }
+      ],
+      "note": "Requires Azure subscription with Claude models deployed via Azure AI Foundry. Billed via Azure account."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://claude.com/pricing",
+      "description": "Claude pricing page - subscription plan prices and descriptions",
+      "verifiedDate": "2026-02-19",
+      "sourceGranularity": "dedicated"
+    },
+    {
+      "url": "https://claude.com/claude-code",
+      "description": "Claude Code product page - plan tiers and usage limits overview",
+      "verifiedDate": "2026-02-19",
+      "sourceGranularity": "dedicated"
+    },
+    {
+      "url": "https://support.claude.com/en/articles/11647753-understanding-usage-and-length-limits",
+      "description": "Claude usage limits support article - quota structure per plan",
+      "verifiedDate": "2026-02-19",
+      "sourceGranularity": "dedicated"
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
+      "description": "Anthropic model overview with API pricing per model",
+      "verifiedDate": "2026-02-19",
+      "sourceGranularity": "dedicated"
+    }
+  ]
+}
