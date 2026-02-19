@@ -114,9 +114,10 @@ def generate_index(agents: Dict[str, Any], quality: Dict[str, Any]) -> Dict[str,
             'To look up a specific agent\'s capabilities, find it in the "agents" array and fetch its "endpoint". '
             'Each agent endpoint returns a full capability list with descriptions, tier requirements, '
             'maturity levels, and verified source citations. '
-            'To compare a capability across all agents, fetch /api/v1/capabilities.json to list all '
-            'known capabilities, then fetch the "comparisonEndpoint" for any capability to get a '
-            'side-by-side breakdown. '
+            'To compare a capability across all agents, prefer the comparison endpoint over fetching '
+            'individual agent files — it is more efficient. '
+            'Fetch /api/v1/capabilities.json to list all known capabilities, then fetch the '
+            '"comparisonEndpoint" for any capability to get a pre-built side-by-side breakdown. '
             'To check data freshness and source quality, fetch /api/v1/quality.json.'
         ),
         'dataQuality': quality,
