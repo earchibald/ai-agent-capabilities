@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-19T16:08:48.630586+00:00",
+  "generated_at": "2026-02-19T20:58:37.703664+00:00",
   "pass": "reachability",
   "results": [
     {
@@ -111,33 +111,6 @@
       "reachable": true
     },
     {
-      "capability": "Context Window",
-      "url": "https://code.claude.com/docs",
-      "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
-      "error": null,
-      "reachable": true
-    },
-    {
-      "capability": "Context Window",
-      "url": "https://platform.claude.com/docs/en/about-claude/models/overview",
-      "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
-      "error": null,
-      "reachable": true
-    },
-    {
-      "capability": "Custom Context Files",
-      "url": "https://code.claude.com/docs/en/claude-md",
-      "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
-      "error": null,
-      "reachable": true
-    },
-    {
       "capability": "MCP Support",
       "url": "https://code.claude.com/docs/en/mcp",
       "status_code": 200,
@@ -157,15 +130,6 @@
     },
     {
       "capability": "Custom Instructions",
-      "url": "https://code.claude.com/docs/en/skills",
-      "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
-      "error": null,
-      "reachable": true
-    },
-    {
-      "capability": "Custom Instructions",
       "url": "https://code.claude.com/docs/en/claude-md",
       "status_code": 200,
       "redirected": false,
@@ -174,17 +138,8 @@
       "reachable": true
     },
     {
-      "capability": "Git Integration",
-      "url": "https://code.claude.com/docs/en/github-actions",
-      "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
-      "error": null,
-      "reachable": true
-    },
-    {
-      "capability": "Git Integration",
-      "url": "https://code.claude.com/docs",
+      "capability": "Custom Instructions",
+      "url": "https://code.claude.com/docs/en/skills",
       "status_code": 200,
       "redirected": false,
       "redirect_url": null,
@@ -203,6 +158,15 @@
     {
       "capability": "Security Analysis",
       "url": "https://code.claude.com/docs",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Token Caching",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
       "status_code": 200,
       "redirected": false,
       "redirect_url": null,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-19T16:09:29.599033+00:00",
+  "generated_at": "2026-02-19T20:59:19.456040+00:00",
   "pass": "relevance",
   "results": [
     {
@@ -15,6 +15,16 @@
     {
       "capability": "Agent Mode",
       "url": "https://github.com/google-gemini/gemini-cli/releases",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Sub-agents",
+      "url": "https://github.com/google-gemini/gemini-cli",
       "granularity": "excerpt",
       "relevant": false,
       "checks": {
@@ -103,36 +113,6 @@
       }
     },
     {
-      "capability": "Context Window",
-      "url": "https://ai.google.dev/gemini-api/docs",
-      "granularity": "excerpt",
-      "relevant": false,
-      "checks": {
-        "exact_match": false,
-        "prefix_match": false
-      }
-    },
-    {
-      "capability": "Context Window",
-      "url": "https://github.com/google-gemini/gemini-cli",
-      "granularity": "excerpt",
-      "relevant": true,
-      "checks": {
-        "exact_match": false,
-        "prefix_match": true
-      }
-    },
-    {
-      "capability": "Custom Context Files",
-      "url": "https://github.com/google-gemini/gemini-cli",
-      "granularity": "excerpt",
-      "relevant": true,
-      "checks": {
-        "exact_match": false,
-        "prefix_match": true
-      }
-    },
-    {
       "capability": "MCP Support",
       "url": "https://github.com/google-gemini/gemini-cli",
       "granularity": "excerpt",
@@ -183,16 +163,6 @@
       }
     },
     {
-      "capability": "Git Integration",
-      "url": "https://github.com/google-gemini/gemini-cli",
-      "granularity": "excerpt",
-      "relevant": false,
-      "checks": {
-        "exact_match": false,
-        "prefix_match": false
-      }
-    },
-    {
       "capability": "Custom Instructions",
       "url": "https://github.com/google-gemini/gemini-cli",
       "granularity": "excerpt",
@@ -223,6 +193,26 @@
       }
     },
     {
+      "capability": "Extended Thinking",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Extended Thinking",
+      "url": "https://ai.google.dev/gemini-api/docs",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
       "capability": "Token Caching",
       "url": "https://github.com/google-gemini/gemini-cli",
       "granularity": "excerpt",
@@ -240,6 +230,16 @@
       "checks": {
         "exact_match": false,
         "prefix_match": false
+      }
+    },
+    {
+      "capability": "Vision",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
       }
     },
     {

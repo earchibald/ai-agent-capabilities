@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-19T16:08:48.631105+00:00",
+  "generated_at": "2026-02-19T20:58:37.704251+00:00",
   "pass": "reachability",
   "results": [
     {
@@ -13,6 +13,15 @@
     },
     {
       "capability": "Agent Mode",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Sub-agents",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
       "redirected": false,
@@ -50,24 +59,6 @@
     {
       "capability": "Terminal CLI",
       "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
-      "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
-      "error": null,
-      "reachable": true
-    },
-    {
-      "capability": "Command Suggestions",
-      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
-      "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
-      "error": null,
-      "reachable": true
-    },
-    {
-      "capability": "Command Suggestions",
-      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
       "redirected": false,
       "redirect_url": null,
@@ -122,6 +113,51 @@
     {
       "capability": "Multi-language Support",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "MCP Support",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Custom Instructions",
+      "url": "https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Custom Instructions",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Model Selection",
+      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Extended Thinking",
+      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
       "status_code": 200,
       "redirected": false,
       "redirect_url": null,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-19T16:08:48.631900+00:00",
+  "generated_at": "2026-02-19T20:58:37.705071+00:00",
   "pass": "reachability",
   "results": [
     {
@@ -50,6 +50,15 @@
     {
       "capability": "Agent Mode",
       "url": "https://docs.github.com/en/copilot/concepts/agents/coding-agent/about-coding-agent",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Sub-agents",
+      "url": "https://code.visualstudio.com/docs/copilot/agents/overview",
       "status_code": 200,
       "redirected": false,
       "redirect_url": null,
@@ -401,6 +410,24 @@
     {
       "capability": "Usage Tracking",
       "url": "https://code.visualstudio.com/api/extension-guides/telemetry",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Extended Thinking",
+      "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Vision",
+      "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
       "status_code": 200,
       "redirected": false,
       "redirect_url": null,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-19T16:09:29.599495+00:00",
+  "generated_at": "2026-02-19T20:59:19.456558+00:00",
   "pass": "relevance",
   "results": [
     {
@@ -60,6 +60,16 @@
       "checks": {
         "name_found": true,
         "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Sub-agents",
+      "url": "https://code.visualstudio.com/docs/copilot/agents/overview",
+      "granularity": "dedicated",
+      "relevant": false,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 0.0
       }
     },
     {
@@ -448,6 +458,26 @@
       "checks": {
         "name_found": false,
         "keyword_ratio": 0.5
+      }
+    },
+    {
+      "capability": "Extended Thinking",
+      "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": false,
+        "keyword_ratio": 0.5
+      }
+    },
+    {
+      "capability": "Vision",
+      "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
       }
     },
     {

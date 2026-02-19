@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-19T16:09:29.598618+00:00",
+  "generated_at": "2026-02-19T20:59:19.455600+00:00",
   "pass": "relevance",
   "results": [
     {
@@ -14,6 +14,16 @@
     },
     {
       "capability": "Agent Mode",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Sub-agents",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "granularity": "excerpt",
       "relevant": false,
@@ -60,26 +70,6 @@
       "checks": {
         "exact_match": false,
         "prefix_match": true
-      }
-    },
-    {
-      "capability": "Command Suggestions",
-      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
-      "granularity": "excerpt",
-      "relevant": false,
-      "checks": {
-        "exact_match": false,
-        "prefix_match": false
-      }
-    },
-    {
-      "capability": "Command Suggestions",
-      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
-      "granularity": "excerpt",
-      "relevant": false,
-      "checks": {
-        "exact_match": false,
-        "prefix_match": false
       }
     },
     {
@@ -135,6 +125,56 @@
     {
       "capability": "Multi-language Support",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "MCP Support",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "granularity": "excerpt",
+      "relevant": true,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": true
+      }
+    },
+    {
+      "capability": "Custom Instructions",
+      "url": "https://docs.github.com/en/copilot/how-tos/configure-custom-instructions/add-repository-instructions",
+      "granularity": "dedicated",
+      "relevant": true,
+      "checks": {
+        "name_found": true,
+        "keyword_ratio": 1.0
+      }
+    },
+    {
+      "capability": "Custom Instructions",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Model Selection",
+      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
+      "granularity": "excerpt",
+      "relevant": false,
+      "checks": {
+        "exact_match": false,
+        "prefix_match": false
+      }
+    },
+    {
+      "capability": "Extended Thinking",
+      "url": "https://docs.github.com/en/copilot/reference/cli-command-reference",
       "granularity": "excerpt",
       "relevant": false,
       "checks": {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-19T16:08:48.631454+00:00",
+  "generated_at": "2026-02-19T20:58:37.704646+00:00",
   "pass": "reachability",
   "results": [
     {
@@ -14,6 +14,15 @@
     {
       "capability": "Agent Mode",
       "url": "https://github.com/google-gemini/gemini-cli/releases",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Sub-agents",
+      "url": "https://github.com/google-gemini/gemini-cli",
       "status_code": 200,
       "redirected": false,
       "redirect_url": null,
@@ -93,33 +102,6 @@
       "reachable": true
     },
     {
-      "capability": "Context Window",
-      "url": "https://ai.google.dev/gemini-api/docs",
-      "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
-      "error": null,
-      "reachable": true
-    },
-    {
-      "capability": "Context Window",
-      "url": "https://github.com/google-gemini/gemini-cli",
-      "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
-      "error": null,
-      "reachable": true
-    },
-    {
-      "capability": "Custom Context Files",
-      "url": "https://github.com/google-gemini/gemini-cli",
-      "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
-      "error": null,
-      "reachable": true
-    },
-    {
       "capability": "MCP Support",
       "url": "https://github.com/google-gemini/gemini-cli",
       "status_code": 200,
@@ -165,15 +147,6 @@
       "reachable": true
     },
     {
-      "capability": "Git Integration",
-      "url": "https://github.com/google-gemini/gemini-cli",
-      "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
-      "error": null,
-      "reachable": true
-    },
-    {
       "capability": "Custom Instructions",
       "url": "https://github.com/google-gemini/gemini-cli",
       "status_code": 200,
@@ -201,6 +174,24 @@
       "reachable": true
     },
     {
+      "capability": "Extended Thinking",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Extended Thinking",
+      "url": "https://ai.google.dev/gemini-api/docs",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
       "capability": "Token Caching",
       "url": "https://github.com/google-gemini/gemini-cli",
       "status_code": 200,
@@ -212,6 +203,15 @@
     {
       "capability": "Token Caching",
       "url": "https://ai.google.dev/gemini-api/docs",
+      "status_code": 200,
+      "redirected": false,
+      "redirect_url": null,
+      "error": null,
+      "reachable": true
+    },
+    {
+      "capability": "Vision",
+      "url": "https://github.com/google-gemini/gemini-cli",
       "status_code": 200,
       "redirected": false,
       "redirect_url": null,
