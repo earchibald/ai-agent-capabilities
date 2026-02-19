@@ -398,9 +398,32 @@ def main():
         print(f"  ~ {gap_count} semantic gap(s) detected (see warnings)")
     print()
 
+    # 8. Check pricing files
+    print("\n8. Checking pricing files...")
+    today = date.today()
+    for agent_slug in ['claude-code', 'copilot-cli', 'gemini-cli', 'vscode-copilot']:
+        pricing_file = AGENTS_DIR / agent_slug / "pricing" / "current.json"
+        if not pricing_file.exists():
+            all_warnings.append(f"{agent_slug}: Missing pricing/current.json")
+            continue
+        try:
+            with open(pricing_file) as f:
+                pricing = json.load(f)
+            last = pricing.get('lastUpdated', '')
+            if last:
+                age = (today - date.fromisoformat(last)).days
+                if age > 30:
+                    all_warnings.append(f"{agent_slug}: pricing/current.json is {age} days old (lastUpdated: {last})")
+                else:
+                    print(f"  + {agent_slug}/pricing/current.json ({age}d old)")
+            else:
+                all_warnings.append(f"{agent_slug}: pricing/current.json missing lastUpdated field")
+        except json.JSONDecodeError as e:
+            all_warnings.append(f"{agent_slug}: pricing/current.json is invalid JSON: {e}")
+
     # Show warnings (non-blocking)
     if all_warnings:
-        print(f"8. Warnings ({len(all_warnings)})...")
+        print(f"9. Warnings ({len(all_warnings)})...")
         for w in all_warnings:
             print(f"  ~ {w}")
         print()
