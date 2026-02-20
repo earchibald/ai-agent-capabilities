@@ -1,0 +1,198 @@
+{
+  "agent": "vscode-copilot",
+  "lastUpdated": "2026-02-19",
+  "plans": [
+    {
+      "id": "free",
+      "name": "Copilot Free",
+      "type": "free",
+      "billedBy": "github",
+      "price": {
+        "amount": 0,
+        "currency": "USD",
+        "period": "month"
+      },
+      "allowance": {
+        "unit": "premium-requests",
+        "quotas": [
+          { "period": "month", "amount": 50 }
+        ]
+      },
+      "overage": {
+        "available": false,
+        "model": "blocked",
+        "note": "Free plan cannot purchase additional premium requests"
+      },
+      "tokenPricing": null,
+      "note": "Also includes up to 2,000 inline code completion suggestions per month"
+    },
+    {
+      "id": "pro",
+      "name": "Copilot Pro",
+      "type": "subscription",
+      "billedBy": "github",
+      "price": {
+        "amount": 10,
+        "currency": "USD",
+        "period": "month",
+        "annualOption": { "amount": 100, "currency": "USD", "period": "year" }
+      },
+      "allowance": {
+        "unit": "premium-requests",
+        "quotas": [
+          { "period": "month", "amount": 300 }
+        ]
+      },
+      "overage": {
+        "available": true,
+        "model": "pay-as-you-go",
+        "unit": "premium-requests",
+        "costPerUnit": 0.04,
+        "currency": "USD",
+        "note": "Overage requires setting a spending budget in account settings; default is $0 (requests blocked)"
+      },
+      "tokenPricing": null,
+      "note": "Free for verified students, teachers, and maintainers of popular open-source projects"
+    },
+    {
+      "id": "pro-plus",
+      "name": "Copilot Pro+",
+      "type": "subscription",
+      "billedBy": "github",
+      "price": {
+        "amount": 39,
+        "currency": "USD",
+        "period": "month",
+        "annualOption": { "amount": 390, "currency": "USD", "period": "year" }
+      },
+      "allowance": {
+        "unit": "premium-requests",
+        "quotas": [
+          { "period": "month", "amount": 1500 }
+        ]
+      },
+      "overage": {
+        "available": true,
+        "model": "pay-as-you-go",
+        "unit": "premium-requests",
+        "costPerUnit": 0.04,
+        "currency": "USD",
+        "note": "Overage requires setting a spending budget in account settings; default is $0 (requests blocked)"
+      },
+      "tokenPricing": null,
+      "note": null
+    },
+    {
+      "id": "business",
+      "name": "Copilot Business",
+      "type": "subscription",
+      "billedBy": "github",
+      "price": {
+        "amount": 19,
+        "currency": "USD",
+        "period": "seat/month"
+      },
+      "allowance": {
+        "unit": "premium-requests",
+        "quotas": [
+          { "period": "month", "amount": 300 }
+        ]
+      },
+      "overage": {
+        "available": true,
+        "model": "configurable-budget",
+        "unit": "premium-requests",
+        "costPerUnit": null,
+        "note": "Organization admin must enable 'Premium request paid usage' policy and set a spending budget"
+      },
+      "tokenPricing": null,
+      "note": null
+    },
+    {
+      "id": "enterprise",
+      "name": "Copilot Enterprise",
+      "type": "subscription",
+      "billedBy": "github",
+      "price": {
+        "amount": 39,
+        "currency": "USD",
+        "period": "seat/month"
+      },
+      "allowance": {
+        "unit": "premium-requests",
+        "quotas": [
+          { "period": "month", "amount": 1000, "note": "Approximately 3.33x Business (300); exact number not published" }
+        ]
+      },
+      "overage": {
+        "available": true,
+        "model": "configurable-budget",
+        "unit": "premium-requests",
+        "costPerUnit": null,
+        "note": "Organization admin must enable 'Premium request paid usage' policy and set a spending budget"
+      },
+      "tokenPricing": null,
+      "note": null
+    },
+    {
+      "id": "byo-anthropic",
+      "name": "Anthropic API Key (BYO)",
+      "type": "pay-per-token",
+      "billedBy": "anthropic",
+      "price": null,
+      "allowance": null,
+      "overage": null,
+      "tokenPricing": [
+        { "model": "claude-opus-4-5", "inputPerMTokens": 15.00, "outputPerMTokens": 75.00, "currency": "USD" },
+        { "model": "claude-sonnet-4-5", "inputPerMTokens": 3.00, "outputPerMTokens": 15.00, "currency": "USD" },
+        { "model": "claude-haiku-3-5", "inputPerMTokens": 0.80, "outputPerMTokens": 4.00, "currency": "USD" }
+      ],
+      "note": "Add via VS Code language model picker → Manage Models → Add Models → Anthropic. Billed directly by Anthropic, not GitHub."
+    },
+    {
+      "id": "byo-openai",
+      "name": "OpenAI API Key (BYO)",
+      "type": "pay-per-token",
+      "billedBy": "openai",
+      "price": null,
+      "allowance": null,
+      "overage": null,
+      "tokenPricing": [
+        { "model": "gpt-5", "inputPerMTokens": 2.50, "outputPerMTokens": 10.00, "currency": "USD" },
+        { "model": "gpt-4o", "inputPerMTokens": 2.50, "outputPerMTokens": 10.00, "currency": "USD" }
+      ],
+      "note": "Add via VS Code language model picker → Manage Models → Add Models → OpenAI. Billed directly by OpenAI, not GitHub."
+    },
+    {
+      "id": "byo-openai-compatible",
+      "name": "OpenAI-compatible API (BYO)",
+      "type": "pay-per-token",
+      "billedBy": "varies",
+      "price": null,
+      "allowance": null,
+      "overage": null,
+      "tokenPricing": null,
+      "note": "Supports any OpenAI-compatible endpoint (Azure OpenAI, local Ollama, etc.) via github.copilot.chat.customOAIModels setting. Pricing varies by provider."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://docs.github.com/en/copilot/concepts/billing/individual-plans",
+      "description": "GitHub Copilot individual plans - Free, Pro, Pro+ pricing and allowances",
+      "verifiedDate": "2026-02-19",
+      "sourceGranularity": "dedicated"
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/managing-copilot/monitoring-usage-and-entitlements/about-premium-requests",
+      "description": "GitHub Copilot premium requests - allowances per plan and overage billing",
+      "verifiedDate": "2026-02-19",
+      "sourceGranularity": "dedicated"
+    },
+    {
+      "url": "https://code.visualstudio.com/docs/copilot/language-models",
+      "description": "VS Code Copilot language models - BYO API key configuration and supported providers",
+      "verifiedDate": "2026-02-19",
+      "sourceGranularity": "dedicated"
+    }
+  ]
+}
