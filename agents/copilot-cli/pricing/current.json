@@ -1,0 +1,158 @@
+{
+  "agent": "copilot-cli",
+  "lastUpdated": "2026-02-19",
+  "plans": [
+    {
+      "id": "free",
+      "name": "Copilot Free",
+      "type": "free",
+      "billedBy": "github",
+      "price": {
+        "amount": 0,
+        "currency": "USD",
+        "period": "month"
+      },
+      "allowance": {
+        "unit": "premium-requests",
+        "quotas": [
+          { "period": "month", "amount": 50 }
+        ]
+      },
+      "overage": {
+        "available": false,
+        "model": "blocked",
+        "note": "Free plan cannot purchase additional premium requests"
+      },
+      "tokenPricing": null,
+      "note": "Not available to users who already have a paid Copilot seat through an organization"
+    },
+    {
+      "id": "pro",
+      "name": "Copilot Pro",
+      "type": "subscription",
+      "billedBy": "github",
+      "price": {
+        "amount": 10,
+        "currency": "USD",
+        "period": "month",
+        "annualOption": { "amount": 100, "currency": "USD", "period": "year" }
+      },
+      "allowance": {
+        "unit": "premium-requests",
+        "quotas": [
+          { "period": "month", "amount": 300 }
+        ]
+      },
+      "overage": {
+        "available": true,
+        "model": "pay-as-you-go",
+        "unit": "premium-requests",
+        "costPerUnit": 0.04,
+        "currency": "USD",
+        "note": "Overage requires setting a spending budget in account settings; default budget is $0 (requests blocked)"
+      },
+      "tokenPricing": null,
+      "note": "Free for verified students, teachers, and maintainers of popular open-source projects"
+    },
+    {
+      "id": "pro-plus",
+      "name": "Copilot Pro+",
+      "type": "subscription",
+      "billedBy": "github",
+      "price": {
+        "amount": 39,
+        "currency": "USD",
+        "period": "month",
+        "annualOption": { "amount": 390, "currency": "USD", "period": "year" }
+      },
+      "allowance": {
+        "unit": "premium-requests",
+        "quotas": [
+          { "period": "month", "amount": 1500 }
+        ]
+      },
+      "overage": {
+        "available": true,
+        "model": "pay-as-you-go",
+        "unit": "premium-requests",
+        "costPerUnit": 0.04,
+        "currency": "USD",
+        "note": "Overage requires setting a spending budget in account settings; default budget is $0 (requests blocked)"
+      },
+      "tokenPricing": null,
+      "note": null
+    },
+    {
+      "id": "business",
+      "name": "Copilot Business",
+      "type": "subscription",
+      "billedBy": "github",
+      "price": {
+        "amount": 19,
+        "currency": "USD",
+        "period": "seat/month"
+      },
+      "allowance": {
+        "unit": "premium-requests",
+        "quotas": [
+          { "period": "month", "amount": 300 }
+        ]
+      },
+      "overage": {
+        "available": true,
+        "model": "configurable-budget",
+        "unit": "premium-requests",
+        "costPerUnit": null,
+        "note": "Organization admin must enable 'Premium request paid usage' policy and set a spending budget"
+      },
+      "tokenPricing": null,
+      "note": "Includes user management, IP indemnity, and usage metrics"
+    },
+    {
+      "id": "enterprise",
+      "name": "Copilot Enterprise",
+      "type": "subscription",
+      "billedBy": "github",
+      "price": {
+        "amount": 39,
+        "currency": "USD",
+        "period": "seat/month"
+      },
+      "allowance": {
+        "unit": "premium-requests",
+        "quotas": [
+          { "period": "month", "amount": 1000, "note": "Approximately 3.33x Business (300); exact number not published" }
+        ]
+      },
+      "overage": {
+        "available": true,
+        "model": "configurable-budget",
+        "unit": "premium-requests",
+        "costPerUnit": null,
+        "note": "Organization admin must enable 'Premium request paid usage' policy and set a spending budget"
+      },
+      "tokenPricing": null,
+      "note": "Includes codebase indexing, custom fine-tuned models, and all available AI models"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://docs.github.com/en/copilot/concepts/billing/individual-plans",
+      "description": "GitHub Copilot individual plans - Free, Pro, Pro+ pricing and allowances",
+      "verifiedDate": "2026-02-19",
+      "sourceGranularity": "dedicated"
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/managing-copilot/monitoring-usage-and-entitlements/about-premium-requests",
+      "description": "GitHub Copilot premium requests - allowances per plan and overage billing",
+      "verifiedDate": "2026-02-19",
+      "sourceGranularity": "dedicated"
+    },
+    {
+      "url": "https://github.com/features/copilot",
+      "description": "GitHub Copilot product page - plan comparison including Business and Enterprise",
+      "verifiedDate": "2026-02-19",
+      "sourceGranularity": "dedicated"
+    }
+  ]
+}

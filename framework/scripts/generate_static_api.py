@@ -56,6 +56,19 @@ def load_verification_data(agent_name: str) -> Dict[str, Any]:
     return results
 
 
+def load_pricing_data() -> Dict[str, Any]:
+    """Load pricing data for all agents."""
+    pricing = {}
+    for agent_dir in sorted(AGENTS_DIR.iterdir()):
+        if not agent_dir.is_dir():
+            continue
+        pricing_file = agent_dir / "pricing" / "current.json"
+        if pricing_file.exists():
+            with open(pricing_file) as f:
+                pricing[agent_dir.name] = json.load(f)
+    return pricing
+
+
 def compute_quality_stats(agents: Dict[str, Any]) -> Dict[str, Any]:
     """Compute data quality statistics."""
     total_caps = 0
@@ -126,7 +139,8 @@ def generate_index(agents: Dict[str, Any], quality: Dict[str, Any]) -> Dict[str,
             'capabilities': '/api/v1/capabilities.json',
             'sources': '/api/v1/sources.json',
             'quality': '/api/v1/quality.json',
-            'schema': '/api/v1/schema.json'
+            'schema': '/api/v1/schema.json',
+            'pricing': '/api/v1/pricing.json'
         },
         'agents': [
             {
@@ -137,6 +151,15 @@ def generate_index(agents: Dict[str, Any], quality: Dict[str, Any]) -> Dict[str,
             }
             for slug, data in agents.items()
         ]
+    }
+
+
+def generate_pricing_index(pricing: Dict[str, Any]) -> Dict[str, Any]:
+    """Generate the combined pricing endpoint."""
+    return {
+        'generated_at': datetime.now(timezone.utc).isoformat(),
+        'description': 'Pricing plans for all tracked agents. Each plan has a type (subscription, pay-per-token, free), billedBy provider, allowance quotas, and optional overage and tokenPricing details.',
+        'agents': pricing
     }
 
 
@@ -274,6 +297,14 @@ def main():
     print("  - capabilities.json")
     caps_data = generate_capabilities_list(agents)
     write_json(DIST_DIR / "capabilities.json", caps_data)
+
+    # 4b. Pricing data
+    pricing_data = load_pricing_data()
+    print("  - pricing.json")
+    write_json(DIST_DIR / "pricing.json", generate_pricing_index(pricing_data))
+    for slug, data in pricing_data.items():
+        print(f"  - agents/{slug}/pricing.json")
+        write_json(DIST_DIR / "agents" / slug / "pricing.json", data)
 
     # 5. Per-capability comparison endpoints
     print("  - comparisons/...")

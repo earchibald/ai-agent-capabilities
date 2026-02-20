@@ -1,0 +1,159 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI Agent Pricing Schema",
+  "description": "Schema for documenting AI agent pricing plans and cost models",
+  "type": "object",
+  "required": ["agent", "lastUpdated", "plans", "sources"],
+  "properties": {
+    "agent": {
+      "type": "string",
+      "description": "Agent slug matching the directory name"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date",
+      "description": "Date this pricing data was last verified"
+    },
+    "plans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "type", "billedBy"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["subscription", "pay-per-token", "free"]
+          },
+          "billedBy": {
+            "type": "string",
+            "enum": ["anthropic", "github", "google", "aws", "gcp", "azure", "openai", "varies"]
+          },
+          "price": {
+            "oneOf": [
+              { "type": "null" },
+              {
+                "type": "object",
+                "required": ["amount", "currency", "period"],
+                "properties": {
+                  "amount": { "type": "number" },
+                  "currency": { "type": "string" },
+                  "period": {
+                    "type": "string",
+                    "enum": ["month", "year", "seat/month"]
+                  },
+                  "annualOption": {
+                    "type": "object",
+                    "properties": {
+                      "amount": { "type": "number" },
+                      "currency": { "type": "string" },
+                      "period": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "allowance": {
+            "oneOf": [
+              { "type": "null" },
+              {
+                "type": "object",
+                "required": ["unit", "quotas"],
+                "properties": {
+                  "unit": {
+                    "type": "string",
+                    "enum": ["tokens", "premium-requests", "requests"]
+                  },
+                  "quotas": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": ["period"],
+                      "properties": {
+                        "period": {
+                          "type": "string",
+                          "enum": ["4h-rolling", "day", "week", "month"]
+                        },
+                        "amount": { "type": ["number", "null"] },
+                        "note": { "type": "string" }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "overage": {
+            "oneOf": [
+              { "type": "null" },
+              {
+                "type": "object",
+                "required": ["available", "model"],
+                "properties": {
+                  "available": { "type": "boolean" },
+                  "model": {
+                    "type": "string",
+                    "enum": ["pay-as-you-go", "blocked", "configurable-budget"]
+                  },
+                  "unit": { "type": "string" },
+                  "costPerUnit": { "type": ["number", "null"] },
+                  "currency": { "type": "string" },
+                  "note": { "type": "string" }
+                }
+              }
+            ]
+          },
+          "tokenPricing": {
+            "oneOf": [
+              { "type": "null" },
+              {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["model", "inputPerMTokens", "outputPerMTokens", "currency"],
+                  "properties": {
+                    "model": { "type": "string" },
+                    "inputPerMTokens": { "type": "number" },
+                    "outputPerMTokens": { "type": "number" },
+                    "currency": { "type": "string" },
+                    "contextTiers": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "upToTokens": { "type": ["number", "null"] },
+                          "inputPerMTokens": { "type": "number" },
+                          "outputPerMTokens": { "type": "number" }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "note": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["url", "description", "verifiedDate", "sourceGranularity"],
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "description": { "type": "string" },
+          "verifiedDate": { "type": "string", "format": "date" },
+          "sourceGranularity": {
+            "type": "string",
+            "enum": ["dedicated", "section", "excerpt"]
+          },
+          "excerpt": { "type": "string" }
+        }
+      }
+    }
+  }
+}

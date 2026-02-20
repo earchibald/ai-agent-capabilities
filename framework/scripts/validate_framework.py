@@ -398,9 +398,37 @@ def main():
         print(f"  ~ {gap_count} semantic gap(s) detected (see warnings)")
     print()
 
+    # 8. Check pricing files
+    print()
+    print("8. Checking pricing files...")
+    today = date.today()
+    for agent_dir in sorted(agents):
+        agent_slug = agent_dir.name
+        pricing_file = agent_dir / "pricing" / "current.json"
+        if not pricing_file.exists():
+            all_warnings.append(f"{agent_slug}: Missing pricing/current.json")
+            continue
+        try:
+            with open(pricing_file) as f:
+                pricing = json.load(f)
+            last = pricing.get('lastUpdated', '')
+            if last:
+                try:
+                    age = (today - date.fromisoformat(last)).days
+                    if age > 30:
+                        all_warnings.append(f"{agent_slug}: pricing/current.json is {age} days old (lastUpdated: {last})")
+                    else:
+                        print(f"  + {agent_slug}/pricing/current.json ({age}d old)")
+                except ValueError:
+                    all_warnings.append(f"{agent_slug}: pricing/current.json has invalid lastUpdated format: {last!r}")
+            else:
+                all_warnings.append(f"{agent_slug}: pricing/current.json missing lastUpdated field")
+        except json.JSONDecodeError as e:
+            all_warnings.append(f"{agent_slug}: pricing/current.json is invalid JSON: {e}")
+
     # Show warnings (non-blocking)
     if all_warnings:
-        print(f"8. Warnings ({len(all_warnings)})...")
+        print(f"9. Warnings ({len(all_warnings)})...")
         for w in all_warnings:
             print(f"  ~ {w}")
         print()

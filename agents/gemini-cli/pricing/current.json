@@ -1,0 +1,148 @@
+{
+  "agent": "gemini-cli",
+  "lastUpdated": "2026-02-19",
+  "plans": [
+    {
+      "id": "google-oauth",
+      "name": "Google Account (OAuth)",
+      "type": "free",
+      "billedBy": "google",
+      "price": {
+        "amount": 0,
+        "currency": "USD",
+        "period": "month"
+      },
+      "allowance": {
+        "unit": "requests",
+        "quotas": [
+          { "period": "day", "amount": 1000 },
+          { "period": "4h-rolling", "amount": null, "note": "60 requests/minute rate limit" }
+        ]
+      },
+      "overage": {
+        "available": false,
+        "model": "blocked",
+        "note": "No overage on OAuth free tier; upgrade to API key paid or Code Assist subscription"
+      },
+      "tokenPricing": null,
+      "note": "Authenticated via personal Google account. Whether quota shares the same pool as Google AI Studio is unconfirmed."
+    },
+    {
+      "id": "gemini-api-free",
+      "name": "Gemini API Key (free tier)",
+      "type": "free",
+      "billedBy": "google",
+      "price": {
+        "amount": 0,
+        "currency": "USD",
+        "period": "month"
+      },
+      "allowance": {
+        "unit": "requests",
+        "quotas": [
+          { "period": "day", "amount": 250 },
+          { "period": "4h-rolling", "amount": null, "note": "10 requests/minute rate limit" }
+        ]
+      },
+      "overage": {
+        "available": true,
+        "model": "pay-as-you-go",
+        "unit": "tokens",
+        "costPerUnit": null,
+        "note": "Upgrade API key to paid billing to access per-token pricing above free limits"
+      },
+      "tokenPricing": null,
+      "note": "Free tier restricted to Flash models only. Lower limits than OAuth free tier."
+    },
+    {
+      "id": "code-assist-standard",
+      "name": "Gemini Code Assist Standard",
+      "type": "subscription",
+      "billedBy": "google",
+      "price": null,
+      "allowance": {
+        "unit": "requests",
+        "quotas": [
+          { "period": "day", "amount": 1500 },
+          { "period": "4h-rolling", "amount": null, "note": "120 requests/minute rate limit" }
+        ]
+      },
+      "overage": null,
+      "tokenPricing": null,
+      "note": "Subscription pricing not confirmed; contact Google for current pricing."
+    },
+    {
+      "id": "code-assist-enterprise",
+      "name": "Gemini Code Assist Enterprise",
+      "type": "subscription",
+      "billedBy": "google",
+      "price": null,
+      "allowance": {
+        "unit": "requests",
+        "quotas": [
+          { "period": "day", "amount": 2000 },
+          { "period": "4h-rolling", "amount": null, "note": "120 requests/minute rate limit" }
+        ]
+      },
+      "overage": null,
+      "tokenPricing": null,
+      "note": "Subscription pricing not confirmed; contact Google for current pricing."
+    },
+    {
+      "id": "gemini-api-paid",
+      "name": "Gemini API Key (paid)",
+      "type": "pay-per-token",
+      "billedBy": "google",
+      "price": null,
+      "allowance": null,
+      "overage": null,
+      "tokenPricing": [
+        {
+          "model": "gemini-2.5-pro",
+          "inputPerMTokens": 1.25,
+          "outputPerMTokens": 10.00,
+          "currency": "USD",
+          "contextTiers": [
+            { "upToTokens": 200000, "inputPerMTokens": 1.25, "outputPerMTokens": 10.00 },
+            { "upToTokens": null, "inputPerMTokens": 2.50, "outputPerMTokens": 15.00 }
+          ]
+        },
+        {
+          "model": "gemini-2.5-flash",
+          "inputPerMTokens": 0.30,
+          "outputPerMTokens": 2.50,
+          "currency": "USD"
+        }
+      ],
+      "note": "Requires Gemini API key with billing enabled. Billed via Google Cloud billing account."
+    },
+    {
+      "id": "vertex-ai",
+      "name": "Vertex AI",
+      "type": "pay-per-token",
+      "billedBy": "gcp",
+      "price": null,
+      "allowance": null,
+      "overage": null,
+      "tokenPricing": [
+        { "model": "gemini-2.5-pro", "inputPerMTokens": 1.25, "outputPerMTokens": 10.00, "currency": "USD" },
+        { "model": "gemini-2.5-flash", "inputPerMTokens": 0.30, "outputPerMTokens": 2.50, "currency": "USD" }
+      ],
+      "note": "90-day Vertex AI Express Mode trial available before paid billing begins. Billed via GCP account."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://geminicli.com/docs/quota-and-pricing/",
+      "description": "Gemini CLI quota and pricing documentation - free tier limits and paid plan allowances",
+      "verifiedDate": "2026-02-19",
+      "sourceGranularity": "dedicated"
+    },
+    {
+      "url": "https://ai.google.dev/pricing",
+      "description": "Google AI / Gemini API pricing - per-token costs by model",
+      "verifiedDate": "2026-02-19",
+      "sourceGranularity": "dedicated"
+    }
+  ]
+}
