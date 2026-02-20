@@ -596,7 +596,7 @@
   ],
   "documentation": {
     "officialDocs": "https://github.com/google-gemini/gemini-cli",
-    "releaseNotes": "https://github.com/google-gemini/gemini-cli/releases",
+    "releaseNotes": "https://geminicli.com/docs/changelogs/",
     "github": "https://github.com/google-gemini/gemini-cli",
     "apiDocs": "https://ai.google.dev/gemini-api/docs"
   }

@@ -491,7 +491,7 @@
   ],
   "documentation": {
     "officialDocs": "https://docs.github.com/en/copilot/github-copilot-in-the-cli",
-    "releaseNotes": "https://github.blog/changelog/label/copilot/",
+    "releaseNotes": "https://github.com/github/copilot-cli/releases",
     "github": "https://github.com/features/copilot",
     "apiDocs": "https://docs.github.com/en/copilot/github-copilot-in-the-cli/about-github-copilot-in-the-cli"
   }

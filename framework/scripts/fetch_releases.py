@@ -33,8 +33,9 @@ AGENT_CONFIGS = {
         "name": "GitHub Copilot CLI",
         "sources": [
             {
-                "type": "changelog-url",
-                "url": "https://github.blog/changelog/label/copilot/"
+                "type": "github-releases",
+                "repo": "github/copilot-cli",
+                "url": "https://api.github.com/repos/github/copilot-cli/releases"
             }
         ]
     },
@@ -43,7 +44,7 @@ AGENT_CONFIGS = {
         "sources": [
             {
                 "type": "changelog-url",
-                "url": "https://code.claude.com/docs/en/changelog"
+                "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
             }
         ]
     },
@@ -54,6 +55,10 @@ AGENT_CONFIGS = {
                 "type": "github-releases",
                 "repo": "google-gemini/gemini-cli",
                 "url": "https://api.github.com/repos/google-gemini/gemini-cli/releases"
+            },
+            {
+                "type": "changelog-url",
+                "url": "https://geminicli.com/docs/changelogs/"
             }
         ]
     }
