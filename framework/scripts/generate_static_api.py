@@ -300,12 +300,11 @@ def main():
 
     # 4b. Pricing data
     pricing_data = load_pricing_data()
-    if pricing_data:
-        print("  - pricing.json")
-        write_json(DIST_DIR / "pricing.json", generate_pricing_index(pricing_data))
-        for slug, data in pricing_data.items():
-            print(f"  - agents/{slug}/pricing.json")
-            write_json(DIST_DIR / "agents" / slug / "pricing.json", data)
+    print("  - pricing.json")
+    write_json(DIST_DIR / "pricing.json", generate_pricing_index(pricing_data))
+    for slug, data in pricing_data.items():
+        print(f"  - agents/{slug}/pricing.json")
+        write_json(DIST_DIR / "agents" / slug / "pricing.json", data)
 
     # 5. Per-capability comparison endpoints
     print("  - comparisons/...")
