@@ -1,0 +1,16 @@
+{
+  "version": "v0.0.409",
+  "releaseDate": "2026-02-12",
+  "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.409",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "2026-02-12\n\n- /diff uses full screen in alt-screen mode\n- Quick help overlay: press `?` to see grouped shortcuts and commands, navigate with arrow keys\n- Theme preview appears above theme list in screen reader mode\n- Add `list_copilot_spaces` tool to default GitHub MCP config\n- Subagents return complete responses\n- CLI now integrates with VS Code, use /ide for more information.\n- Permission prompts with long diffs are scrollable in alt-screen mode\n- Include default plugin marketplaces (copilot-plugins, awesome-copilot) for easier plugin discovery\n",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "GitHub Copilot CLI"
+}

@@ -1,0 +1,16 @@
+{
+  "version": "v0.0.401-0",
+  "releaseDate": "2026-02-02",
+  "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.401-0",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "**Added**\n- Add `copilot login` subcommand and support ACP terminal-auth\n- Add agentStop and subagentStop hooks to control agent completion\n\n**Fixed**\n- CLI handles unknown keypresses gracefully\n- /diff displays accurate line numbers with dual column layout",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "GitHub Copilot CLI"
+}

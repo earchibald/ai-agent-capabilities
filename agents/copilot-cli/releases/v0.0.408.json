@@ -1,0 +1,16 @@
+{
+  "version": "v0.0.408",
+  "releaseDate": "2026-02-12",
+  "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.408",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "2026-02-12\n\n- Add `/streamer-mode` to hide preview model names and quota details for streaming\n- Makes shellId more flexible to not error when a number is passed\n- Background tasks hint updates when detached shells are killed or removed\n- Add mouse text selection in --alt-screen mode\n- ! commands with large output no longer crash the CLI\n- Fix duplicate/ghost lines appearing when resizing the terminal in alt-screen mode\n- MCP servers respect the `cwd` working directory property\n- Add substring matching to slash command autocomplete\n- Change run command shortcut from ctrl+p to ctrl+s\n",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "GitHub Copilot CLI"
+}

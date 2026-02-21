@@ -1,0 +1,16 @@
+{
+  "version": "v0.29.5",
+  "releaseDate": "2026-02-19",
+  "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.29.5",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.29.4...v0.29.5",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "Gemini CLI"
+}

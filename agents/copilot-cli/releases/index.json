@@ -1,16 +1,156 @@
 {
-  "agent": "GitHub Copilot CLI",
-  "lastUpdated": "2026-02-17T19:54:00.000Z",
+  "agent": "copilot-cli",
+  "lastUpdated": "2026-02-21T00:08:04.967907+00:00",
   "releases": [
     {
-      "version": "v2.86.0",
-      "releaseDate": "2026-01-21",
-      "sourceUrl": "https://github.com/cli/cli/releases/tag/v2.86.0"
+      "version": "v0.0.413",
+      "releaseDate": "2026-02-20",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.413"
     },
     {
-      "version": "v2.85.0",
-      "releaseDate": "2026-01-14",
-      "sourceUrl": "https://github.com/cli/cli/releases/tag/v2.85.0"
+      "version": "v0.0.413-0",
+      "releaseDate": "2026-02-20",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.413-0"
+    },
+    {
+      "version": "v0.0.412",
+      "releaseDate": "2026-02-19",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.412"
+    },
+    {
+      "version": "v0.0.412-2",
+      "releaseDate": "2026-02-19",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.412-2"
+    },
+    {
+      "version": "v0.0.412-1",
+      "releaseDate": "2026-02-18",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.412-1"
+    },
+    {
+      "version": "v0.0.412-0",
+      "releaseDate": "2026-02-18",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.412-0"
+    },
+    {
+      "version": "v0.0.411",
+      "releaseDate": "2026-02-17",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.411"
+    },
+    {
+      "version": "v0.0.411-1",
+      "releaseDate": "2026-02-17",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.411-1"
+    },
+    {
+      "version": "v0.0.411-0",
+      "releaseDate": "2026-02-16",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.411-0"
+    },
+    {
+      "version": "v0.0.410",
+      "releaseDate": "2026-02-14",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.410"
+    },
+    {
+      "version": "v0.0.410-1",
+      "releaseDate": "2026-02-13",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.410-1"
+    },
+    {
+      "version": "v0.0.410-0",
+      "releaseDate": "2026-02-13",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.410-0"
+    },
+    {
+      "version": "v0.0.409",
+      "releaseDate": "2026-02-12",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.409"
+    },
+    {
+      "version": "v0.0.408",
+      "releaseDate": "2026-02-12",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.408"
+    },
+    {
+      "version": "v0.0.407",
+      "releaseDate": "2026-02-11",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.407"
+    },
+    {
+      "version": "v0.0.407-1",
+      "releaseDate": "2026-02-10",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.407-1"
+    },
+    {
+      "version": "v0.0.407-0",
+      "releaseDate": "2026-02-10",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.407-0"
+    },
+    {
+      "version": "v0.0.406",
+      "releaseDate": "2026-02-07",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.406"
+    },
+    {
+      "version": "v0.0.406-1",
+      "releaseDate": "2026-02-06",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.406-1"
+    },
+    {
+      "version": "v0.0.406-0",
+      "releaseDate": "2026-02-06",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.406-0"
+    },
+    {
+      "version": "v0.0.405",
+      "releaseDate": "2026-02-05",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.405"
+    },
+    {
+      "version": "v0.0.404",
+      "releaseDate": "2026-02-05",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.404"
+    },
+    {
+      "version": "v0.0.404-0",
+      "releaseDate": "2026-02-05",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.404-0"
+    },
+    {
+      "version": "v0.0.403",
+      "releaseDate": "2026-02-05",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.403"
+    },
+    {
+      "version": "v0.0.402",
+      "releaseDate": "2026-02-03",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.402"
+    },
+    {
+      "version": "v0.0.402-0",
+      "releaseDate": "2026-02-03",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.402-0"
+    },
+    {
+      "version": "v0.0.401",
+      "releaseDate": "2026-02-03",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.401"
+    },
+    {
+      "version": "v0.0.401-1",
+      "releaseDate": "2026-02-02",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.401-1"
+    },
+    {
+      "version": "v0.0.401-0",
+      "releaseDate": "2026-02-02",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.401-0"
+    },
+    {
+      "version": "v0.0.400",
+      "releaseDate": "2026-01-30",
+      "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.400"
     }
   ]
 }
