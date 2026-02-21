@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-20T07:19:14.681995+00:00",
+  "generated_at": "2026-02-21T19:23:11.052397+00:00",
   "pass": "reachability",
   "results": [
     {
@@ -58,15 +58,6 @@
     },
     {
       "capability": "Code Refactoring",
-      "url": "https://code.claude.com/docs",
-      "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
-      "error": null,
-      "reachable": true
-    },
-    {
-      "capability": "Test Generation",
       "url": "https://code.claude.com/docs",
       "status_code": 200,
       "redirected": false,
@@ -148,15 +139,6 @@
     },
     {
       "capability": "Multi-language Support",
-      "url": "https://code.claude.com/docs",
-      "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
-      "error": null,
-      "reachable": true
-    },
-    {
-      "capability": "Security Analysis",
       "url": "https://code.claude.com/docs",
       "status_code": 200,
       "redirected": false,

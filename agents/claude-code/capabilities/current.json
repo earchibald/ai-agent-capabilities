@@ -127,25 +127,6 @@
       ]
     },
     {
-      "category": "testing",
-      "name": "Test Generation",
-      "description": "Generate tests, run them, and fix failures iteratively",
-      "available": true,
-      "tier": "pro",
-      "maturityLevel": "stable",
-      "status": "active",
-      "sources": [
-        {
-          "url": "https://code.claude.com/docs",
-          "description": "Claude Code overview - test generation with iterative fixing",
-          "verifiedDate": "2026-02-18",
-          "status": "active",
-          "sourceGranularity": "excerpt",
-          "excerpt": "Claude Code handles the tedious tasks that eat up your day: writing tests for untested code, fixing lint errors across a project, resolving merge conflicts."
-        }
-      ]
-    },
-    {
       "category": "documentation",
       "name": "Documentation Generation",
       "description": "Generate code documentation, README files, and API documentation",
@@ -281,25 +262,6 @@
           "status": "active",
           "sourceGranularity": "excerpt",
           "excerpt": "Claude Code is an agentic coding tool that reads your codebase, edits files, runs commands, and integrates with your development tools. Available in your terminal, IDE, desktop app, and browser."
-        }
-      ]
-    },
-    {
-      "category": "security",
-      "name": "Security Analysis",
-      "description": "Identify security vulnerabilities and suggest secure coding practices",
-      "available": true,
-      "tier": "pro",
-      "maturityLevel": "stable",
-      "status": "active",
-      "sources": [
-        {
-          "url": "https://code.claude.com/docs",
-          "description": "Claude Code overview - security vulnerability identification",
-          "verifiedDate": "2026-02-18",
-          "status": "active",
-          "sourceGranularity": "excerpt",
-          "excerpt": "Pipe logs into it, run it in CI, or chain it with other tools: git diff main --name-only | claude -p 'review these changed files for security issues'"
         }
       ]
     },

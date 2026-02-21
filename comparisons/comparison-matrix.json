@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-21T00:08:02.645914+00:00",
+  "generated_at": "2026-02-21T19:23:59.011343+00:00",
   "agents": [
     "claude-code",
     "copilot-cli",
@@ -24,9 +24,7 @@
     "model-selection",
     "multi-file-editing",
     "observability",
-    "performance",
-    "security",
-    "testing"
+    "performance"
   ],
   "comparison": {
     "agent-orchestration": {
@@ -950,91 +948,6 @@
             "name": "Vision",
             "available": true,
             "tier": "pro",
-            "maturity": "stable"
-          }
-        ]
-      }
-    },
-    "security": {
-      "claude-code": {
-        "count": 1,
-        "capabilities": [
-          {
-            "name": "Security Analysis",
-            "available": true,
-            "tier": "pro",
-            "maturity": "stable"
-          }
-        ]
-      },
-      "copilot-cli": {
-        "count": 0,
-        "capabilities": []
-      },
-      "gemini-cli": {
-        "count": 1,
-        "capabilities": [
-          {
-            "name": "Security Analysis",
-            "available": true,
-            "tier": "free",
-            "maturity": "stable"
-          }
-        ]
-      },
-      "vscode-copilot": {
-        "count": 1,
-        "capabilities": [
-          {
-            "name": "Security Analysis",
-            "available": true,
-            "tier": "business",
-            "maturity": "stable"
-          }
-        ]
-      }
-    },
-    "testing": {
-      "claude-code": {
-        "count": 1,
-        "capabilities": [
-          {
-            "name": "Test Generation",
-            "available": true,
-            "tier": "pro",
-            "maturity": "stable"
-          }
-        ]
-      },
-      "copilot-cli": {
-        "count": 1,
-        "capabilities": [
-          {
-            "name": "Test Generation",
-            "available": true,
-            "tier": "pro",
-            "maturity": "beta"
-          }
-        ]
-      },
-      "gemini-cli": {
-        "count": 1,
-        "capabilities": [
-          {
-            "name": "Test Generation",
-            "available": true,
-            "tier": "free",
-            "maturity": "stable"
-          }
-        ]
-      },
-      "vscode-copilot": {
-        "count": 1,
-        "capabilities": [
-          {
-            "name": "Test Generation",
-            "available": true,
-            "tier": "free",
             "maturity": "stable"
           }
         ]

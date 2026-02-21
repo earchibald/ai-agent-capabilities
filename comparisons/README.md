@@ -1,15 +1,15 @@
 # AI Agent Capability Comparison
 
-*Generated: 2026-02-21 00:08:02 UTC*
+*Generated: 2026-02-21 19:23:59 UTC*
 
 ## Overview
 
 | Agent | Vendor | Total Capabilities |
 |-------|--------|-------------------|
-| Claude Code | Anthropic | 24 |
-| GitHub Copilot CLI | GitHub / Microsoft | 21 |
-| Gemini CLI | Google | 25 |
-| GitHub Copilot (VS Code) | GitHub / Microsoft | 27 |
+| Claude Code | Anthropic | 22 |
+| GitHub Copilot CLI | GitHub / Microsoft | 20 |
+| Gemini CLI | Google | 23 |
+| GitHub Copilot (VS Code) | GitHub / Microsoft | 25 |
 
 ## Capabilities by Category
 
@@ -131,18 +131,6 @@
 | Extended Thinking | ✅ (pro) | ✅ (pro) | ✅ (free) | ✅ (pro) |
 | Token Caching | ✅ (pro) | ❌ | ✅ (free) | ❌ |
 | Vision | ✅ (pro) | ❌ | ✅ (free) | ✅ (pro) |
-
-### Security
-
-| Capability | claude-code | copilot-cli | gemini-cli | vscode-copilot |
-|------------|------|------|------|------|
-| Security Analysis | ✅ (pro) | ❌ | ✅ (free) | ✅ (business) |
-
-### Testing
-
-| Capability | claude-code | copilot-cli | gemini-cli | vscode-copilot |
-|------------|------|------|------|------|
-| Test Generation | ✅ (pro) | ✅ (pro) | ✅ (free) | ✅ (free) |
 
 ## Model Support
 

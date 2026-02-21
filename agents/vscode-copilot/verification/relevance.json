@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-20T07:19:54.315240+00:00",
+  "generated_at": "2026-02-21T19:23:49.839716+00:00",
   "pass": "relevance",
   "results": [
     {
@@ -212,26 +212,6 @@
       }
     },
     {
-      "capability": "Test Generation",
-      "url": "https://code.visualstudio.com/docs/copilot/guides/test-with-copilot",
-      "granularity": "dedicated",
-      "relevant": true,
-      "checks": {
-        "name_found": true,
-        "keyword_ratio": 1.0
-      }
-    },
-    {
-      "capability": "Test Generation",
-      "url": "https://docs.github.com/en/copilot/tutorials/write-tests",
-      "granularity": "dedicated",
-      "relevant": true,
-      "checks": {
-        "name_found": false,
-        "keyword_ratio": 1.0
-      }
-    },
-    {
       "capability": "Documentation Generation",
       "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat",
       "granularity": "dedicated",
@@ -359,25 +339,6 @@
       "checks": {
         "name_found": true,
         "keyword_ratio": 1.0
-      }
-    },
-    {
-      "capability": "Security Analysis",
-      "url": "https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/using-github-copilot-code-security",
-      "granularity": "dedicated",
-      "relevant": false,
-      "checks": {
-        "page_reachable": false
-      }
-    },
-    {
-      "capability": "Security Analysis",
-      "url": "https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies",
-      "granularity": "excerpt",
-      "relevant": false,
-      "checks": {
-        "exact_match": false,
-        "prefix_match": false
       }
     },
     {

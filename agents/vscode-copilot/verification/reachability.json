@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-20T07:19:14.683519+00:00",
+  "generated_at": "2026-02-21T19:23:11.054394+00:00",
   "pass": "reachability",
   "results": [
     {
@@ -192,24 +192,6 @@
       "reachable": true
     },
     {
-      "capability": "Test Generation",
-      "url": "https://code.visualstudio.com/docs/copilot/guides/test-with-copilot",
-      "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
-      "error": null,
-      "reachable": true
-    },
-    {
-      "capability": "Test Generation",
-      "url": "https://docs.github.com/en/copilot/tutorials/write-tests",
-      "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
-      "error": null,
-      "reachable": true
-    },
-    {
       "capability": "Documentation Generation",
       "url": "https://code.visualstudio.com/docs/copilot/chat/copilot-chat",
       "status_code": 200,
@@ -320,24 +302,6 @@
     {
       "capability": "Code Review",
       "url": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review",
-      "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
-      "error": null,
-      "reachable": true
-    },
-    {
-      "capability": "Security Analysis",
-      "url": "https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/using-github-copilot-code-security",
-      "status_code": 404,
-      "redirected": false,
-      "redirect_url": null,
-      "error": "HTTP Error 404: Not Found",
-      "reachable": false
-    },
-    {
-      "capability": "Security Analysis",
-      "url": "https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies",
       "status_code": 200,
       "redirected": false,
       "redirect_url": null,

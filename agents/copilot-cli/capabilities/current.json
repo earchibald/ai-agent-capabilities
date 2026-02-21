@@ -140,25 +140,6 @@
       ]
     },
     {
-      "category": "testing",
-      "name": "Test Generation",
-      "description": "Generate and run tests, with automated test failure analysis",
-      "available": true,
-      "tier": "pro",
-      "maturityLevel": "beta",
-      "status": "active",
-      "sources": [
-        {
-          "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
-          "description": "Using Copilot CLI - generating and running tests with automated failure analysis",
-          "verifiedDate": "2026-02-18",
-          "status": "active",
-          "sourceGranularity": "excerpt",
-          "excerpt": "Executes commands such as tests and builds, providing brief summaries on success and full output on failure for iterative fixing."
-        }
-      ]
-    },
-    {
       "category": "documentation",
       "name": "Documentation Generation",
       "description": "Create and update documentation from the command line",

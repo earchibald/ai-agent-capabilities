@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-21T00:08:02.650338+00:00",
+  "generated_at": "2026-02-21T19:23:59.013732+00:00",
   "sources": [
     {
       "url": "https://ai.google.dev/gemini-api/docs",
@@ -57,10 +57,6 @@
         },
         {
           "agent": "claude-code",
-          "capability": "Test Generation"
-        },
-        {
-          "agent": "claude-code",
           "capability": "Documentation Generation"
         },
         {
@@ -74,10 +70,6 @@
         {
           "agent": "claude-code",
           "capability": "Multi-language Support"
-        },
-        {
-          "agent": "claude-code",
-          "capability": "Security Analysis"
         },
         {
           "agent": "claude-code",
@@ -452,20 +444,6 @@
       ]
     },
     {
-      "url": "https://code.visualstudio.com/docs/copilot/guides/test-with-copilot",
-      "description": "VS Code Copilot testing documentation",
-      "publishedDate": null,
-      "verifiedDate": "2026-02-18",
-      "status": "active",
-      "supersededBy": null,
-      "citedBy": [
-        {
-          "agent": "vscode-copilot",
-          "capability": "Test Generation"
-        }
-      ]
-    },
-    {
       "url": "https://code.visualstudio.com/docs/copilot/reference/copilot-settings",
       "description": "VS Code Copilot settings reference (developer/debug settings including Chat Debug View)",
       "publishedDate": null,
@@ -560,20 +538,6 @@
         {
           "agent": "vscode-copilot",
           "capability": "Multi-language Support"
-        }
-      ]
-    },
-    {
-      "url": "https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies",
-      "description": "GitHub Copilot policies (includes public code suggestion matching filter)",
-      "publishedDate": null,
-      "verifiedDate": "2026-02-18",
-      "status": "active",
-      "supersededBy": null,
-      "citedBy": [
-        {
-          "agent": "vscode-copilot",
-          "capability": "Security Analysis"
         }
       ]
     },
@@ -674,10 +638,6 @@
         {
           "agent": "copilot-cli",
           "capability": "Debugging"
-        },
-        {
-          "agent": "copilot-cli",
-          "capability": "Test Generation"
         },
         {
           "agent": "copilot-cli",
@@ -852,20 +812,6 @@
       ]
     },
     {
-      "url": "https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/using-github-copilot-code-security",
-      "description": "GitHub Copilot code security responsible use documentation",
-      "publishedDate": null,
-      "verifiedDate": "2026-02-18",
-      "status": "active",
-      "supersededBy": null,
-      "citedBy": [
-        {
-          "agent": "vscode-copilot",
-          "capability": "Security Analysis"
-        }
-      ]
-    },
-    {
       "url": "https://docs.github.com/en/copilot/responsible-use/copilot-spaces",
       "description": "GitHub Copilot Spaces documentation",
       "publishedDate": null,
@@ -904,20 +850,6 @@
         {
           "agent": "vscode-copilot",
           "capability": "Code Refactoring"
-        }
-      ]
-    },
-    {
-      "url": "https://docs.github.com/en/copilot/tutorials/write-tests",
-      "description": "GitHub Copilot writing tests documentation",
-      "publishedDate": null,
-      "verifiedDate": "2026-02-18",
-      "status": "active",
-      "supersededBy": null,
-      "citedBy": [
-        {
-          "agent": "vscode-copilot",
-          "capability": "Test Generation"
         }
       ]
     },
@@ -1027,10 +959,6 @@
         },
         {
           "agent": "gemini-cli",
-          "capability": "Test Generation"
-        },
-        {
-          "agent": "gemini-cli",
           "capability": "Documentation Generation"
         },
         {
@@ -1040,10 +968,6 @@
         {
           "agent": "gemini-cli",
           "capability": "Multi-language Support"
-        },
-        {
-          "agent": "gemini-cli",
-          "capability": "Security Analysis"
         },
         {
           "agent": "gemini-cli",

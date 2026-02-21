@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-20T07:19:54.314698+00:00",
+  "generated_at": "2026-02-21T19:23:49.839326+00:00",
   "pass": "relevance",
   "results": [
     {
@@ -143,16 +143,6 @@
       }
     },
     {
-      "capability": "Test Generation",
-      "url": "https://github.com/google-gemini/gemini-cli",
-      "granularity": "excerpt",
-      "relevant": false,
-      "checks": {
-        "exact_match": false,
-        "prefix_match": false
-      }
-    },
-    {
       "capability": "Documentation Generation",
       "url": "https://github.com/google-gemini/gemini-cli",
       "granularity": "excerpt",
@@ -174,16 +164,6 @@
     },
     {
       "capability": "Multi-language Support",
-      "url": "https://github.com/google-gemini/gemini-cli",
-      "granularity": "excerpt",
-      "relevant": false,
-      "checks": {
-        "exact_match": false,
-        "prefix_match": false
-      }
-    },
-    {
-      "capability": "Security Analysis",
       "url": "https://github.com/google-gemini/gemini-cli",
       "granularity": "excerpt",
       "relevant": false,

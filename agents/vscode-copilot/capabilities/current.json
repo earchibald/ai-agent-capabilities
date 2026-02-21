@@ -279,31 +279,6 @@
       ]
     },
     {
-      "category": "testing",
-      "name": "Test Generation",
-      "description": "Generate unit tests for selected code",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable",
-      "status": "active",
-      "sources": [
-        {
-          "url": "https://code.visualstudio.com/docs/copilot/guides/test-with-copilot",
-          "description": "VS Code Copilot testing documentation",
-          "verifiedDate": "2026-02-18",
-          "status": "active",
-          "sourceGranularity": "dedicated"
-        },
-        {
-          "url": "https://docs.github.com/en/copilot/tutorials/write-tests",
-          "description": "GitHub Copilot writing tests documentation",
-          "verifiedDate": "2026-02-18",
-          "status": "active",
-          "sourceGranularity": "dedicated"
-        }
-      ]
-    },
-    {
       "category": "documentation",
       "name": "Documentation Generation",
       "description": "Generate code documentation, commit messages, and PR descriptions",
@@ -469,32 +444,6 @@
           "verifiedDate": "2026-02-18",
           "status": "active",
           "sourceGranularity": "dedicated"
-        }
-      ]
-    },
-    {
-      "category": "security",
-      "name": "Security Analysis",
-      "description": "Detect security vulnerabilities in code and filter suggestions matching public code",
-      "available": true,
-      "tier": "business",
-      "maturityLevel": "stable",
-      "status": "active",
-      "sources": [
-        {
-          "url": "https://docs.github.com/en/copilot/responsible-use-of-github-copilot-features/using-github-copilot-code-security",
-          "description": "GitHub Copilot code security responsible use documentation",
-          "verifiedDate": "2026-02-18",
-          "status": "active",
-          "sourceGranularity": "dedicated"
-        },
-        {
-          "url": "https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies",
-          "description": "GitHub Copilot policies (includes public code suggestion matching filter)",
-          "verifiedDate": "2026-02-18",
-          "status": "active",
-          "sourceGranularity": "excerpt",
-          "excerpt": "GitHub Copilot policies documentation covering organization-level settings including public code suggestion matching filter."
         }
       ]
     },

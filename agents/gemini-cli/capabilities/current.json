@@ -229,25 +229,6 @@
       ]
     },
     {
-      "category": "testing",
-      "name": "Test Generation",
-      "description": "Generate and execute tests with iterative fixing",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable",
-      "status": "active",
-      "sources": [
-        {
-          "url": "https://github.com/google-gemini/gemini-cli",
-          "description": "Gemini CLI repository - test generation and execution capabilities",
-          "verifiedDate": "2026-02-18",
-          "status": "active",
-          "sourceGranularity": "excerpt",
-          "excerpt": "Gemini CLI brings the power of Gemini directly into your terminal, providing an open-source AI agent for software development."
-        }
-      ]
-    },
-    {
       "category": "documentation",
       "name": "Documentation Generation",
       "description": "Generate code documentation and project documentation",
@@ -297,25 +278,6 @@
         {
           "url": "https://github.com/google-gemini/gemini-cli",
           "description": "Gemini CLI repository - multi-language programming support",
-          "verifiedDate": "2026-02-18",
-          "status": "active",
-          "sourceGranularity": "excerpt",
-          "excerpt": "Gemini CLI brings the power of Gemini directly into your terminal, providing an open-source AI agent for software development."
-        }
-      ]
-    },
-    {
-      "category": "security",
-      "name": "Security Analysis",
-      "description": "Identify security issues and vulnerabilities in code",
-      "available": true,
-      "tier": "free",
-      "maturityLevel": "stable",
-      "status": "active",
-      "sources": [
-        {
-          "url": "https://github.com/google-gemini/gemini-cli",
-          "description": "Gemini CLI repository - security vulnerability identification",
           "verifiedDate": "2026-02-18",
           "status": "active",
           "sourceGranularity": "excerpt",
