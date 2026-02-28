@@ -1,0 +1,16 @@
+{
+  "version": "v0.0.418",
+  "releaseDate": "2026-02-25",
+  "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.418",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "2026-02-25\n\n\ud83c\udf89 Copilot CLI is now [generally available](https://github.blog/changelog/2026-02-25-github-copilot-cli-is-now-generally-available) \ud83c\udf89\n\n- Agent protected from accidentally killing itself\n- Remove --disable-parallel-tools-execution flag and parallel_tool_execution config option\n- Plugin agents specified as file paths in plugin.json load correctly\n",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "GitHub Copilot CLI"
+}

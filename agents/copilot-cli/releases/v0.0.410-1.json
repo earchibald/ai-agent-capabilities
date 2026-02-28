@@ -1,0 +1,16 @@
+{
+  "version": "v0.0.410-1",
+  "releaseDate": "2026-02-13",
+  "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.410-1",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "**Added**\n- Show IDE file selection indicator in the status bar when connected to an IDE\n- Add repo-level settings to disable individual validation tools\n- ACP server supports loading existing sessions\n- Page Up/Page Down keyboard scrolling in alt-screen mode\n- Add Ctrl+Z suspend/resume support on Unix platforms\n- Support tilde (~) expansion in MCP server cwd configuration\n- Support ctrl+n and ctrl+p as arrow key alternatives\n- Exit CLI with ctrl+d on empty prompt\n\n**Improved**\n- Shell mode removed from Shift+Tab cycle, accessed only via `!`\n- Improve /tasks dialog with consistent icons and typography\n- Exit from alt-screen no longer replays full session history\n- MCP server errors and loading issues surface in timeline\n- Reduce input jitter with frame coalescing and smoother alt-screen animations\n- Extend skill name validation to support underscores, dots, and spaces; make name and description optional in skill frontmatter with sensible fallbacks\n\n**Fixed**\n- Fix unknown option '--no-warnings' error\n- Shift+Enter inserts newlines in terminals with kitty keyboard protocol\n- MCP server list selection adjusts correctly after deletion",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "GitHub Copilot CLI"
+}

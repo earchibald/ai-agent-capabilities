@@ -1,0 +1,16 @@
+{
+  "version": "v0.0.415-0",
+  "releaseDate": "2026-02-23",
+  "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.415-0",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "**Added**\n- Add show_file tool for presenting code and diffs to the user\n\n**Improved**\n- Agent now knows which model is powering it when asked\n\n**Fixed**\n- /plugin marketplace add and /plugin install support local paths containing spaces",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "GitHub Copilot CLI"
+}
