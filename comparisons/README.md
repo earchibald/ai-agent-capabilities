@@ -1,6 +1,6 @@
 # AI Agent Capability Comparison
 
-*Generated: 2026-02-27 00:08:58 UTC*
+*Generated: 2026-02-28 00:06:32 UTC*
 
 ## Overview
 
