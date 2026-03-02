@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-23T06:28:26.978635+00:00",
+  "generated_at": "2026-03-02T06:22:46.575268+00:00",
   "pass": "relevance",
   "results": [
     {
@@ -136,10 +136,9 @@
       "capability": "Custom Instructions",
       "url": "https://code.claude.com/docs/en/claude-md",
       "granularity": "dedicated",
-      "relevant": true,
+      "relevant": false,
       "checks": {
-        "name_found": false,
-        "keyword_ratio": 0.5
+        "page_reachable": false
       }
     },
     {

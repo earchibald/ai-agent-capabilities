@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-23T06:27:47.842665+00:00",
+  "generated_at": "2026-03-02T06:22:07.745132+00:00",
   "pass": "reachability",
   "results": [
     {
@@ -122,11 +122,11 @@
     {
       "capability": "Custom Instructions",
       "url": "https://code.claude.com/docs/en/claude-md",
-      "status_code": 200,
+      "status_code": 404,
       "redirected": false,
       "redirect_url": null,
-      "error": null,
-      "reachable": true
+      "error": "HTTP Error 404: Not Found",
+      "reachable": false
     },
     {
       "capability": "Custom Instructions",
