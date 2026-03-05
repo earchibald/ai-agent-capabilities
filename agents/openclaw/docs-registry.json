@@ -1,0 +1,17 @@
+{
+  "agent": "openclaw",
+  "docSources": [
+    {
+      "url": "https://docs.openclaw.ai",
+      "type": "sitemap",
+      "crawlStrategy": "follow-links",
+      "description": "OpenClaw official documentation"
+    },
+    {
+      "url": "https://github.com/openclaw/openclaw",
+      "type": "dedicated",
+      "crawlStrategy": "single-page",
+      "description": "OpenClaw GitHub repository and README"
+    }
+  ]
+}
