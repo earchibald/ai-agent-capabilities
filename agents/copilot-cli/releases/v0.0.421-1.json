@@ -1,0 +1,16 @@
+{
+  "version": "v0.0.421-1",
+  "releaseDate": "2026-03-02",
+  "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.421-1",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "**Improved**\n- AUTO theme now reads your terminal's ANSI color palette and uses it directly, so colors match your terminal theme",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "GitHub Copilot CLI"
+}

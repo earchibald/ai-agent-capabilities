@@ -1,0 +1,16 @@
+{
+  "version": "v0.31.0-preview.2",
+  "releaseDate": "2026-02-27",
+  "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.31.0-preview.2",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "## What's Changed\n* fix(patch): cherry-pick ea48bd9 to release/v0.31.0-preview.1-pr-20577 [CONFLICTS] by @gemini-cli-robot in https://github.com/google-gemini/gemini-cli/pull/20592\n\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.31.0-preview.1...v0.31.0-preview.2",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "Gemini CLI"
+}

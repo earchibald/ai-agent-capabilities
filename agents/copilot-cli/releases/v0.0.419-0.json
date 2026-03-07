@@ -1,0 +1,16 @@
+{
+  "version": "v0.0.419-0",
+  "releaseDate": "2026-02-25",
+  "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.419-0",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "Pre-release 0.0.419-0",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "GitHub Copilot CLI"
+}

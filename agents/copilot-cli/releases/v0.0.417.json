@@ -1,0 +1,16 @@
+{
+  "version": "v0.0.417",
+  "releaseDate": "2026-02-25",
+  "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.417",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "2026-02-25\n\n- Add /research command for deep research with exportable reports\n- MCP servers no longer intermittently fail to load when opening a new session\n- Plugin agents and skills are available immediately after install without restarting\n- Plugin skills and commands load from custom paths declared in plugin.json\n- Alt+backspace correctly registers as backspace instead of delete\n",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "GitHub Copilot CLI"
+}
