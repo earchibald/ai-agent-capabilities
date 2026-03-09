@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-02T06:22:46.575794+00:00",
+  "generated_at": "2026-03-09T06:25:27.433397+00:00",
   "pass": "relevance",
   "results": [
     {
@@ -96,10 +96,10 @@
       "capability": "Chat Assistance",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "granularity": "excerpt",
-      "relevant": true,
+      "relevant": false,
       "checks": {
         "exact_match": false,
-        "prefix_match": true
+        "prefix_match": false
       }
     },
     {

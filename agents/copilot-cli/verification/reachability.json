@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-03-02T06:22:07.745776+00:00",
+  "generated_at": "2026-03-09T06:24:50.843511+00:00",
   "pass": "reachability",
   "results": [
     {
       "capability": "Agent Mode",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-agents/overview",
       "error": null,
       "reachable": true
     },
@@ -15,8 +15,8 @@
       "capability": "Agent Mode",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-agents/overview",
       "error": null,
       "reachable": true
     },
@@ -24,8 +24,8 @@
       "capability": "Sub-agents",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-agents/overview",
       "error": null,
       "reachable": true
     },
@@ -33,8 +33,8 @@
       "capability": "Code Generation",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-agents/overview",
       "error": null,
       "reachable": true
     },
@@ -42,8 +42,8 @@
       "capability": "Multi-file Editing",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-agents/overview",
       "error": null,
       "reachable": true
     },
@@ -51,8 +51,8 @@
       "capability": "Terminal CLI",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-agents/overview",
       "error": null,
       "reachable": true
     },
@@ -69,8 +69,8 @@
       "capability": "Debugging",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-agents/overview",
       "error": null,
       "reachable": true
     },
@@ -78,8 +78,8 @@
       "capability": "Documentation Generation",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-agents/overview",
       "error": null,
       "reachable": true
     },
@@ -87,8 +87,8 @@
       "capability": "Chat Assistance",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-agents/overview",
       "error": null,
       "reachable": true
     },
@@ -96,8 +96,8 @@
       "capability": "Multi-language Support",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-agents/overview",
       "error": null,
       "reachable": true
     },
@@ -105,8 +105,8 @@
       "capability": "Multi-language Support",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-agents/overview",
       "error": null,
       "reachable": true
     },
@@ -114,8 +114,8 @@
       "capability": "MCP Support",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-agents/overview",
       "error": null,
       "reachable": true
     },
@@ -132,8 +132,8 @@
       "capability": "Custom Instructions",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-agents/overview",
       "error": null,
       "reachable": true
     },
@@ -195,8 +195,8 @@
       "capability": "Lifecycle Hooks",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-agents/overview",
       "error": null,
       "reachable": true
     },
@@ -213,8 +213,8 @@
       "capability": "Code Explanation",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-agents/overview",
       "error": null,
       "reachable": true
     },
@@ -222,8 +222,8 @@
       "capability": "Code Refactoring",
       "url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli",
       "status_code": 200,
-      "redirected": false,
-      "redirect_url": null,
+      "redirected": true,
+      "redirect_url": "https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli-agents/overview",
       "error": null,
       "reachable": true
     }
