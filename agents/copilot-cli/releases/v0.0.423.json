@@ -1,0 +1,16 @@
+{
+  "version": "v0.0.423",
+  "releaseDate": "2026-03-06",
+  "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.423",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "2026-03-06\n\n- Users are prompted for shell commands with potentially dangerous expansion or substitution use cases, additional guardrails for malicious exploits\n- Block /share gist for EMU and GHE Cloud users with clear error messaging\n- Elicitation enum and boolean fields now require Enter to confirm a selection, with a \u2713 indicator for confirmed values vs \u276f for the browsing cursor\n- MCP servers can now request users to visit a URL for out-of-band interactions such as OAuth flows or API key entry\n- Improve explore agent precision and large repository support with better context sharing\n- Diff mode displays cleanly on Windows with CRLF line endings\n",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "GitHub Copilot CLI"
+}

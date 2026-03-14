@@ -1,0 +1,16 @@
+{
+  "version": "v0.0.421-0",
+  "releaseDate": "2026-03-02",
+  "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v0.0.421-0",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "**Added**\n- ACP clients can configure reasoning effort via session config options\n- Click links in the terminal to open them in your default browser\n- Support repo-level config via .github/copilot/config.json for shared project settings like marketplaces and launch messages\n\n**Improved**\n- Markdown tables render with proper column widths, word wrap, and Unicode borders that adapt to terminal width\n- MCP elicitation form displays taller multi-line text input, hides tab bar for single-field forms, and fixes error flashing on field navigation\n\n**Fixed**\n- Streaming output no longer truncates when running in alt-screen mode\n- Right-click paste no longer produces garbled text on Windows\n- Shell command output on Windows no longer renders as \"No changes detected\" in the timeline\n- GitHub API errors no longer appear as raw HTTP messages in the terminal when using the # reference picker",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "GitHub Copilot CLI"
+}

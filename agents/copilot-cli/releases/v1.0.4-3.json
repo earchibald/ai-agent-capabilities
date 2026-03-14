@@ -1,0 +1,16 @@
+{
+  "version": "v1.0.4-3",
+  "releaseDate": "2026-03-11",
+  "sourceUrl": "https://github.com/github/copilot-cli/releases/tag/v1.0.4-3",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "**Added**\n- Add `session.shell.exec` and `session.shell.kill` RPC methods for executing shell commands with streaming stdout/stderr output\n\n**Fixed**\n- Custom agents from --plugin-dir plugins now load correctly in ACP mode",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "GitHub Copilot CLI"
+}

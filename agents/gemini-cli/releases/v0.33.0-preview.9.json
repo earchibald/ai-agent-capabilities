@@ -1,0 +1,16 @@
+{
+  "version": "v0.33.0-preview.9",
+  "releaseDate": "2026-03-10",
+  "sourceUrl": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0-preview.9",
+  "changes": [
+    {
+      "type": "feature",
+      "description": "## What's Changed\n* fix(patch): cherry-pick 9a74271 to release/v0.33.0-preview.8-pr-21236 [CONFLICTS] by @gemini-cli-robot in https://github.com/google-gemini/gemini-cli/pull/21788\n\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.33.0-preview.8...v0.33.0-preview.9",
+      "impact": "minor"
+    }
+  ],
+  "capabilitiesAdded": [],
+  "capabilitiesModified": [],
+  "capabilitiesRemoved": [],
+  "agent": "Gemini CLI"
+}
